@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="SWIF"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AEA4A4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="랭킹"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:orientation="horizontal"
+                android:background="@color/main">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="372"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    app:srcCompat="@drawable/profile1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="파이"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="1,230 P"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AEA4A4" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="1"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="31dp"-->
+<!--                    android:layout_height="31dp"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    app:srcCompat="@drawable/profile1" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="스위프"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="5,430 P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="2"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="31dp"-->
+<!--                    android:layout_height="31dp"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    app:srcCompat="@drawable/profile2" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="헬로 월드"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="5,320 P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="3"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="31dp"-->
+<!--                    android:layout_height="31dp"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    app:srcCompat="@drawable/profile1" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="문희열립니다"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="5,210 P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="4"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="31dp"-->
+<!--                    android:layout_height="31dp"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    app:srcCompat="@drawable/profile1" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="장난둘"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="5,100 P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="5"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="31dp"-->
+<!--                    android:layout_height="31dp"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    app:srcCompat="@drawable/profile1" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="벼락식혜"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="5,000 P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="431dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AEA4A4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AEA4A4" />
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/alarmbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dkffla" />
+
+                <ImageButton
+                    android:id="@+id/rankbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/fodzld" />
+
+                <ImageButton
+                    android:id="@+id/homebtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/wlq" />
+
+                <ImageButton
+                    android:id="@+id/writebtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/rmf" />
+
+                <ImageButton
+                    android:id="@+id/hambarbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/goaqj" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

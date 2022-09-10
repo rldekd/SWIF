@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="SWIF"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AEA4A4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="포인트 내역"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="66dp"
+                    android:layout_weight="1"
+                    android:background="@color/main"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="내 포인트"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="MissingClass" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="66dp"
+                    android:layout_weight="1"
+                    android:background="@color/main"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="1,234P"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="MissingClass" />
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="헬로 월드님과 매칭 완료"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="+ 30P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="깅다님과 매칭 완료"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="+ 30P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="승미니님과 매칭 완료"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="+ 30P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="죄용이님과 매칭 완료"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="+ 30P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#AEA4A4" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="68dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|left"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="짱유진님과 매칭 완료"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp" />-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|right"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:fontFamily="@font/roboto_medium"-->
+<!--                    android:text="+ 30P"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AEA4A4" />
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/alarmbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dkffla" />
+
+                <ImageButton
+                    android:id="@+id/rankbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/fodzld" />
+
+                <ImageButton
+                    android:id="@+id/homebtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/wlq" />
+
+                <ImageButton
+                    android:id="@+id/writebtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/rmf" />
+
+                <ImageButton
+                    android:id="@+id/hambarbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/goaqj" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
