@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="293dp"
+    android:layout_height="802dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+<!--    android:layout_marginTop="38dp"-->
+<!--    android:layout_marginLeft="115dp"-->
+<!--    android:layout_marginBottom="24dp"-->
+<!--    android:layout_marginRight="114dp"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="파이"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="\u0040pie_01"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="17dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/round_yellow"
+        android:fontFamily="@font/roboto_bold"
+        android:text="SWIF 유료 구독하기"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="14dp"/>
+    <View
+        android:layout_width="271dp"
+        android:layout_height="1dp"
+        android:background="#AEA4A4" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="친구"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="타이머"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="매칭"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="랭킹"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="게시판"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="마이페이지"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="공지사항"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+
+
+</LinearLayout>
