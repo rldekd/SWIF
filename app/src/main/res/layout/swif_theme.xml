@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/roboto_b"
                 android:gravity="center"
                 android:text="SWIF"
                 android:textAlignment="center"
@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="테마 변경"
                 android:background="@color/main"
@@ -57,7 +57,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_gravity="left"
                     android:gravity="left"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/roboto"
                     android:padding="5dp"
                     android:text="안녕하세요!"
                     android:textColor="#000000"
@@ -71,7 +71,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_gravity="right"
                     android:gravity="right"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/roboto"
                     android:padding="5dp"
                     android:text="테마 예시입니다."
                     android:textColor="#000000"
@@ -276,40 +276,39 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/alarmbtn"
+            android:id="@+id/btn_noti"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/dkffla"/>
+            android:src="@drawable/nav_noti"/>
 
         <ImageButton
-            android:id="@+id/rankbtn"
+            android:id="@+id/btn_rank"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/fodzld" />
+            android:src="@drawable/nav_rank"/>
 
         <ImageButton
-            android:id="@+id/homebtn"
+            android:id="@+id/btn_home"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/wlq" />
+            android:src="@drawable/nav_home" />
 
         <ImageButton
-            android:id="@+id/writebtn"
-
+            android:id="@+id/btn_write"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/rmf" />
+            android:src="@drawable/nav_write" />
 
         <ImageButton
-            android:id="@+id/hambarbtn"
+            android:id="@+id/btn_menu"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/goaqj" />
+            android:src="@drawable/nav_menu" />
 
 
     </LinearLayout>

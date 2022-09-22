@@ -13,16 +13,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="68dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/roboto_bold"
-                android:gravity="center"
-                android:text="SWIF"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -32,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="포인트 내역"
                 android:textAlignment="center"
@@ -48,7 +38,7 @@
                     android:layout_height="66dp"
                     android:layout_weight="1"
                     android:background="@color/main"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/roboto"
                     android:text="내 포인트"
                     android:textSize="18dp"
                     android:textColor="#FFFFFF"
@@ -64,7 +54,7 @@
                     android:layout_height="66dp"
                     android:layout_weight="1"
                     android:background="@color/main"
-                    android:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto_b"
                     android:text="1,234P"
                     android:textSize="18dp"
                     android:textColor="#FFFFFF"
@@ -256,45 +246,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#AEA4A4" />
+
             <LinearLayout
-                android:layout_width="400dp"
+
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/alarmbtn"
+                    android:id="@+id/btn_noti"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/dkffla" />
+                    android:src="@drawable/nav_noti"/>
 
                 <ImageButton
-                    android:id="@+id/rankbtn"
+                    android:id="@+id/btn_rank"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/fodzld" />
+                    android:src="@drawable/nav_rank"/>
 
                 <ImageButton
-                    android:id="@+id/homebtn"
+                    android:id="@+id/btn_home"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/wlq" />
+                    android:src="@drawable/nav_home" />
 
                 <ImageButton
-                    android:id="@+id/writebtn"
+                    android:id="@+id/btn_write"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/rmf" />
+                    android:src="@drawable/nav_write" />
 
                 <ImageButton
-                    android:id="@+id/hambarbtn"
+                    android:id="@+id/btn_menu"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/goaqj" />
+                    android:src="@drawable/nav_menu" />
 
 
             </LinearLayout>

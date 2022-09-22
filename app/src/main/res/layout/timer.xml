@@ -25,7 +25,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto_b"
                     android:text="캡스톤디자인"
                     android:textColor="#99000000"
                     android:textSize="30dp"/>
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/roboto_b"
                 android:textSize="50dp"
                 android:textColor="#005C9F"/>
             <LinearLayout
@@ -61,14 +61,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/roboto"
                     android:text="총 공부량"
                     android:textSize="20dp"
                     android:textColor="#90000000"/>
                 <Chronometer
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/roboto"
                     android:textSize="20dp"
                     android:textColor="#90000000"/>
             </LinearLayout>
@@ -95,7 +95,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
+                        android:fontFamily="@font/roboto_b"
                         android:layout_marginLeft="10dp"
                         android:text="기록 시작"
                         android:textColor="#80000000"
@@ -118,7 +118,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
+                        android:fontFamily="@font/roboto_b"
                         android:layout_marginLeft="10dp"
                         android:text="기록 중단"
                         android:textColor="#80000000"
@@ -146,7 +146,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="32dp"
                         android:textSize="20dp"
-                        android:fontFamily="@font/roboto_bold"
+                        android:fontFamily="@font/roboto_b"
                         android:textColor="#FFFFFF"
                         android:text="오늘의 공부"/>
                     <ImageButton
@@ -258,5 +258,50 @@
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
+        <LinearLayout
+
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFF">
+
+            <ImageButton
+                android:id="@+id/btn_noti"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/nav_noti"/>
+
+            <ImageButton
+                android:id="@+id/btn_rank"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/nav_rank"/>
+
+            <ImageButton
+                android:id="@+id/btn_home"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/nav_home" />
+
+            <ImageButton
+                android:id="@+id/btn_write"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/nav_write" />
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/nav_menu" />
+
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
