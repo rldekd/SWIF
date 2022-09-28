@@ -15,6 +15,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
+        android:id="@+id/nick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -26,6 +27,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <TextView
+        android:id="@+id/id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -37,6 +39,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sub"
         android:layout_width="243dp"
         android:layout_height="43dp"
         android:layout_marginTop="17dp"
@@ -54,6 +57,7 @@
         android:background="#AEA4A4"
         android:layout_marginTop="28dp"/>
     <TextView
+        android:id="@+id/friend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -65,6 +69,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <TextView
+        android:id="@+id/timer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -76,6 +81,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <TextView
+        android:id="@+id/match"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -87,6 +93,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <TextView
+        android:id="@+id/rank"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -98,6 +105,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <TextView
+        android:id="@+id/info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -109,6 +117,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <TextView
+        android:id="@+id/mypage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -120,6 +129,7 @@
         android:textColor="#000000"
         android:textSize="18dp" />
     <TextView
+        android:id="@+id/noti"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -127,6 +137,18 @@
         android:fontFamily="@font/roboto"
         android:gravity="center"
         android:text="공지사항"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/inq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="1:1 문의"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18dp" />
