@@ -7,14 +7,13 @@ import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Pop_plan_make extends Activity {
-
+public class Plan_certified extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.pop_plan_make);
+        setContentView(R.layout.plan_certified);
 
     }
 
@@ -23,3 +22,4 @@ public class Pop_plan_make extends Activity {
     }
 
 }
+

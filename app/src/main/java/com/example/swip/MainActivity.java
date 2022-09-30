@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         /* 타이머로 가기 */
         Chronometer timer = (Chronometer) findViewById(R.id.timer);
         timer.setOnClickListener(new View.OnClickListener() {

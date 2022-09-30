@@ -33,6 +33,16 @@ public class friends_manage extends AppCompatActivity {
             }
         });
 
+        ImageButton cancel_btn = (ImageButton) findViewById(R.id.cancel_btn);
+        cancel_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Delete_friend.class);
+                startActivity(intent);
+            }
+        });
+
+
         Button friends_apply_btn = (Button) findViewById(R.id.friends_apply_btn);
         friends_apply_btn.setOnClickListener(new View.OnClickListener() {
             @Override

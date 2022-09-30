@@ -38,6 +38,7 @@
         android:scaleType="centerCrop" />
 
     <TextView
+        android:id="@+id/mynick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -73,6 +74,7 @@
                />
 
             <TextView
+                android:id="@+id/mypoint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0 P"
@@ -102,6 +104,7 @@
                 android:fontFamily="@font/roboto"/>
 
             <TextView
+                android:id="@+id/myrank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0위"
@@ -125,6 +128,7 @@
 />
 
         <TextView
+            android:id="@+id/myscrap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="스크랩"
@@ -141,6 +145,7 @@
             android:layout_marginTop="20dp" />
 
         <TextView
+            android:id="@+id/mytema"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="테마 변경"
@@ -157,6 +162,7 @@
             android:layout_marginTop="20dp" />
 
         <TextView
+            android:id="@+id/myinq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1 : 1 문의"
@@ -174,6 +180,7 @@
 
 
         <Button
+            android:id="@+id/mymem"
             android:layout_width="318dp"
             android:layout_height="47dp"
             android:background="@drawable/button_background"

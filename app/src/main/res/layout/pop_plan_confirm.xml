@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/pop_plan_con"
         android:layout_width="360dp"
-        android:layout_height="324dp"
+        android:layout_height="390dp"
         android:background="#ffffff"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"

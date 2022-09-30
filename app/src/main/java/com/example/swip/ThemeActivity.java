@@ -12,7 +12,7 @@ public class ThemeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nofi);
+        setContentView(R.layout.swif_theme);
 
         ImageButton noti = (ImageButton) findViewById(R.id.btn_noti);
         noti.setOnClickListener(new View.OnClickListener() {
