@@ -70,7 +70,7 @@ public class fpage extends AppCompatActivity {
         });
 
         ImageView back = (ImageView) findViewById(R.id.fpageX);
-        post.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), friends_list.class);
@@ -79,7 +79,7 @@ public class fpage extends AppCompatActivity {
         });
 
         ImageButton plan = (ImageButton) findViewById(R.id.fpageplan);
-        post.setOnClickListener(new View.OnClickListener() {
+        plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), TimerActivity.class);

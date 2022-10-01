@@ -26,6 +26,51 @@ public class mypage extends AppCompatActivity {
             }
         });
 
+        TextView changeBtn2 = (TextView) findViewById(R.id.mypoint);
+        changeBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),PointActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView changeBtn3 = (TextView) findViewById(R.id.myrank);
+        changeBtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),RankActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView changeBtn4 = (TextView) findViewById(R.id.myscrap);
+        changeBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Scrap.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView changeBtn5 = (TextView) findViewById(R.id.mytema);
+        changeBtn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),ThemeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView changeBtn6 = (TextView) findViewById(R.id.myinq);
+        changeBtn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),InqActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton noti = (ImageButton) findViewById(R.id.btn_noti);
         noti.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,63 +117,8 @@ public class mypage extends AppCompatActivity {
         });
 
 
-
-        TextView changeBtn2 = (TextView) findViewById(R.id.mypoint);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),PointActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView changeBtn3 = (TextView) findViewById(R.id.myrank);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),RankActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView changeBtn4 = (TextView) findViewById(R.id.myscrap);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Scrap.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView changeBtn5 = (TextView) findViewById(R.id.mytema);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),ThemeActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView changeBtn6 = (TextView) findViewById(R.id.myinq);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),InqActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView changeBtn7 = (TextView) findViewById(R.id.mynick);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Profile_modify.class);
-                startActivity(intent);
-            }
-        });
-
         Button membership = (Button) findViewById(R.id.mymem);
-        noti.setOnClickListener(new View.OnClickListener() {
+        membership.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), membership.class);
