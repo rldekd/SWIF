@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#005C9F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="horizontal">
+
+        <Chronometer
+            android:id="@+id/timer"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="68dp"
+            android:background="#00005C9F"
+            android:fontFamily="roboto"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/chronometer_btn"
+            android:layout_width="11dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_roundcorner">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:background="#E9E9E9" >
+
+        <Button
+            android:id="@+id/add_plan"
+            android:layout_width="209dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="64dp"
+            android:layout_gravity="center"
+            android:background="@drawable/yellow_roundcorner"
+            android:text="플래너 추가하기"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nav_alarm"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_alarm" />
+
+        <ImageButton
+            android:id="@+id/nav_rank"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_rank" />
+
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_home" />
+
+        <ImageButton
+            android:id="@+id/nav_post"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_post" />
+
+        <ImageButton
+            android:id="@+id/nav_menu"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_menu" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

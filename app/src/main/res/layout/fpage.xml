@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/fpageback"
+            android:layout_width="match_parent"
+            android:layout_height="415dp"
+            android:background='@drawable/fpageback' />
+
+
+        <ImageView
+            android:id="@+id/fpageX"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/x"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="1dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img">
+
+        </ImageView>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#005c9f"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/roboto_b"
+            android:text="헬로월드"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#005c9f"
+        android:layout_gravity="bottom">
+
+
+
+        <ImageButton
+            android:id="@+id/fpagechat"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/chat"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="85dp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/fpageplan"
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/planner" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_noti"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_noti"/>
+
+        <ImageButton
+            android:id="@+id/btn_rank"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_rank"/>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_home" />
+
+        <ImageButton
+            android:id="@+id/btn_write"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_write" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_menu" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btn_noti"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:background="@android:color/transparent"
+        android:icon="@drawable/nav_noti"
+        android:title="알림"/>
+
+    <item
+        android:id="@+id/btn_rank"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:background="@android:color/transparent"
+        android:icon="@drawable/nav_rank"
+        android:title="순위"/>
+
+    <item
+        android:id="@+id/btn_home"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:background="@android:color/transparent"
+        android:icon="@drawable/nav_home"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/btn_write"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:background="@android:color/transparent"
+        android:icon="@drawable/nav_write"
+        android:title="게시판"/>
+
+    <item
+        android:id="@+id/btn_menu"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:background="@android:color/transparent"
+        android:icon="@drawable/nav_menu"
+        android:title="메뉴" />
+
+
+</menu>

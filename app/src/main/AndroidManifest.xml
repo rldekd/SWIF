@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.swip">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SWIP">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--깅-->
+
+        <activity android:name=".friends_list" />
+        <activity android:name=".friends_manage"/>
+        <activity android:name=".friends_apply"/>
+        <activity android:name=".information_board"/>
+        <activity android:name=".membership"/>
+        <activity android:name=".Post_Cho_Stu"/>
+        <activity android:name=".Post_Jung_Stu"/>
+        <activity android:name=".Post_Godueng_Stu"/>
+        <activity android:name=".Post_Dae_Stu"/>
+        <activity android:name=".Post_Imyong"/>
+        <activity android:name=".Post_Gita"/>
+        <activity android:name=".Post_Giup"/>
+        <activity android:name=".Post_Gukga"/>
+        <activity android:name=".Scrap"/>
+        <activity android:name=".Post_Gita_Zagi"/>
+        <activity android:name=".Post_Naega"/>
+        <activity android:name=".Post_Jaguk"/>
+
+        <!--죄용이-->
+
+        <activity android:name=".FriendChatActivity" android:label="friendchat" />
+        <activity android:name=".MenuActivity" android:label="menu" />
+        <activity android:name=".NofiActivity" android:label="nofi" />
+        <activity android:name=".PointActivity" android:label="point" />
+        <activity android:name=".RankActivity" android:label="rank" />
+        <activity android:name=".ScrapActivity" android:label="scrap" />
+        <activity android:name=".ThemeActivity" android:label="theme" />
+        <activity android:name=".TimerActivity" android:label="timer" />
+
+        <!-- <meta-data
+             android:name="preloaded_fonts"
+             android:resource="@array/preloaded_fonts" /> -->
+
+        <!--유짱-->
+        <activity android:name=".NoticeActivity"/>
+        <activity android:name=".InqActivity"/>
+        <activity android:name=".MyinqActivity"/>
+        <activity android:name=".Pop_plan_make"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Board_detail"/>
+        <activity android:name=".Delete_friend"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Plan_certified"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Pop_plan_confirm"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Post_write"/>
+        <activity android:name=".Profile_modify"/>
+
+
+        <!--승미니-->
+        <activity android:name=".chat"/>
+        <activity android:name=".chat_f"/>
+        <activity android:name=".id"/>
+        <activity android:name=".password"/>
+        <activity android:name=".fpage"/>
+        <activity android:name=".member"/>
+        <activity android:name=".mypage"/>
+        <activity android:name=".login"/>
+        <activity android:name=".feedback"/>
+        <activity android:name=".post"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
