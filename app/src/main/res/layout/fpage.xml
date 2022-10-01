@@ -50,14 +50,11 @@
 
 
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#005c9f"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="10dp">
 
 
         <TextView
@@ -81,9 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:background="#005c9f"
-        android:layout_gravity="bottom"
-
-        >
+        android:layout_gravity="bottom">
 
 
 
