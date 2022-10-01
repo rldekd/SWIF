@@ -17,7 +17,6 @@
             android:layout_marginBottom="8dp"
             android:gravity="center"
             android:text="SWIF 멤버십 구독"
-            android:fontColor="#FFF"
             android:textColor="#FFF"
             android:textSize="20sp"
             android:textStyle="bold">
