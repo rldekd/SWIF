@@ -206,50 +206,62 @@
                 android:layout_height="1dp"
                 android:background="#AEA4A4" />
 
-            <LinearLayout
-
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/btn_noti"
-                    android:layout_width="80dp"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/nav_alarm"/>
-
-                <ImageButton
-                    android:id="@+id/btn_rank"
-                    android:layout_width="80dp"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/nav_rank"/>
-
-                <ImageButton
-                    android:id="@+id/btn_home"
-                    android:layout_width="80dp"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/nav_home" />
-
-                <ImageButton
-                    android:id="@+id/btn_write"
-                    android:layout_width="80dp"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/nav_post" />
-
-                <ImageButton
-                    android:id="@+id/btn_menu"
-                    android:layout_width="80dp"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/nav_menu" />
-
-
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+    <ImageButton
+        android:id="@+id/write"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/write"
+        android:scaleType="centerInside"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="14dp"/>
+
+    <LinearLayout
+
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_noti"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_alarm"/>
+
+        <ImageButton
+            android:id="@+id/btn_rank"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_rank"/>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_home" />
+
+        <ImageButton
+            android:id="@+id/btn_write"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_post" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_menu" />
+
+
+    </LinearLayout>
 </LinearLayout>

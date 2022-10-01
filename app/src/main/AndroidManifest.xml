@@ -57,7 +57,17 @@
         <activity android:name=".NoticeActivity"/>
         <activity android:name=".InqActivity"/>
         <activity android:name=".MyinqActivity"/>
-        <activity android:name=".Pop_plan_make"/>
+        <activity android:name=".Pop_plan_make"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Board_detail"/>
+        <activity android:name=".Delete_friend"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Plan_certified"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Pop_plan_confirm"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Post_write"/>
+        <activity android:name=".Profile_modify"/>
 
 
         <!--승미니-->

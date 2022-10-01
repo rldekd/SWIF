@@ -6,12 +6,19 @@
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/cal.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/pink_roundcorner.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/round_button_basic.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/round_button_basic_bottom.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/round_chat_left.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/round_chat_right.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/round_post.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/search_round.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/theme_black.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/theme_green.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/theme_ivory.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/theme_orig.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/theme_ravend.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/white_roundcorner.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/board_detail.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/cal.xml" value="0.25" />
@@ -23,7 +30,17 @@
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/menubar.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/nofi.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/point.xml" value="0.25" />
-        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post.xml" value="0.19091751621872105" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post.xml" value="0.1" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_cho_stu.xml" value="0.16" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_dae_stu.xml" value="0.47893379191745483" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_gita.xml" value="0.34965473948524795" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_gita_zagi.xml" value="0.34965473948524795" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_giup.xml" value="0.34965473948524795" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_godueng_stu.xml" value="0.29025534132360603" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_gukga.xml" value="0.34965473948524795" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_imyong.xml" value="0.34965473948524795" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_jaguk.xml" value="0.34965473948524795" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/post_jung_stu.xml" value="0.34965473948524795" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/scrap.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/swif_theme.xml" value="0.25" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/timer.xml" value="0.33" />
@@ -40,7 +57,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.1" />
+        <option name="scale" value="0.16" />
       </ProjectState>
     </option>
   </component>
