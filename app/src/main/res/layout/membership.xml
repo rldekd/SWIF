@@ -5,7 +5,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="163dp"
+        android:layout_height="162dp"
         android:layout_weight="1"
         android:background="#005C9F"
         android:orientation="vertical">
