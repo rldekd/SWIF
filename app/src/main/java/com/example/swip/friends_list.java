@@ -108,5 +108,3 @@ public class friends_list extends AppCompatActivity {
 
     }
 }
-
-

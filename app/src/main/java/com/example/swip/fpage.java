@@ -15,8 +15,8 @@ public class fpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fpage);
 
-        ImageButton fpagechat = (ImageButton) findViewById(R.id.fpagechat);
-        fpagechat.setOnClickListener(new View.OnClickListener() {
+        ImageButton changeBtn = (ImageButton) findViewById(R.id.fpagechat);
+        changeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),chat_f.class);
@@ -69,8 +69,8 @@ public class fpage extends AppCompatActivity {
             }
         });
 
-        ImageView fpageX = (ImageView) findViewById(R.id.fpageX);
-        fpageX.setOnClickListener(new View.OnClickListener() {
+        ImageView back = (ImageView) findViewById(R.id.fpageX);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), friends_list.class);
@@ -78,8 +78,8 @@ public class fpage extends AppCompatActivity {
             }
         });
 
-        ImageButton fpageplan = (ImageButton) findViewById(R.id.fpageplan);
-        fpageplan.setOnClickListener(new View.OnClickListener() {
+        ImageButton plan = (ImageButton) findViewById(R.id.fpageplan);
+        plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), TimerActivity.class);

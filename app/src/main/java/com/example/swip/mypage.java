@@ -17,8 +17,8 @@ public class mypage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mypage);
 
-        TextView mynick = (TextView) findViewById(R.id.mynick);
-        mynick.setOnClickListener(new View.OnClickListener() {
+        TextView changeBtn = (TextView) findViewById(R.id.mynick);
+        changeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),Profile_modify.class);
@@ -26,8 +26,8 @@ public class mypage extends AppCompatActivity {
             }
         });
 
-        TextView mypoint = (TextView) findViewById(R.id.mypoint);
-        mypoint.setOnClickListener(new View.OnClickListener() {
+        TextView changeBtn2 = (TextView) findViewById(R.id.mypoint);
+        changeBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),PointActivity.class);
@@ -35,8 +35,8 @@ public class mypage extends AppCompatActivity {
             }
         });
 
-        TextView myrank = (TextView) findViewById(R.id.myrank);
-        myrank.setOnClickListener(new View.OnClickListener() {
+        TextView changeBtn3 = (TextView) findViewById(R.id.myrank);
+        changeBtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),RankActivity.class);
@@ -44,8 +44,8 @@ public class mypage extends AppCompatActivity {
             }
         });
 
-        TextView myscrap = (TextView) findViewById(R.id.myscrap);
-        myscrap.setOnClickListener(new View.OnClickListener() {
+        TextView changeBtn4 = (TextView) findViewById(R.id.myscrap);
+        changeBtn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),Scrap.class);
@@ -53,8 +53,8 @@ public class mypage extends AppCompatActivity {
             }
         });
 
-        TextView mytema = (TextView) findViewById(R.id.mytema);
-        mytema.setOnClickListener(new View.OnClickListener() {
+        TextView changeBtn5 = (TextView) findViewById(R.id.mytema);
+        changeBtn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),ThemeActivity.class);
@@ -62,8 +62,8 @@ public class mypage extends AppCompatActivity {
             }
         });
 
-        TextView myinq = (TextView) findViewById(R.id.myinq);
-        myinq.setOnClickListener(new View.OnClickListener() {
+        TextView changeBtn6 = (TextView) findViewById(R.id.myinq);
+        changeBtn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),InqActivity.class);
@@ -129,5 +129,3 @@ public class mypage extends AppCompatActivity {
 
     }
 }
-
-
