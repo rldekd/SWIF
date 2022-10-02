@@ -30,14 +30,28 @@ public class MainActivity extends AppCompatActivity {
 
 
         /* 타이머로 가기 */
-        Chronometer timer = (Chronometer) findViewById(R.id.timer);
-        timer.setOnClickListener(new View.OnClickListener() {
+
+        Button chronometer_btn = (Button) findViewById(R.id.chronometer_btn);
+        chronometer_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),TimerActivity.class);
                 startActivity(intent);
             }
         });
+
+        Chronometer timer = (Chronometer) findViewById(R.id.timer);
+        timer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),TimerActivity.class);
+                startActivity(intent);
+
+                Chronometer chronometer = (Chronometer) findViewById(R.id.chrono);
+                long time = chronometer.getBase();
+            }
+        });
+
 
         /* 하단바 */
 
