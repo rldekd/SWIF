@@ -3,7 +3,6 @@ package com.example.swip;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -14,12 +13,11 @@ public class information_board extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.information_board);
 
         /* 초딩 */
-        TextView choid = (TextView) findViewById(R.id.choid);
-        choid.setOnClickListener(new View.OnClickListener() {
+        TextView a = (TextView) findViewById(R.id.a);
+        a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),Post_Cho_Stu.class);
@@ -185,8 +183,8 @@ public class information_board extends AppCompatActivity {
 
 
         /* 하단바 - 알림 */
-        ImageButton btn_arlarm = (ImageButton) findViewById(R.id.nav_alarm);
-        btn_arlarm.setOnClickListener(new View.OnClickListener() {
+        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
+        nav_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), NofiActivity.class);

@@ -14,15 +14,6 @@ public class Post_Naega extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_naega);
 
-        ImageButton write = (ImageButton) findViewById(R.id.btn_write);
-        write.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Post_write.class);
-                startActivity(intent);
-            }
-        });
-
         /* 하단바 */
 
         /* 하단바 - 홈 */

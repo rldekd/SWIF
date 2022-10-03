@@ -60,172 +60,172 @@
                     android:textColor="#FFFFFF"
                     tools:ignore="MissingClass" />
             </LinearLayout>
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="68dp"-->
-<!--                android:orientation="horizontal">-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="68dp"-->
+            <!--                android:orientation="horizontal">-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|left"-->
-<!--                    android:layout_marginLeft="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="헬로 월드님과 매칭 완료"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp" />-->
-<!--                <View-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="0dp"-->
-<!--                    android:layout_weight="1" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|left"-->
+            <!--                    android:layout_marginLeft="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="헬로 월드님과 매칭 완료"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp" />-->
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:layout_weight="1" />-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|right"-->
-<!--                    android:layout_marginRight="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="+ 30P"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-<!--            <View-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1dp"-->
-<!--                android:background="#AEA4A4" />-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="68dp"-->
-<!--                android:orientation="horizontal">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|right"-->
+            <!--                    android:layout_marginRight="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="+ 30P"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--            </LinearLayout>-->
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:background="#AEA4A4" />-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="68dp"-->
+            <!--                android:orientation="horizontal">-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|left"-->
-<!--                    android:layout_marginLeft="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="깅다님과 매칭 완료"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp" />-->
-<!--                <View-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="0dp"-->
-<!--                    android:layout_weight="1" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|left"-->
+            <!--                    android:layout_marginLeft="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="깅다님과 매칭 완료"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp" />-->
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:layout_weight="1" />-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|right"-->
-<!--                    android:layout_marginRight="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="+ 30P"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-<!--            <View-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1dp"-->
-<!--                android:background="#AEA4A4" />-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="68dp"-->
-<!--                android:orientation="horizontal">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|right"-->
+            <!--                    android:layout_marginRight="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="+ 30P"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--            </LinearLayout>-->
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:background="#AEA4A4" />-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="68dp"-->
+            <!--                android:orientation="horizontal">-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|left"-->
-<!--                    android:layout_marginLeft="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="승미니님과 매칭 완료"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp" />-->
-<!--                <View-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="0dp"-->
-<!--                    android:layout_weight="1" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|left"-->
+            <!--                    android:layout_marginLeft="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="승미니님과 매칭 완료"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp" />-->
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:layout_weight="1" />-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|right"-->
-<!--                    android:layout_marginRight="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="+ 30P"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-<!--            <View-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1dp"-->
-<!--                android:background="#AEA4A4" />-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="68dp"-->
-<!--                android:orientation="horizontal">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|right"-->
+            <!--                    android:layout_marginRight="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="+ 30P"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--            </LinearLayout>-->
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:background="#AEA4A4" />-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="68dp"-->
+            <!--                android:orientation="horizontal">-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|left"-->
-<!--                    android:layout_marginLeft="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="죄용이님과 매칭 완료"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp" />-->
-<!--                <View-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="0dp"-->
-<!--                    android:layout_weight="1" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|left"-->
+            <!--                    android:layout_marginLeft="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="죄용이님과 매칭 완료"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp" />-->
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:layout_weight="1" />-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|right"-->
-<!--                    android:layout_marginRight="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="+ 30P"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-<!--            <View-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1dp"-->
-<!--                android:background="#AEA4A4" />-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="68dp"-->
-<!--                android:orientation="horizontal">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|right"-->
+            <!--                    android:layout_marginRight="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="+ 30P"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--            </LinearLayout>-->
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:background="#AEA4A4" />-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="68dp"-->
+            <!--                android:orientation="horizontal">-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|left"-->
-<!--                    android:layout_marginLeft="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="짱유진님과 매칭 완료"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp" />-->
-<!--                <View-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="0dp"-->
-<!--                    android:layout_weight="1" />-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|left"-->
+            <!--                    android:layout_marginLeft="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="짱유진님과 매칭 완료"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp" />-->
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:layout_weight="1" />-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center|right"-->
-<!--                    android:layout_marginRight="16dp"-->
-<!--                    android:fontFamily="@font/roboto_medium"-->
-<!--                    android:text="+ 30P"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="16dp"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center|right"-->
+            <!--                    android:layout_marginRight="16dp"-->
+            <!--                    android:fontFamily="@font/roboto_medium"-->
+            <!--                    android:text="+ 30P"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="16dp"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--            </LinearLayout>-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -258,35 +258,35 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/btn_noti"
+            android:id="@+id/nav_alarm"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_noti"/>
+            android:src="@drawable/nav_alarm"/>
 
         <ImageButton
-            android:id="@+id/btn_rank"
+            android:id="@+id/nav_rank"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
             android:src="@drawable/nav_rank"/>
 
         <ImageButton
-            android:id="@+id/btn_home"
+            android:id="@+id/nav_home"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
             android:src="@drawable/nav_home" />
 
         <ImageButton
-            android:id="@+id/btn_write"
+            android:id="@+id/nav_post"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_write" />
+            android:src="@drawable/nav_post" />
 
         <ImageButton
-            android:id="@+id/btn_menu"
+            android:id="@+id/nav_menu"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"

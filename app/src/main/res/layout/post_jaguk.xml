@@ -208,15 +208,15 @@
         </LinearLayout>
     </ScrollView>
     <ImageButton
-    android:id="@+id/write"
-    android:layout_width="50dp"
-    android:layout_height="50dp"
-    android:background="@android:color/transparent"
-    android:src="@drawable/write"
-    android:scaleType="centerInside"
-    android:layout_gravity="right|bottom"
-    android:layout_marginBottom="14dp"
-    android:layout_marginRight="14dp"/>
+        android:id="@+id/write"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/write"
+        android:scaleType="centerInside"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="14dp"/>
 
     <LinearLayout
 

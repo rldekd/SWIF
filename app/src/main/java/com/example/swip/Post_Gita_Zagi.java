@@ -14,7 +14,7 @@ public class Post_Gita_Zagi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_gita_zagi);
 
-        ImageButton write = (ImageButton) findViewById(R.id.btn_write);
+        ImageButton write = (ImageButton) findViewById(R.id.write);
         write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

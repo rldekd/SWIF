@@ -14,7 +14,7 @@ public class Post_Giup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_giup);
 
-        ImageButton write = (ImageButton) findViewById(R.id.btn_write);
+        ImageButton write = (ImageButton) findViewById(R.id.write);
         write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

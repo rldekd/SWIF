@@ -237,11 +237,11 @@
             android:src="@drawable/nav_home" />
 
         <ImageButton
-            android:id="@+id/nav_write"
+            android:id="@+id/nav_post"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_write" />
+            android:src="@drawable/nav_post" />
 
         <ImageButton
             android:id="@+id/nav_menu"

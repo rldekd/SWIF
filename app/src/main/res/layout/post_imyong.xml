@@ -226,7 +226,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <ImageButton
             android:id="@+id/nav_alarm"
             android:layout_width="80dp"

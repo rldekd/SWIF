@@ -45,7 +45,6 @@
         <activity android:name=".NofiActivity" android:label="nofi" />
         <activity android:name=".PointActivity" android:label="point" />
         <activity android:name=".RankActivity" android:label="rank" />
-        <activity android:name=".ScrapActivity" android:label="scrap" />
         <activity android:name=".ThemeActivity" android:label="theme" />
         <activity android:name=".TimerActivity" android:label="timer" />
 
