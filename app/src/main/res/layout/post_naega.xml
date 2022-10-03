@@ -216,11 +216,11 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/nav_post"
+            android:id="@+id/nav_alarm"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_post"/>
+            android:src="@drawable/nav_alarm"/>
 
         <ImageButton
             android:id="@+id/nav_rank"

@@ -18,8 +18,8 @@ public class information_board extends AppCompatActivity {
         setContentView(R.layout.information_board);
 
         /* 초딩 */
-        TextView a = (TextView) findViewById(R.id.a);
-        a.setOnClickListener(new View.OnClickListener() {
+        TextView choid = (TextView) findViewById(R.id.choid);
+        choid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),Post_Cho_Stu.class);

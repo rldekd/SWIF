@@ -261,35 +261,35 @@
             android:background="#FFF">
 
             <ImageButton
-                android:id="@+id/btn_noti"
+                android:id="@+id/nav_alarm"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/nav_noti"/>
+                android:src="@drawable/nav_alarm"/>
 
             <ImageButton
-                android:id="@+id/btn_rank"
+                android:id="@+id/nav_rank"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/nav_rank"/>
 
             <ImageButton
-                android:id="@+id/btn_home"
+                android:id="@+id/nav_home"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/nav_home" />
 
             <ImageButton
-                android:id="@+id/btn_write"
+                android:id="@+id/nav_post"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/nav_write" />
+                android:src="@drawable/nav_post" />
 
             <ImageButton
-                android:id="@+id/btn_menu"
+                android:id="@+id/nav_menu"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
