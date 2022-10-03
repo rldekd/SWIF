@@ -69,8 +69,8 @@ public class Post_Gukga extends AppCompatActivity {
 
 
         /* 하단바 - 알림 */
-        ImageButton btn_arlarm = (ImageButton) findViewById(R.id.nav_alarm);
-        btn_arlarm.setOnClickListener(new View.OnClickListener() {
+        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
+        nav_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), NofiActivity.class);

@@ -3,15 +3,18 @@ package com.example.swip;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Post_Cho_Stu extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.post_cho_stu);
 
         ImageButton write = (ImageButton) findViewById(R.id.btn_write);
@@ -69,8 +72,8 @@ public class Post_Cho_Stu extends AppCompatActivity {
 
 
         /* 하단바 - 알림 */
-        ImageButton btn_arlarm = (ImageButton) findViewById(R.id.nav_alarm);
-        btn_arlarm.setOnClickListener(new View.OnClickListener() {
+        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
+        nav_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), NofiActivity.class);

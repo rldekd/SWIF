@@ -50,11 +50,11 @@ public class RankActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton post = (ImageButton) findViewById(R.id.btn_write);
-        post.setOnClickListener(new View.OnClickListener() {
+        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
+        nav_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), information_board.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NofiActivity.class);
                 startActivity(intent);
             }
         });
