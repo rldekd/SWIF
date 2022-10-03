@@ -14,7 +14,7 @@ public class Post_Jung_Stu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_jung_stu);
 
-        ImageButton write = (ImageButton) findViewById(R.id.btn_write);
+        ImageButton write = (ImageButton) findViewById(R.id.write);
         write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,8 +69,8 @@ public class Post_Jung_Stu extends AppCompatActivity {
 
 
         /* 하단바 - 알림 */
-        ImageButton btn_arlarm = (ImageButton) findViewById(R.id.nav_alarm);
-        btn_arlarm.setOnClickListener(new View.OnClickListener() {
+        ImageButton nav_noti = (ImageButton) findViewById(R.id.nav_noti);
+        nav_noti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), NofiActivity.class);

@@ -14,15 +14,6 @@ public class Post_Naega extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_naega);
 
-        ImageButton write = (ImageButton) findViewById(R.id.btn_write);
-        write.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Post_write.class);
-                startActivity(intent);
-            }
-        });
-
         /* 하단바 */
 
         /* 하단바 - 홈 */
@@ -69,8 +60,8 @@ public class Post_Naega extends AppCompatActivity {
 
 
         /* 하단바 - 알림 */
-        ImageButton btn_arlarm = (ImageButton) findViewById(R.id.nav_alarm);
-        btn_arlarm.setOnClickListener(new View.OnClickListener() {
+        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
+        nav_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), NofiActivity.class);
