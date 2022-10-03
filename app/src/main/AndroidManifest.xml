@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SWIP">
         <activity
-            android:name=".MainActivity"
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,7 @@
         </activity>
         <!--깅-->
 
+        <activity android:name=".MainActivity" />
         <activity android:name=".friends_list" />
         <activity android:name=".friends_manage"/>
         <activity android:name=".friends_apply"/>
@@ -75,9 +76,8 @@
         <activity android:name=".id"/>
         <activity android:name=".password"/>
         <activity android:name=".fpage"/>
-        <activity android:name=".member"/>
         <activity android:name=".mypage"/>
-        <activity android:name=".login"/>
+        <activity android:name=".member"/>
         <activity android:name=".feedback"/>
         <activity android:name=".post"/>
         <meta-data

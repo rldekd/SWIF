@@ -18,10 +18,14 @@
         <entry key="app/src/main/res/layout/friends_manage.xml" value="0.13333333333333333" />
         <entry key="app/src/main/res/layout/information_board.xml" value="0.17980072463768115" />
         <entry key="app/src/main/res/layout/inquiry_write.xml" value="0.14463019250253292" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.11752786220871327" />
         <entry key="app/src/main/res/layout/matching_start.xml" value="0.10054347826086957" />
+        <entry key="app/src/main/res/layout/member.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/menubar.xml" value="0.11752786220871327" />
         <entry key="app/src/main/res/layout/point.xml" value="0.24682971014492755" />
+        <entry key="app/src/main/res/layout/pop_plan_confirm.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/post.xml" value="0.24682971014492755" />
-        <entry key="app/src/main/res/layout/post_cho_stu.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/post_cho_stu.xml" value="0.254083251953125" />
         <entry key="app/src/main/res/layout/post_dae_stu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/post_gita.xml" value="0.1" />
         <entry key="app/src/main/res/layout/post_gita_zagi.xml" value="0.1" />

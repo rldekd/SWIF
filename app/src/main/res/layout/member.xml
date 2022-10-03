@@ -18,26 +18,25 @@
         android:text="SWIF"
         android:gravity="center"
         android:textAlignment="center"
-        android:textSize="60sp"
-        />
+        android:textSize="60sp" />
 
-    <EditText
-        android:id="@+id/mem_id"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="아이디"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="아이디"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto"/>
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="아이디"
+            android:inputType="textPersonName"
+            android:text="아이디"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/mem_pass"
+        <EditText
+        android:id="@+id/user_password"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -52,7 +51,7 @@
         android:fontFamily="@font/roboto"/>
 
     <EditText
-        android:id="@+id/mem_pass2"
+        android:id="@+id/user_password_check"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -135,7 +134,7 @@
 
 
     <Button
-        android:id="@+id/mem_login"
+        android:id="@+id/check"
         android:layout_width="318dp"
         android:layout_height="47dp"
         android:background="@drawable/button_background"
