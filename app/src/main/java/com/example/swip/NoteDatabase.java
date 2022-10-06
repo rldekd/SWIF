@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 public class NoteDatabase {
+    // 데이터베이스
     private static final String TAG = "NoteDatabase";
 
     private static NoteDatabase database; // 데이터베이스에 대한 객체

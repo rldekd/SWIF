@@ -133,16 +133,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        /* 타이머로 가기 */
-        Chronometer timer = (Chronometer) findViewById(R.id.timer);
-        timer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),TimerActivity.class);
-                startActivity(intent);
-            }
-        });
-
         /* 하단바 */
 
         /* 하단바 - 홈 */

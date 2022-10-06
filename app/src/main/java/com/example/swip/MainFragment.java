@@ -20,6 +20,7 @@ public class MainFragment extends Fragment { // Fragment 상속
     NoteAdapter adapter;
     Context context;
     SwipeRefreshLayout swipeRefreshLayout;
+    // 메인프래그먼트
 
     @SuppressLint("Range")
     public int loadNoteListData(){ // 아이템을 보이게 함

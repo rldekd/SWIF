@@ -1,6 +1,7 @@
 package com.example.swip;
 
 public class Note {
+    // id 받고 todo 생성
     int _id;
     String todo;
 

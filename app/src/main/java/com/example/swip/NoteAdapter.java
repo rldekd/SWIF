@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder>{
     private static final String TAG = "NoteAdapter";
+    // 할 일 어댑터
 
     // 아이템이 들어갈 배열 정의
     ArrayList<Note> items = new ArrayList<Note>();
