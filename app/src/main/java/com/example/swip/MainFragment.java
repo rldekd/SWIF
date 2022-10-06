@@ -67,9 +67,13 @@ public class MainFragment extends Fragment { // Fragment 상속
             @Override
             public void onRefresh() {
                 loadNoteListData();
-                swipeRefreshLayout.setRefreshing(false);
+                swipeRefreshLayout.setRefreshing(true);
+                if (swipeRefreshLayout.isRefreshing()) {
+                    swipeRefreshLayout.setRefreshing(false);
+                }
             }
         });
+
         return rootView;
     }
 

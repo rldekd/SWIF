@@ -21,12 +21,18 @@ import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+
+//import devs.mulham.horizontalcalendar.HorizontalCalendar;
+//import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
 
 public class MainActivity extends AppCompatActivity {
     private static final String Tag = "MainActivity";
     CalendarView calendarView;
     TextView today;
+//    TextView calendarTextView;
+//    int year, month, day;
     Fragment mainFragment;
     public static NoteDatabase noteDatabase = null;
     private Context context;
@@ -92,7 +98,40 @@ public class MainActivity extends AppCompatActivity {
                 day = year + "년" +(month+1) + "월" + dayOfMonth + "일";
                 today.setText(day);
             }});
-
+//        calendarTextView = findViewById(R.id.calendar_text_view);
+//
+//        // 시작 날짜
+//        Calendar startDate = Calendar.getInstance();
+//        startDate.add(Calendar.MONTH, -1);
+//
+//        // 종료 날짜(현재 날짜 + 1달 후)
+//        Calendar endDate = Calendar.getInstance();
+//        endDate.add(Calendar.MONTH, 1);
+//
+//        //  가로달력 실행
+//        HorizontalCalendar horizontalCalendar = new HorizontalCalendar.Builder(this, R.id.calendarView)
+//                .range(startDate, endDate)
+//                .datesNumberOnScreen(5)
+//                .build();
+//
+//        // 날짜 설정
+//        year = startDate.get(Calendar.YEAR);
+//        month = startDate.get(Calendar.MONTH);
+//        day = startDate.get(Calendar.DAY_OF_MONTH);
+//
+//        calendarTextView.setText(year+"년 "+month+"월 "+day+"일");
+//
+//        // 날짜 선택 이벤트
+//        horizontalCalendar.setCalendarListener(new HorizontalCalendarListener() {
+//            @Override
+//            public void onDateSelected(Calendar date, int position) {
+//                year = date.get(Calendar.YEAR);
+//                month = date.get(Calendar.MONTH) +1;
+//                day = date.get(Calendar.DAY_OF_MONTH);
+//
+//                calendarTextView.setText(year+"년 "+month+"월 "+day+"일");
+//            }
+//        });
 
         /* 타이머로 가기 */
         Chronometer timer = (Chronometer) findViewById(R.id.timer);
@@ -159,6 +198,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     private void saveToDo(){ // 저장 버튼 클릭 시 EditText에 적힌 글을 가져와 테이블에 값을 추가
         EditText inputToDo = findViewById(R.id.inputToDo);
 

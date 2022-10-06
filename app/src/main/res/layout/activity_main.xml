@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#005C9F">
 
@@ -51,10 +52,26 @@
                 <CalendarView
                     android:id="@+id/calendarView"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     tools:ignore="MissingConstraints" />
+<!--                <devs.mulham.horizontalcalendar.HorizontalCalendarView-->
+<!--                    android:id="@+id/calendarView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#FFE400"-->
+<!--                    app:textColorNormal="#FFFFFF"-->
+<!--                    app:selectorColor="#86E57F"-->
+<!--                    app:textColorSelected="#86E57F" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:id="@+id/calendar_text_view" />-->
             </LinearLayout>
 
 
