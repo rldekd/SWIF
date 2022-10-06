@@ -7,144 +7,142 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:text="SWIF"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textSize="60sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:text="SWIF"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            />
 
         <EditText
-            android:id="@+id/user_id"
+            android:id="@+id/mem_id"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="20dp"
             android:ems="10"
-            android:fontFamily="@font/roboto"
             android:hint="아이디"
             android:inputType="textPersonName"
-            android:text="아이디"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-        android:id="@+id/user_password"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="패스워드"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_id"
-        android:text="비밀번호"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto"/>
-
-    <EditText
-        android:id="@+id/user_password_check"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="비밀번호 재입력"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_id"
-        android:text="비밀번호 재입력"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto"/>
-
-    <EditText
-        android:id="@+id/mem_name"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="닉네임"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_id"
-        android:text="닉네임"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" >
-
-        <EditText
-            android:id="@+id/mem_number"
-            android:layout_width="262dp"
-            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+            android:id="@+id/mem_pass"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="전화번호"
-            android:inputType="textPersonName"
-            android:text="전화번호"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_id"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="인증번호발송"
-            android:fontFamily="@font/roboto"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" >
 
         <EditText
-            android:id="@+id/mem_number2"
-            android:layout_width="262dp"
+            android:id="@+id/mem_pass2"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="인증번호"
+            android:hint="비밀번호 재입력"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_id"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+            android:id="@+id/mem_name"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="닉네임"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_id"
-            android:text="인증번호"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"/>
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="확인" />
-    </LinearLayout>
+            android:layout_marginTop="16dp" >
+
+            <EditText
+                android:id="@+id/mem_number"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:ems="10"
+                android:hint="전화번호"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_id"
+                android:fontFamily="@font/roboto"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증번호발송"
+                android:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" >
+
+            <EditText
+                android:id="@+id/mem_number2"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="인증번호"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_id"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/roboto"/>
+
+            <Button
+                android:id="@+id/button_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확인" />
+        </LinearLayout>
 
 
-    <Button
-        android:id="@+id/check"
-        android:layout_width="318dp"
-        android:layout_height="47dp"
-        android:background="@drawable/button_background"
-        android:text="확인"
-        android:textColor="#fff"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="359dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/roboto"/>
+        <Button
+            android:onClick="mem_login"
+            android:layout_width="318dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button_background"
+            android:text="확인"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="359dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto"
+            tools:ignore="OnClick" />
 
 
     </LinearLayout>
