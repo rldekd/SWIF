@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-moing/app/src/main/res/layout/login.xml" value="0.1" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-moing/app/src/main/res/layout/member.xml" value="0.264" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIP/app/src/main/res/layout/board_detail.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIP/app/src/main/res/layout/chat.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIP/app/src/main/res/layout/inquiry_write.xml" value="0.27395833333333336" />

@@ -64,70 +64,15 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"/>
 
-        <EditText
-            android:id="@+id/mem_name"
-            android:layout_width="330dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="닉네임"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_id"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/roboto"/>
+            android:layout_marginTop="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" >
-
-            <EditText
-                android:id="@+id/mem_number"
-                android:layout_width="262dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:ems="10"
-                android:hint="전화번호"
-                android:inputType="number"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_id"
-                android:fontFamily="@font/roboto"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="인증번호발송"
-                android:fontFamily="@font/roboto"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" >
-
-            <EditText
-                android:id="@+id/mem_number2"
-                android:layout_width="262dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="인증번호"
-                android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_id"
-                android:layout_marginLeft="40dp"
-                android:fontFamily="@font/roboto"/>
-
-            <Button
-                android:id="@+id/button_go"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="확인" />
-        </LinearLayout>
+            android:layout_marginTop="16dp" />
 
 
         <Button

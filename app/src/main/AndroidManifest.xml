@@ -20,7 +20,6 @@
         </activity>
         <!--깅-->
 
-        <activity android:name=".MainActivity" />
         <activity android:name=".friends_list" />
         <activity android:name=".friends_manage"/>
         <activity android:name=".friends_apply"/>
@@ -71,18 +70,21 @@
 
 
         <!--승미니-->
+        <activity android:name=".member"/>
         <activity android:name=".chat"/>
         <activity android:name=".chat_f"/>
         <activity android:name=".id"/>
         <activity android:name=".password"/>
         <activity android:name=".fpage"/>
         <activity android:name=".mypage"/>
-        <activity android:name=".member"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".feedback"/>
         <activity android:name=".post"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
     </application>
 
 </manifest>
