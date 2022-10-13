@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.swip">
-    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SWIP">
         <activity
-            android:name=".login"
+            android:name=".Intro_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +33,6 @@
         <activity android:name=".Post_Gita"/>
         <activity android:name=".Post_Giup"/>
         <activity android:name=".Post_Gukga"/>
-        <activity android:name=".Scrap"/>
         <activity android:name=".Post_Gita_Zagi"/>
         <activity android:name=".Post_Naega"/>
         <activity android:name=".Post_Jaguk"/>
@@ -54,6 +52,7 @@
              android:resource="@array/preloaded_fonts" /> -->
 
         <!--유짱-->
+        <activity android:name=".login"/>
         <activity android:name=".Matching_Start"/>
         <activity android:name=".NoticeActivity"/>
         <activity android:name=".InqActivity"/>
