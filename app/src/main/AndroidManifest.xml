@@ -54,6 +54,7 @@
              android:resource="@array/preloaded_fonts" /> -->
 
         <!--유짱-->
+        <activity android:name=".Matching_Start"/>
         <activity android:name=".NoticeActivity"/>
         <activity android:name=".InqActivity"/>
         <activity android:name=".MyinqActivity"/>
