@@ -8,12 +8,12 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FriendChatActivity extends AppCompatActivity {
+public class Friends_Manage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friendchatlist);
+        setContentView(R.layout.friends_manage);
 
         Button friend_manage_btn = (Button) findViewById(R.id.friend_manage_btn);
         friend_manage_btn.setOnClickListener(new View.OnClickListener() {
@@ -33,11 +33,20 @@ public class FriendChatActivity extends AppCompatActivity {
             }
         });
 
-        Button friends_apply_btn = (Button) findViewById(R.id.friends_apply_btn);
-        friends_apply_btn.setOnClickListener(new View.OnClickListener() {
+        ImageButton cancel_btn = (ImageButton) findViewById(R.id.cancel_btn);
+        cancel_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Friends_Apply.class);
+                Intent intent = new Intent(getApplicationContext(), Delete_friend.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton friends_chat_btn = (ImageButton) findViewById(R.id.friends_chat_btn);
+        friends_chat_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FriendChatActivity.class);
                 startActivity(intent);
             }
         });
@@ -96,5 +105,6 @@ public class FriendChatActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

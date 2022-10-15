@@ -25,17 +25,20 @@
         <entry key="app/src/main/res/layout/fpage.xml" value="0.1111111111111111" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.19877005314481433" />
         <entry key="app/src/main/res/layout/friendchatlist.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/friends_apply.xml" value="0.10572916666666667" />
+        <entry key="app/src/main/res/layout/friends_apply.xml" value="0.20804850260416669" />
+        <entry key="app/src/main/res/layout/friends_list.xml" value="0.1259259259259259" />
         <entry key="app/src/main/res/layout/friends_manage.xml" value="0.13333333333333333" />
         <entry key="app/src/main/res/layout/id.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/layout/information_board.xml" value="0.17980072463768115" />
         <entry key="app/src/main/res/layout/inquiry_write.xml" value="0.14463019250253292" />
+        <entry key="app/src/main/res/layout/intro.xml" value="0.125" />
         <entry key="app/src/main/res/layout/login.xml" value="0.11752786220871327" />
         <entry key="app/src/main/res/layout/matching_start.xml" value="0.10054347826086957" />
         <entry key="app/src/main/res/layout/member.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/menubar.xml" value="0.11752786220871327" />
         <entry key="app/src/main/res/layout/nofi.xml" value="0.1" />
         <entry key="app/src/main/res/layout/notice.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/notice_board_write.xml" value="0.11322188449848024" />
         <entry key="app/src/main/res/layout/plan_certified.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/layout/point.xml" value="0.24682971014492755" />
         <entry key="app/src/main/res/layout/pop_plan_confirm.xml" value="0.24166666666666667" />

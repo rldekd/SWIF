@@ -3,44 +3,16 @@ package com.example.swip;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FriendChatActivity extends AppCompatActivity {
+public class NofiActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friendchatlist);
-
-        Button friend_manage_btn = (Button) findViewById(R.id.friend_manage_btn);
-        friend_manage_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Friends_Manage.class);
-                startActivity(intent);
-            }
-        });
-
-        Button friends_list_btn = (Button) findViewById(R.id.friends_list_btn);
-        friends_list_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
-                startActivity(intent);
-            }
-        });
-
-        Button friends_apply_btn = (Button) findViewById(R.id.friends_apply_btn);
-        friends_apply_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Friends_Apply.class);
-                startActivity(intent);
-            }
-        });
+        setContentView(R.layout.nofi);
 
         /* 하단바 */
 

@@ -45,19 +45,7 @@
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="18dp" />
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/sub"
-                android:layout_width="243dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="17dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:background="@drawable/round_yellow"
-                android:fontFamily="@font/roboto_b"
-                android:text="SWIF 유료 구독하기"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="14dp"/>
+
             <View
                 android:layout_width="271dp"
                 android:layout_height="1dp"
@@ -74,7 +62,7 @@
                 android:text="친구"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
             <TextView
                 android:id="@+id/timer"
                 android:layout_width="match_parent"
@@ -99,18 +87,7 @@
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="18dp" />
-            <TextView
-                android:id="@+id/rank"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="34dp"
-                android:fontFamily="@font/roboto"
-                android:gravity="center"
-                android:text="랭킹"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="18dp" />
+
             <TextView
                 android:id="@+id/info"
                 android:layout_width="match_parent"

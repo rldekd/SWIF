@@ -20,11 +20,10 @@
         </activity>
         <!--깅-->
 
-        <activity android:name=".friends_list" />
-        <activity android:name=".friends_manage"/>
-        <activity android:name=".friends_apply"/>
+        <activity android:name=".Friends_List" />
+        <activity android:name=".Friends_Manage"/>
+        <activity android:name=".Friends_Apply"/>
         <activity android:name=".information_board"/>
-        <activity android:name=".membership"/>
         <activity android:name=".Post_Cho_Stu"/>
         <activity android:name=".Post_Jung_Stu"/>
         <activity android:name=".Post_Godueng_Stu"/>
@@ -44,7 +43,6 @@
         <activity android:name=".NofiActivity" android:label="nofi" />
         <activity android:name=".PointActivity" android:label="point" />
         <activity android:name=".RankActivity" android:label="rank" />
-        <activity android:name=".ThemeActivity" android:label="theme" />
         <activity android:name=".TimerActivity" android:label="timer" />
 
         <!-- <meta-data

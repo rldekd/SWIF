@@ -3,53 +3,16 @@ package com.example.swip;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class friends_manage extends AppCompatActivity {
+public class RankActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friends_manage);
-
-        Button friend_manage_btn = (Button) findViewById(R.id.friend_manage_btn);
-        friend_manage_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),friends_manage.class);
-                startActivity(intent);
-            }
-        });
-
-        Button friends_list_btn = (Button) findViewById(R.id.friends_list_btn);
-        friends_list_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), friends_list.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageButton cancel_btn = (ImageButton) findViewById(R.id.cancel_btn);
-        cancel_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Delete_friend.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageButton friends_chat_btn = (ImageButton) findViewById(R.id.friends_chat_btn);
-        friends_chat_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), FriendChatActivity.class);
-                startActivity(intent);
-            }
-        });
+        setContentView(R.layout.ranking);
 
         /* 하단바 */
 
@@ -105,6 +68,5 @@ public class friends_manage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

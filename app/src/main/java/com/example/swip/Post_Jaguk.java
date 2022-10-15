@@ -57,25 +57,6 @@ public class Post_Jaguk extends AppCompatActivity {
         });
 
 
-        /* 하단바 - 랭킹 */
-        ImageButton nav_rank = (ImageButton) findViewById(R.id.nav_rank);
-        nav_rank.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), RankActivity.class);
-                startActivity(intent);
-            }
-        });
 
-
-        /* 하단바 - 알림 */
-        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
-        nav_alarm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NofiActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

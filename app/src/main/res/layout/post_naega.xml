@@ -152,11 +152,7 @@
                         android:textSize="16dp" />
                 </LinearLayout>
             </LinearLayout>-->
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/yanado"
-                android:background="@android:color/transparent" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
