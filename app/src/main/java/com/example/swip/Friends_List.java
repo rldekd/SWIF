@@ -33,7 +33,7 @@ public class Friends_List extends AppCompatActivity {
             }
         });
 
-        ImageButton friends_chat_btn = (ImageButton) findViewById(R.id.friends_chat_btn);
+        Button friends_chat_btn = (Button) findViewById(R.id.friends_chat_btn);
         friends_chat_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

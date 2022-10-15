@@ -288,16 +288,6 @@
                 android:text="내가 쓴 글"
                 android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/l"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="41dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="17dp"
-                android:text="스크랩"
-                android:textSize="14sp" />
-
         </LinearLayout>
 
     </LinearLayout>

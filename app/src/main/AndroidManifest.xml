@@ -20,7 +20,7 @@
         </activity>
         <!--깅-->
 
-        <activity android:name=".Friends_List" />
+        <activity android:name=".Friends_List"/>
         <activity android:name=".Friends_Manage"/>
         <activity android:name=".Friends_Apply"/>
         <activity android:name=".information_board"/>
