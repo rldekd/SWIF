@@ -86,7 +86,7 @@ public class MainFragment extends Fragment { // Fragment 상속
         recyclerView.setLayoutManager(layoutManager);
 
         // 어댑터 연결
-       adapter = new NoteAdapter();
+        adapter = new NoteAdapter();
         recyclerView.setAdapter(adapter);
     }
 }

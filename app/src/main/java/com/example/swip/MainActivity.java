@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String Tag = "MainActivity";
     CalendarView calendarView;
     TextView today;
-//    TextView calendarTextView;
+    //    TextView calendarTextView;
 //    int year, month, day;
     Fragment mainFragment;
     public static NoteDatabase noteDatabase = null;
@@ -132,6 +132,16 @@ public class MainActivity extends AppCompatActivity {
 //                calendarTextView.setText(year+"년 "+month+"월 "+day+"일");
 //            }
 //        });
+        /* 매칭하러 가기 */
+        Button add_plan = (Button) findViewById(R.id.add_plan);
+        add_plan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Matching_Start.class);
+                startActivity(intent);
+            }
+        });
+
 
         /* 하단바 */
 

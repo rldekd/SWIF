@@ -31,6 +31,7 @@
                     android:textSize="30dp"/>
             </LinearLayout>
             <Chronometer
+                android:id="@+id/chrono"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -38,59 +39,59 @@
                 android:fontFamily="@font/roboto_b"
                 android:textSize="50dp"
                 android:textColor="#FD8D4E"/>
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:layout_marginTop="60dp"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:gravity="center">-->
-<!--                <LinearLayout-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:gravity="center">-->
-<!--                    <ImageButton-->
-<!--                        android:id="@+id/start"-->
-<!--                        android:layout_width="25dp"-->
-<!--                        android:layout_height="25dp"-->
-<!--                        android:background="@android:color/transparent"-->
-<!--                        android:scaleType="fitCenter"-->
-<!--                        android:src="@drawable/start"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="@font/roboto_b"-->
-<!--                        android:layout_marginLeft="10dp"-->
-<!--                        android:text="기록 시작"-->
-<!--                        android:textColor="#80000000"-->
-<!--                        android:textSize="14dp"/>-->
-<!--                </LinearLayout>-->
-<!--                <LinearLayout-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:gravity="center"-->
-<!--                    android:layout_marginLeft="50dp">-->
-<!--                    <ImageButton-->
-<!--                        android:id="@+id/stop"-->
-<!--                        android:layout_width="25dp"-->
-<!--                        android:layout_height="25dp"-->
-<!--                        android:background="@android:color/transparent"-->
-<!--                        android:scaleType="fitCenter"-->
-<!--                        android:src="@drawable/stop"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="@font/roboto_b"-->
-<!--                        android:layout_marginLeft="10dp"-->
-<!--                        android:text="기록 중단"-->
-<!--                        android:textColor="#80000000"-->
-<!--                        android:textSize="14dp"/>-->
-<!--                </LinearLayout>-->
-<!--            </LinearLayout>-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_marginTop="60dp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:gravity="center">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:gravity="center">-->
+            <!--                    <ImageButton-->
+            <!--                        android:id="@+id/start"-->
+            <!--                        android:layout_width="25dp"-->
+            <!--                        android:layout_height="25dp"-->
+            <!--                        android:background="@android:color/transparent"-->
+            <!--                        android:scaleType="fitCenter"-->
+            <!--                        android:src="@drawable/start"/>-->
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:fontFamily="@font/roboto_b"-->
+            <!--                        android:layout_marginLeft="10dp"-->
+            <!--                        android:text="기록 시작"-->
+            <!--                        android:textColor="#80000000"-->
+            <!--                        android:textSize="14dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_marginLeft="50dp">-->
+            <!--                    <ImageButton-->
+            <!--                        android:id="@+id/stop"-->
+            <!--                        android:layout_width="25dp"-->
+            <!--                        android:layout_height="25dp"-->
+            <!--                        android:background="@android:color/transparent"-->
+            <!--                        android:scaleType="fitCenter"-->
+            <!--                        android:src="@drawable/stop"/>-->
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:fontFamily="@font/roboto_b"-->
+            <!--                        android:layout_marginLeft="10dp"-->
+            <!--                        android:text="기록 중단"-->
+            <!--                        android:textColor="#80000000"-->
+            <!--                        android:textSize="14dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
         </LinearLayout>
 
         <ScrollView
@@ -125,92 +126,92 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/timerplus"/>
                 </LinearLayout>
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal"-->
-<!--                    android:layout_marginTop="16dp">-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:layout_marginTop="16dp">-->
 
-<!--                    <CheckBox-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginLeft="16dp"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="@font/roboto_medium"-->
-<!--                        android:textSize="16dp"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        android:text="캡스톤디자인 피그마 제작"/>-->
-<!--                </LinearLayout>-->
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal">-->
+                <!--                    <CheckBox-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="16dp"/>-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:fontFamily="@font/roboto_medium"-->
+                <!--                        android:textSize="16dp"-->
+                <!--                        android:textColor="#FFFFFF"-->
+                <!--                        android:text="캡스톤디자인 피그마 제작"/>-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
 
-<!--                    <CheckBox-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginLeft="16dp"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="@font/roboto_medium"-->
-<!--                        android:textSize="16dp"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        android:text="파이팀 회의"/>-->
-<!--                </LinearLayout>-->
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal">-->
+                <!--                    <CheckBox-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="16dp"/>-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:fontFamily="@font/roboto_medium"-->
+                <!--                        android:textSize="16dp"-->
+                <!--                        android:textColor="#FFFFFF"-->
+                <!--                        android:text="파이팀 회의"/>-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
 
-<!--                    <CheckBox-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginLeft="16dp"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="@font/roboto_medium"-->
-<!--                        android:textSize="16dp"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        android:text="캡스톤디자인 XML 완성"/>-->
-<!--                </LinearLayout>-->
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal">-->
+                <!--                    <CheckBox-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="16dp"/>-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:fontFamily="@font/roboto_medium"-->
+                <!--                        android:textSize="16dp"-->
+                <!--                        android:textColor="#FFFFFF"-->
+                <!--                        android:text="캡스톤디자인 XML 완성"/>-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
 
-<!--                    <CheckBox-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginLeft="16dp"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="@font/roboto_medium"-->
-<!--                        android:textSize="16dp"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        android:text="블로그"/>-->
-<!--                </LinearLayout>-->
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="horizontal">-->
+                <!--                    <CheckBox-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="16dp"/>-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:fontFamily="@font/roboto_medium"-->
+                <!--                        android:textSize="16dp"-->
+                <!--                        android:textColor="#FFFFFF"-->
+                <!--                        android:text="블로그"/>-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
 
-<!--                    <CheckBox-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginLeft="16dp"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="@font/roboto_medium"-->
-<!--                        android:textSize="16dp"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        android:text="수강신청"/>-->
-<!--                </LinearLayout>-->
+                <!--                    <CheckBox-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="16dp"/>-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:fontFamily="@font/roboto_medium"-->
+                <!--                        android:textSize="16dp"-->
+                <!--                        android:textColor="#FFFFFF"-->
+                <!--                        android:text="수강신청"/>-->
+                <!--                </LinearLayout>-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

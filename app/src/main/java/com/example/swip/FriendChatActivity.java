@@ -19,7 +19,7 @@ public class FriendChatActivity extends AppCompatActivity {
         friend_manage_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),friends_manage.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_Manage.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class FriendChatActivity extends AppCompatActivity {
         friends_list_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), friends_list.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +37,16 @@ public class FriendChatActivity extends AppCompatActivity {
         friends_apply_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), friends_apply.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_Apply.class);
+                startActivity(intent);
+            }
+        });
+
+        Button friends_chat_btn = (Button) findViewById(R.id.friends_chat_btn);
+        friends_chat_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FriendChatActivity.class);
                 startActivity(intent);
             }
         });

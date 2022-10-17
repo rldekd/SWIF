@@ -73,7 +73,7 @@ public class fpage extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), friends_list.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
                 startActivity(intent);
             }
         });

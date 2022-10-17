@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SWIP">
         <activity
-            android:name=".MainActivity"
+            android:name=".Intro_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +20,10 @@
         </activity>
         <!--깅-->
 
-        <activity android:name=".friends_list" />
-        <activity android:name=".friends_manage"/>
-        <activity android:name=".friends_apply"/>
+        <activity android:name=".Friends_List"/>
+        <activity android:name=".Friends_Manage"/>
+        <activity android:name=".Friends_Apply"/>
         <activity android:name=".information_board"/>
-        <activity android:name=".membership"/>
         <activity android:name=".Post_Cho_Stu"/>
         <activity android:name=".Post_Jung_Stu"/>
         <activity android:name=".Post_Godueng_Stu"/>
@@ -33,10 +32,11 @@
         <activity android:name=".Post_Gita"/>
         <activity android:name=".Post_Giup"/>
         <activity android:name=".Post_Gukga"/>
-        <activity android:name=".Scrap"/>
         <activity android:name=".Post_Gita_Zagi"/>
         <activity android:name=".Post_Naega"/>
         <activity android:name=".Post_Jaguk"/>
+
+        <activity android:name=".MainActivity_A"/>
 
         <!--죄용이-->
 
@@ -45,7 +45,6 @@
         <activity android:name=".NofiActivity" android:label="nofi" />
         <activity android:name=".PointActivity" android:label="point" />
         <activity android:name=".RankActivity" android:label="rank" />
-        <activity android:name=".ThemeActivity" android:label="theme" />
         <activity android:name=".TimerActivity" android:label="timer" />
 
         <!-- <meta-data
@@ -53,6 +52,8 @@
              android:resource="@array/preloaded_fonts" /> -->
 
         <!--유짱-->
+        <activity android:name=".login"/>
+        <activity android:name=".Matching_Start"/>
         <activity android:name=".NoticeActivity"/>
         <activity android:name=".InqActivity"/>
         <activity android:name=".MyinqActivity"/>
@@ -70,19 +71,21 @@
 
 
         <!--승미니-->
+        <activity android:name=".member"/>
         <activity android:name=".chat"/>
         <activity android:name=".chat_f"/>
         <activity android:name=".id"/>
         <activity android:name=".password"/>
         <activity android:name=".fpage"/>
-        <activity android:name=".member"/>
         <activity android:name=".mypage"/>
-        <activity android:name=".login"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".feedback"/>
         <activity android:name=".post"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
     </application>
 
 </manifest>

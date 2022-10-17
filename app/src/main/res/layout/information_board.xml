@@ -7,20 +7,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="58dp"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/information_start"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="정보 게시판"
-            android:textSize="20sp"
-            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,11 +32,12 @@
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="13dp"
                 app:srcCompat="@drawable/student_icon" />
 
             <TextView
+                android:id="@+id/information_start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
@@ -70,7 +61,7 @@
                 android:layout_marginStart="41dp"
                 android:layout_marginTop="13dp"
                 android:text="초등학생"
-                android:textSize="14sp" />
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/b"
@@ -295,16 +286,6 @@
                 android:layout_marginStart="41dp"
                 android:layout_marginTop="13dp"
                 android:text="내가 쓴 글"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/l"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="41dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="17dp"
-                android:text="스크랩"
                 android:textSize="14sp" />
 
         </LinearLayout>

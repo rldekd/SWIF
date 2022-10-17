@@ -127,14 +127,6 @@ public class information_board extends AppCompatActivity {
         });
 
         /* 스크랩 */
-        TextView l = (TextView) findViewById(R.id.l);
-        l.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Scrap.class);
-                startActivity(intent);
-            }
-        });
 
 
         /* 하단바 */

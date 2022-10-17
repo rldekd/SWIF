@@ -21,12 +21,11 @@
         android:layout_width="262dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="아이디"
+        android:hint="이메일"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="ID"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto_b"/>
@@ -37,11 +36,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="패스워드"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_id"
-        android:text="PW"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_b"/>
@@ -90,59 +88,8 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
-
-        <View
-            android:layout_width="150dp"
-            android:layout_height="2dp"
-            android:background="#D0D0D0"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="7dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="OR"
-            android:textAlignment="center"
-            android:textSize="10sp"
-            android:layout_marginLeft="30dp"
-            android:fontFamily="@font/roboto"/>
-
-        <View
-            android:layout_width="150dp"
-            android:layout_height="2dp"
-            android:background="#D0D0D0"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="7dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp">
 
 
-        <ImageButton
-            android:id="@+id/logkakao"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="140dp"
-            app:srcCompat="@drawable/kakaotalk_logo"
-            android:padding="0sp"
-            android:scaleType="centerCrop" />
-
-        <ImageButton
-            android:id="@+id/lognaver"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/naver_logo"
-            android:layout_marginLeft="30dp"
-            android:padding="0sp"
-            android:scaleType="centerCrop"/>
-    </LinearLayout>
 
 
 

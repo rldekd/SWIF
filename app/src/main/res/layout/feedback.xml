@@ -19,101 +19,101 @@
             android:orientation="vertical">
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="SWIF"
-            android:textSize="24sp"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:fontFamily="@font/roboto"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="헬로 월드님과 매칭이 종료되었습니다."
-            android:layout_gravity="center"
-            android:textSize="12sp"
-            android:textColor="#646464"
-            android:fontFamily="@font/roboto"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="205dp"
-            android:layout_height="130dp"
-            android:orientation="vertical"
-            android:layout_gravity="center">
-
-            <ImageButton
-                android:id="@+id/feedplan"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                app:srcCompat="@drawable/plan"
-                android:padding="0sp"
-                android:scaleType="centerCrop"
-                android:layout_marginLeft="70dp"
-                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="SWIF"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:fontFamily="@font/roboto"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="공부 계획 확인"
-                android:textSize="10sp"
-                android:textColor="#000"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="86dp"
-                android:textAlignment="center"
-                android:fontFamily="@font/roboto"
-                />
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="헬로 월드님과 매칭이 종료되었습니다."
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#646464"
+                android:fontFamily="@font/roboto"/>
 
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="205dp"
-            android:layout_height="130dp"
-            android:orientation="vertical"
-            android:layout_gravity="center">
-
-            <ImageButton
-                android:id="@+id/feedstudy"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                app:srcCompat="@drawable/study_p"
-                android:padding="0sp"
-                android:scaleType="centerCrop"
-                android:layout_marginLeft="45dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="공부 인증 확인"
-                android:textSize="10sp"
-                android:textColor="#000"
-                android:fontFamily="@font/roboto"
-                android:layout_marginTop="10dp"
-                android:textAlignment="center"
-                android:layout_marginLeft="60dp"
-                />
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="205dp"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/feedplan"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        app:srcCompat="@drawable/plan"
+                        android:padding="0sp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="70dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="공부 계획 확인"
+                        android:textSize="10sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="86dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/roboto"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="205dp"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/feedstudy"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        app:srcCompat="@drawable/study_p"
+                        android:padding="0sp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="45dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="공부 인증 확인"
+                        android:textSize="10sp"
+                        android:textColor="#000"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="60dp"
+                        />
 
 
 
-        </LinearLayout>
+                </LinearLayout>
 
 
-    </LinearLayout>
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -132,209 +132,209 @@
                 android:fontFamily="@font/roboto"
                 android:textColor="#000000"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:context=".MainActivity"
-            >
-
-            <RadioGroup
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:fontFamily="@font/roboto">
+                tools:context=".MainActivity"
+                >
 
-                <RadioButton
-                    android:id="@+id/btnnotgood"
-                    android:layout_width="0dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="만족스럽지\n못했어요"
-                    android:fontFamily="@font/roboto"/>
+                    android:orientation="horizontal"
+                    android:fontFamily="@font/roboto">
 
-                <RadioButton
-                    android:id="@+id/btnsoso"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="그냥\n그랬어요"
-                    android:fontFamily="@font/roboto"/>
+                    <RadioButton
+                        android:id="@+id/btnnotgood"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="만족스럽지\n못했어요"
+                        android:fontFamily="@font/roboto"/>
 
-                <RadioButton
-                    android:id="@+id/btngood"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="도움이\n되었어요"
-                    android:fontFamily="@font/roboto"/>
-            </RadioGroup>
+                    <RadioButton
+                        android:id="@+id/btnsoso"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="그냥\n그랬어요"
+                        android:fontFamily="@font/roboto"/>
 
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#D0D0D0"
-            android:layout_marginTop="10dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:text="정해진 시간 안에 목표한 분량을 완료했나요?"
-            android:textSize="16sp"
-            android:fontFamily="@font/roboto"
-            android:textColor="#000000"/>
-        <SeekBar
-            android:id="@+id/seek1"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:thumb="@drawable/custom_seekbar_thumb"
-            android:progressDrawable="@drawable/custom_seekbar_progress"
-            android:splitTrack="false"
-            />
+                    <RadioButton
+                        android:id="@+id/btngood"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="도움이\n되었어요"
+                        android:fontFamily="@font/roboto"/>
+                </RadioGroup>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:fontFamily="@font/roboto"
-            android:text="계획한 일정에 따라 진행했나요?"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            />
+            </LinearLayout>
 
-        <SeekBar
-            android:id="@+id/seek2"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:thumb="@drawable/custom_seekbar_thumb"
-            android:progressDrawable="@drawable/custom_seekbar_progress"
-            android:splitTrack="false"
-            />
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="@font/roboto"
-            android:layout_marginLeft="30dp"
-            android:text="헬로 월드님의 계획표 달성률은?"
-            android:textSize="16sp"
-            android:textColor="#000000"/>
-
-        <SeekBar
-            android:id="@+id/seek3"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:thumb="@drawable/custom_seekbar_thumb"
-            android:progressDrawable="@drawable/custom_seekbar_progress"
-            android:splitTrack="false"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="30dp"
-            android:text="친구신청"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:fontFamily="@font/roboto"/>
-        <View
-            android:layout_width="330dp"
-            android:layout_height="1dp"
-            android:background="#D0D0D0"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                app:srcCompat="@drawable/img"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
-                android:padding="0sp"
-                android:scaleType="centerCrop" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D0D0D0"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp"
-                android:text="헬로 월드"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="정해진 시간 안에 목표한 분량을 완료했나요?"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#000000"/>
+            <SeekBar
+                android:id="@+id/seek1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:thumb="@drawable/custom_seekbar_thumb"
+                android:progressDrawable="@drawable/custom_seekbar_progress"
+                android:splitTrack="false"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
+                android:text="계획한 일정에 따라 진행했나요?"
+                android:textSize="16sp"
                 android:textColor="#000000"
-                android:textSize="14sp"
+                />
+
+            <SeekBar
+                android:id="@+id/seek2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:thumb="@drawable/custom_seekbar_thumb"
+                android:progressDrawable="@drawable/custom_seekbar_progress"
+                android:splitTrack="false"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/roboto"
+                android:layout_marginLeft="30dp"
+                android:text="헬로 월드님의 계획표 달성률은?"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <SeekBar
+                android:id="@+id/seek3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:thumb="@drawable/custom_seekbar_thumb"
+                android:progressDrawable="@drawable/custom_seekbar_progress"
+                android:splitTrack="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="친구신청"
+                android:textSize="16sp"
+                android:textColor="#000000"
                 android:fontFamily="@font/roboto"/>
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:background="#D0D0D0"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/img"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="헬로 월드"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"/>
 
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <View
-            android:layout_width="330dp"
-            android:layout_height="1dp"
-            android:background="#D0D0D0"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"/>
+            <View
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:background="#D0D0D0"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:text="* 친구 추가 후 플래너 공유와 채팅이 가능합니다."
-            android:textSize="10sp"
-            android:fontFamily="@font/roboto"
-            />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="* 친구 추가 후 플래너 공유와 채팅이 가능합니다."
+                android:textSize="10sp"
+                android:fontFamily="@font/roboto"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
 
 
+            </LinearLayout>
 
 
-        <Button
-            android:layout_width="318dp"
-            android:layout_height="47dp"
-            android:background="@drawable/button_background"
-            android:text="Matching Close"
-            android:textColor="#fff"
-            tools:layout_editor_absoluteX="46dp"
-            tools:layout_editor_absoluteY="359dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"/>
+
+
+
+            <Button
+                android:layout_width="318dp"
+                android:layout_height="47dp"
+                android:background="@drawable/button_background"
+                android:text="Matching Close"
+                android:textColor="#fff"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="359dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
 
         </LinearLayout>
 

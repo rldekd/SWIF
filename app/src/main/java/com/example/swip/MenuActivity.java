@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
+
+/* 자바 : FriendItem, MainActivity_A, MyRecyclerAdapter 한 세트
+* 레이아웃 : activity_main_a, item_recyclerview 한 세트 */
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -15,20 +17,12 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menubar);
 
-        AppCompatButton sub = (AppCompatButton) findViewById(R.id.sub);
-        sub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), membership.class);
-                startActivity(intent);
-            }
-        });
 
         TextView friend = (TextView) findViewById(R.id.friend);
         friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), friends_list.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_Apply.class);
                 startActivity(intent);
             }
         });
@@ -51,14 +45,6 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        TextView rank = (TextView) findViewById(R.id.rank);
-        rank.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RankActivity.class);
-                startActivity(intent);
-            }
-        });
 
         TextView info = (TextView) findViewById(R.id.info);
         info.setOnClickListener(new View.OnClickListener() {

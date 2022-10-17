@@ -12,7 +12,7 @@ public class PointActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.point);
+        setContentView(R.layout.activity_main);
 
         /* 하단바 */
 

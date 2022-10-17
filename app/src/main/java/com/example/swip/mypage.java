@@ -44,23 +44,6 @@ public class mypage extends AppCompatActivity {
             }
         });
 
-        TextView changeBtn4 = (TextView) findViewById(R.id.myscrap);
-        changeBtn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Scrap.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView changeBtn5 = (TextView) findViewById(R.id.mytema);
-        changeBtn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),ThemeActivity.class);
-                startActivity(intent);
-            }
-        });
 
         TextView changeBtn6 = (TextView) findViewById(R.id.myinq);
         changeBtn6.setOnClickListener(new View.OnClickListener() {
