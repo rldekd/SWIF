@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class friends_manage extends AppCompatActivity {
+public class Friends_Manage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class friends_manage extends AppCompatActivity {
         friend_manage_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),friends_manage.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_Manage.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class friends_manage extends AppCompatActivity {
         friends_list_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), friends_list.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
                 startActivity(intent);
             }
         });
@@ -42,11 +42,20 @@ public class friends_manage extends AppCompatActivity {
             }
         });
 
-        ImageButton friends_chat_btn = (ImageButton) findViewById(R.id.friends_chat_btn);
+        Button friends_chat_btn = (Button) findViewById(R.id.friends_chat_btn);
         friends_chat_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), FriendChatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button friends_apply_btn = (Button) findViewById(R.id.friends_apply_btn);
+        friends_apply_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Friends_Apply.class);
                 startActivity(intent);
             }
         });
@@ -85,23 +94,23 @@ public class friends_manage extends AppCompatActivity {
         });
 
 
-        /* 하단바 - 랭킹 */
-        ImageButton nav_rank = (ImageButton) findViewById(R.id.nav_rank);
-        nav_rank.setOnClickListener(new View.OnClickListener() {
+        /* 하단바 - 친구 */
+        ImageButton nav_friend = (ImageButton) findViewById(R.id.nav_friend);
+        nav_friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), RankActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
                 startActivity(intent);
             }
         });
 
 
-        /* 하단바 - 알림 */
-        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
-        nav_alarm.setOnClickListener(new View.OnClickListener() {
+        /* 하단바 - 타이머 */
+        ImageButton nav_timer = (ImageButton) findViewById(R.id.nav_timer);
+        nav_timer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NofiActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
                 startActivity(intent);
             }
         });

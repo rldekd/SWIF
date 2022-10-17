@@ -222,18 +222,19 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/nav_alarm"
+            android:id="@+id/nav_friend"
             android:layout_width="80dp"
             android:layout_height="50dp"
+            android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_alarm"/>
+            android:src="@drawable/nav_friend" />
 
         <ImageButton
-            android:id="@+id/nav_rank"
+            android:id="@+id/nav_timer"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_rank"/>
+            android:src="@drawable/nav_timer" />
 
         <ImageButton
             android:id="@+id/nav_home"

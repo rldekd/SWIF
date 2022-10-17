@@ -42,9 +42,6 @@
 
         <activity android:name=".FriendChatActivity" android:label="friendchat" />
         <activity android:name=".MenuActivity" android:label="menu" />
-        <activity android:name=".NofiActivity" android:label="nofi" />
-        <activity android:name=".PointActivity" android:label="point" />
-        <activity android:name=".RankActivity" android:label="rank" />
         <activity android:name=".TimerActivity" android:label="timer" />
 
         <!-- <meta-data
