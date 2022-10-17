@@ -36,6 +36,8 @@
         <activity android:name=".Post_Naega"/>
         <activity android:name=".Post_Jaguk"/>
 
+        <activity android:name=".MainActivity_A"/>
+
         <!--죄용이-->
 
         <activity android:name=".FriendChatActivity" android:label="friendchat" />

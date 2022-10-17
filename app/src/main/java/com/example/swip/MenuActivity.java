@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/* 자바 : FriendItem, MainActivity_A, MyRecyclerAdapter 한 세트
+* 레이아웃 : activity_main_a, item_recyclerview 한 세트 */
+
 public class MenuActivity extends AppCompatActivity {
 
     @Override
@@ -19,7 +22,7 @@ public class MenuActivity extends AppCompatActivity {
         friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Friends_Manage.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity_A.class);
                 startActivity(intent);
             }
         });

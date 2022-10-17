@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/accessibility_shortcut_chooser_item.xml" value="0.12590579710144928" />
         <entry key="app/src/main/res/layout/accessibilty_button_chooser_item.xml" value="0.10572916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17178802490234374" />
+        <entry key="app/src/main/res/layout/activity_main_a.xml" value="0.14945652173913043" />
         <entry key="app/src/main/res/layout/board_detail.xml" value="0.1111111111111111" />
         <entry key="app/src/main/res/layout/chat.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/layout/chat_f.xml" value="0.12407407407407407" />
@@ -33,6 +34,7 @@
         <entry key="app/src/main/res/layout/information_board.xml" value="0.17980072463768115" />
         <entry key="app/src/main/res/layout/inquiry_write.xml" value="0.14463019250253292" />
         <entry key="app/src/main/res/layout/intro.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/item_recyclerview.xml" value="0.1343671052352242" />
         <entry key="app/src/main/res/layout/login.xml" value="0.11752786220871327" />
         <entry key="app/src/main/res/layout/matching_start.xml" value="0.10054347826086957" />
         <entry key="app/src/main/res/layout/member.xml" value="0.24166666666666667" />
