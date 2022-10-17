@@ -20,7 +20,7 @@ public class Matching_Start extends AppCompatActivity {
         match_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Matching_Start.class);
+                Intent intent = new Intent(getApplicationContext(), MatchingNickActivity.class);
                 startActivity(intent);
             }
         });

@@ -26,24 +26,6 @@ public class mypage extends AppCompatActivity {
             }
         });
 
-        TextView changeBtn2 = (TextView) findViewById(R.id.mypoint);
-        changeBtn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),PointActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView changeBtn3 = (TextView) findViewById(R.id.myrank);
-        changeBtn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),RankActivity.class);
-                startActivity(intent);
-            }
-        });
-
 
         TextView changeBtn6 = (TextView) findViewById(R.id.myinq);
         changeBtn6.setOnClickListener(new View.OnClickListener() {
@@ -105,16 +87,6 @@ public class mypage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-        Button membership = (Button) findViewById(R.id.mymem);
-        membership.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), membership.class);
                 startActivity(intent);
             }
         });
