@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.swip">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -42,10 +44,10 @@
 
         <activity android:name=".FriendChatActivity" android:label="friendchat" />
         <activity android:name=".MenuActivity" android:label="menu" />
-        <activity android:name=".NofiActivity" android:label="nofi" />
-        <activity android:name=".PointActivity" android:label="point" />
-        <activity android:name=".RankActivity" android:label="rank" />
         <activity android:name=".TimerActivity" android:label="timer" />
+        <activity android:name=".MatchingMainActivity" android:label="matchingmain" />
+        <activity android:name=".MatchingCreateActivity" android:label="matchingcreate" />
+        <activity android:name=".MatchingNickActivity" android:label="matchingnick" />
 
         <!-- <meta-data
              android:name="preloaded_fonts"

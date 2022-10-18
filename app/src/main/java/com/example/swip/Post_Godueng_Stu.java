@@ -57,23 +57,23 @@ public class Post_Godueng_Stu extends AppCompatActivity {
         });
 
 
-        /* 하단바 - 랭킹 */
-        ImageButton nav_rank = (ImageButton) findViewById(R.id.nav_rank);
-        nav_rank.setOnClickListener(new View.OnClickListener() {
+        /* 하단바 - 친구 */
+        ImageButton nav_friend = (ImageButton) findViewById(R.id.nav_friend);
+        nav_friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), RankActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
                 startActivity(intent);
             }
         });
 
 
-        /* 하단바 - 알림 */
-        ImageButton nav_alarm = (ImageButton) findViewById(R.id.nav_alarm);
-        nav_alarm.setOnClickListener(new View.OnClickListener() {
+        /* 하단바 - 타이머 */
+        ImageButton nav_timer = (ImageButton) findViewById(R.id.nav_timer);
+        nav_timer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NofiActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
                 startActivity(intent);
             }
         });

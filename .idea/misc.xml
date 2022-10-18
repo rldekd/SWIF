@@ -21,6 +21,7 @@
         <entry key="app/src/main/res/layout/chat.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/layout/chat_f.xml" value="0.12407407407407407" />
         <entry key="app/src/main/res/layout/delete_friend.xml" value="0.1425925925925926" />
+        <entry key="app/src/main/res/layout/example.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/example_layout.xml" value="0.18298339843750003" />
         <entry key="app/src/main/res/layout/example_layout2.xml" value="0.17980072463768115" />
         <entry key="app/src/main/res/layout/feedback.xml" value="0.17980072463768115" />
@@ -34,8 +35,12 @@
         <entry key="app/src/main/res/layout/information_board.xml" value="0.17980072463768115" />
         <entry key="app/src/main/res/layout/inquiry_write.xml" value="0.14463019250253292" />
         <entry key="app/src/main/res/layout/intro.xml" value="0.125" />
-        <entry key="app/src/main/res/layout/item_recyclerview.xml" value="0.1343671052352242" />
+        <entry key="app/src/main/res/layout/item_recyclerview.xml" value="0.18848087476647418" />
         <entry key="app/src/main/res/layout/login.xml" value="0.11752786220871327" />
+        <entry key="app/src/main/res/layout/marching_create.xml" value="0.16145833333333334" />
+        <entry key="app/src/main/res/layout/matching_create.xml" value="0.16145833333333334" />
+        <entry key="app/src/main/res/layout/matching_main.xml" value="0.16145833333333334" />
+        <entry key="app/src/main/res/layout/matching_nick.xml" value="0.16145833333333334" />
         <entry key="app/src/main/res/layout/matching_start.xml" value="0.10054347826086957" />
         <entry key="app/src/main/res/layout/member.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/menubar.xml" value="0.11752786220871327" />
@@ -65,6 +70,7 @@
         <entry key="app/src/main/res/layout/swif_theme.xml" value="0.14463019250253292" />
         <entry key="app/src/main/res/layout/timer.xml" value="0.16933746337890626" />
         <entry key="app/src/main/res/layout/todo_item.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/menu/nav_bar.xml" value="0.16145833333333334" />
       </map>
     </option>
   </component>

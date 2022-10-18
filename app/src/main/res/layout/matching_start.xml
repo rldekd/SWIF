@@ -50,57 +50,57 @@
             android:text="공부 인증 파일 등록하기" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFF">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="#FFF">-->
 
 
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="8dp"
-            android:ems="10"
-            android:inputType="date" />
+    <!--        <EditText-->
+    <!--            android:id="@+id/editTextDate"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="32dp"-->
+    <!--            android:layout_marginRight="8dp"-->
+    <!--            android:ems="10"-->
+    <!--            android:inputType="date" />-->
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="#00ffffff"
-            app:srcCompat="@drawable/match_plus" />
-    </LinearLayout>
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/imageButton2"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:background="#00ffffff"-->
+    <!--            app:srcCompat="@drawable/match_plus" />-->
+    <!--    </LinearLayout>-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="143dp"
-        android:layout_weight="2"
-        android:background="#FFF"
-        android:orientation="vertical">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="143dp"-->
+    <!--        android:layout_weight="2"-->
+    <!--        android:background="#FFF"-->
+    <!--        android:orientation="vertical">-->
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:text="플래너를 작성해주세요!" />
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="40dp"-->
+    <!--            android:text="플래너를 작성해주세요!" />-->
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="171dp"
-            android:background="@drawable/gray_roundcorner"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:text="플래너 작성하러 가기" />
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="37dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_marginBottom="171dp"-->
+    <!--            android:background="@drawable/gray_roundcorner"-->
+    <!--            android:paddingLeft="30dp"-->
+    <!--            android:paddingRight="30dp"-->
+    <!--            android:text="플래너 작성하러 가기" />-->
 
-    </LinearLayout>
+    <!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,19 +109,19 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/nav_alarm"
+            android:id="@+id/nav_friend"
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_alarm" />
+            android:src="@drawable/nav_friend" />
 
         <ImageButton
-            android:id="@+id/nav_rank"
+            android:id="@+id/nav_timer"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_rank" />
+            android:src="@drawable/nav_timer" />
 
         <ImageButton
             android:id="@+id/nav_home"
