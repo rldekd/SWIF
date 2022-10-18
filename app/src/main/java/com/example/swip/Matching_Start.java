@@ -26,7 +26,14 @@ public class Matching_Start extends AppCompatActivity {
         });
 
         /* 공부 파일 등록 */
-
+        Button bt_choose = (Button) findViewById(R.id.bt_choose);
+        bt_choose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Matching_example.class);
+                startActivity(intent);
+            }
+        });
 
 
         /* 플래너 작성하러 가기 */

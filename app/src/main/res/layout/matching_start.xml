@@ -33,23 +33,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="123dp"
-        android:layout_weight="0.5"
-        android:background="@drawable/white_roundcorner"
-        android:orientation="vertical">
-
-        <Button
-            android:layout_width="209dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="90dp"
-            android:background="@drawable/gray_roundcorner"
-            android:text="공부 인증 파일 등록하기" />
-    </LinearLayout>
-
     <!--    <LinearLayout-->
     <!--        android:layout_width="match_parent"-->
     <!--        android:layout_height="wrap_content"-->
@@ -101,6 +84,42 @@
     <!--            android:text="플래너 작성하러 가기" />-->
 
     <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/white_roundcorner"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/bt_choose"
+            android:layout_width="209dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gray_roundcorner"
+            android:text="공부 인증 사진 선택" />
+
+        <Button
+            android:id="@+id/bt_upload"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/gray_roundcorner"
+            android:text="업로드 하기" />
+
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
