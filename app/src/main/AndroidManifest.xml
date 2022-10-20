@@ -22,9 +22,6 @@
         </activity>
         <!--깅-->
 
-        <activity android:name=".Friends_List"/>
-        <activity android:name=".Friends_Manage"/>
-        <activity android:name=".Friends_Apply"/>
         <activity android:name=".information_board"/>
         <activity android:name=".Post_Cho_Stu"/>
         <activity android:name=".Post_Jung_Stu"/>
@@ -55,18 +52,11 @@
 
         <!--유짱-->
         <activity android:name=".login"/>
-        <activity android:name=".Matching_Start"/>
         <activity android:name=".NoticeActivity"/>
         <activity android:name=".InqActivity"/>
         <activity android:name=".MyinqActivity"/>
-        <activity android:name=".Pop_plan_make"
-            android:theme="@android:style/Theme.Dialog"/>
         <activity android:name=".Board_detail"/>
         <activity android:name=".Delete_friend"
-            android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".Plan_certified"
-            android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".Pop_plan_confirm"
             android:theme="@android:style/Theme.Dialog"/>
         <activity android:name=".Post_write"/>
         <activity android:name=".Profile_modify"/>
@@ -74,14 +64,11 @@
 
         <!--승미니-->
         <activity android:name=".member"/>
-        <activity android:name=".chat_f"/>
-        <activity android:name=".id"/>
         <activity android:name=".password"/>
-        <activity android:name=".fpage"/>
         <activity android:name=".mypage"/>
         <activity android:name=".MainActivity"/>
         <activity android:name=".feedback"/>
-        <activity android:name=".post"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

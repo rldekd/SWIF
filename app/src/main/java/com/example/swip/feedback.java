@@ -14,24 +14,6 @@ public class feedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.feedback);
 
-        ImageButton changeBtn = (ImageButton) findViewById(R.id.feedplan);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(feedback.this, Pop_plan_confirm.class));
-            }
-
-        });
-
-        ImageButton changeBtn2 = (ImageButton) findViewById(R.id.feedstudy);
-        changeBtn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Plan_certified.class);
-                startActivity(intent);
-            }
-        });
-
         /* 하단바 */
 
         /* 하단바 - 홈 */
@@ -66,12 +48,12 @@ public class feedback extends AppCompatActivity {
         });
 
 
-        /* 하단바 - 친구 */
+        /* 하단바 - 마이페이지 */
         ImageButton nav_friend = (ImageButton) findViewById(R.id.nav_friend);
         nav_friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
+                Intent intent = new Intent(getApplicationContext(), mypage.class);
                 startActivity(intent);
             }
         });

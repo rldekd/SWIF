@@ -17,16 +17,6 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menubar);
 
-
-        TextView friend = (TextView) findViewById(R.id.friend);
-        friend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Friends_Apply.class);
-                startActivity(intent);
-            }
-        });
-
         TextView timer = (TextView) findViewById(R.id.timer);
         timer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +30,7 @@ public class MenuActivity extends AppCompatActivity {
         match.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Matching_Start.class);
+                Intent intent = new Intent(getApplicationContext(), MatchingNickActivity.class);
                 startActivity(intent);
             }
         });

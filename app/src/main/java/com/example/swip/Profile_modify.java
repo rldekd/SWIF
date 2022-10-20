@@ -48,12 +48,12 @@ public class Profile_modify extends AppCompatActivity {
         });
 
 
-        /* 하단바 - 친구 */
+        /* 하단바 - 마이페이지 */
         ImageButton nav_friend = (ImageButton) findViewById(R.id.nav_friend);
         nav_friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
+                Intent intent = new Intent(getApplicationContext(), mypage.class);
                 startActivity(intent);
             }
         });
