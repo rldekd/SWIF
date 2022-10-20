@@ -22,6 +22,7 @@ public class login extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPassword;
     private Button buttonLogIn;
+    private TextView gogo;
     private TextView buttonSignUp;
     //
     @Override
@@ -29,10 +30,24 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+
+
+        gogo = (TextView) findViewById(R.id.login_idpass);
+        gogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // SignUpActivity 연결
+                Intent intent = new Intent(login.this, PasswordResetActivity.class);
+                startActivity(intent);
+            }
+        });
+
         firebaseAuth = FirebaseAuth.getInstance();
 
         editTextEmail = (EditText) findViewById(R.id.log_id);
         editTextPassword = (EditText) findViewById(R.id.log_pass);
+
+
 
         buttonSignUp = (TextView) findViewById(R.id.login_member);
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
@@ -41,8 +56,12 @@ public class login extends AppCompatActivity {
                 // SignUpActivity 연결
                 Intent intent = new Intent(login.this, member.class);
                 startActivity(intent);
+
+
             }
         });
+
+
         buttonLogIn = (Button) findViewById(R.id.login);
         buttonLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,7 +95,7 @@ public class login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // 로그인 성공
-                            Toast.makeText(login.this, "로그인을 성공하였습니다.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(login.this, "로그인을 성공하였습니다." , Toast.LENGTH_SHORT).show();
                             firebaseAuth.addAuthStateListener(firebaseAuthListener);
                         } else {
                             // 로그인 실패

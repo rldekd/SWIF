@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.swip">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,16 +36,13 @@
         <activity android:name=".Post_Naega"/>
         <activity android:name=".Post_Jaguk"/>
 
-        <activity android:name=".MainActivity_A"/>
+
 
         <!--죄용이-->
 
         <activity android:name=".FriendChatActivity" android:label="friendchat" />
         <activity android:name=".MenuActivity" android:label="menu" />
         <activity android:name=".TimerActivity" android:label="timer" />
-        <activity android:name=".MatchingMainActivity" android:label="matchingmain" />
-        <activity android:name=".MatchingCreateActivity" android:label="matchingcreate" />
-        <activity android:name=".MatchingNickActivity" android:label="matchingnick" />
 
         <!-- <meta-data
              android:name="preloaded_fonts"
@@ -71,6 +65,8 @@
             android:theme="@android:style/Theme.Dialog"/>
         <activity android:name=".Post_write"/>
         <activity android:name=".Profile_modify"/>
+        <activity android:name=".PasswordResetActivity"/>
+        <activity android:name=".WritePostActivity"/>
 
 
         <!--승미니-->
@@ -83,7 +79,7 @@
         <activity android:name=".mypage"/>
         <activity android:name=".MainActivity"/>
         <activity android:name=".feedback"/>
-        <activity android:name=".post"/>
+        <activity android:name=".Post"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

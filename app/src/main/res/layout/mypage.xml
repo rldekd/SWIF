@@ -184,14 +184,15 @@
                 android:layout_width="318dp"
                 android:layout_height="47dp"
                 android:background="@drawable/button_background"
-                android:text="SWIF 유료 구독하기"
+                android:text="로그아웃"
                 android:textColor="#fff"
+                android:textSize="20dp"
                 tools:layout_editor_absoluteX="46dp"
                 tools:layout_editor_absoluteY="359dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp"
-                android:fontFamily="@font/roboto"/>
+                android:fontFamily="@font/roboto_b"/>
 
 
         </LinearLayout>

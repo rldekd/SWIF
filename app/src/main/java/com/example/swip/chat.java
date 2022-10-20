@@ -18,7 +18,7 @@ public class chat extends AppCompatActivity {
         changeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),post.class);
+                Intent intent = new Intent(getApplicationContext(),PostDetailActivity.class);
                 startActivity(intent);
             }
         });

@@ -116,14 +116,15 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_friend" />
 
         <ImageButton
             android:id="@+id/nav_timer"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_home" />
+            android:src="@drawable/nav_timer" />
 
         <ImageButton
             android:id="@+id/nav_home"

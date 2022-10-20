@@ -49,6 +49,7 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/titleEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -70,6 +71,7 @@
             </EditText>
 
             <EditText
+                android:id="@+id/contentsEditText"
                 android:layout_width="match_parent"
                 android:layout_height="466dp"
                 android:layout_marginLeft="16dp"
@@ -110,6 +112,7 @@
             </ImageButton>
 
             <Button
+                android:id="@+id/check"
                 android:layout_width="318dp"
                 android:layout_height="47dp"
                 android:layout_gravity="center"

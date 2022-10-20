@@ -6,8 +6,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class mypage extends AppCompatActivity {
 
@@ -16,6 +23,29 @@ public class mypage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mypage);
+        if(FirebaseAuth.getInstance().getCurrentUser() == null){
+            startSignUpActivity();
+        }
+
+        findViewById(R.id.mymem).setOnClickListener(onClickListener);
+    }
+
+    View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.mymem:
+                    Toast.makeText(mypage.this, "로그아웃이 완료되었습니다.", Toast.LENGTH_SHORT).show(); // 로그아웃 메시지 출력
+                    FirebaseAuth.getInstance().signOut(); // 로그아웃
+                    startSignUpActivity(); // login 페이지로 이동 호출
+                    break;
+            }
+        }
+    };
+
+    private void startSignUpActivity() {
+        Intent intent = new Intent(this, login.class);
+        startActivity(intent); // 로그인 페이지로 넘어가기 정의
 
         TextView changeBtn = (TextView) findViewById(R.id.mynick);
         changeBtn.setOnClickListener(new View.OnClickListener() {
