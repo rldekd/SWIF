@@ -74,7 +74,6 @@
 
         <!--승미니-->
         <activity android:name=".member"/>
-        <activity android:name=".chat"/>
         <activity android:name=".chat_f"/>
         <activity android:name=".id"/>
         <activity android:name=".password"/>

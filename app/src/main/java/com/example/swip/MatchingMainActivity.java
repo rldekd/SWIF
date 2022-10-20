@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class MatchingMainActivity  extends AppCompatActivity {
-    private Button btn_send;
+    private ImageButton btn_send;
     private EditText et_send;
     private ListView lv_chating;
 
@@ -49,7 +49,7 @@ public class MatchingMainActivity  extends AppCompatActivity {
         setContentView(R.layout.matching_main);
 
         lv_chating = (ListView) findViewById(R.id.lv_chating);
-        btn_send = (Button) findViewById(R.id.btn_send);
+        btn_send = (ImageButton) findViewById(R.id.btn_send);
         et_send = (EditText) findViewById(R.id.et_send);
 
         str_room_name = getIntent().getExtras().get("room_name").toString();
@@ -110,61 +110,6 @@ public class MatchingMainActivity  extends AppCompatActivity {
 
             }
         });
-
-//        /* 하단바 */
-//
-//        /* 하단바 - 홈 */
-//        ImageButton nav_home = (ImageButton) findViewById(R.id.nav_home);
-//        nav_home.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//
-//        /* 하단바 - 게시판 */
-//        ImageButton nav_post = (ImageButton) findViewById(R.id.nav_post);
-//        nav_post.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),information_board.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        /* 하단바 - 메뉴 */
-//        ImageButton nav_menu = (ImageButton) findViewById(R.id.nav_menu);
-//        nav_menu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//
-//        /* 하단바 - 친구 */
-//        ImageButton nav_friend = (ImageButton) findViewById(R.id.nav_friend);
-//        nav_friend.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//
-//        /* 하단바 - 타이머 */
-//        ImageButton nav_timer = (ImageButton) findViewById(R.id.nav_timer);
-//        nav_timer.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
-//                startActivity(intent);
-//            }
-//        });
     }
 
     // addChildEventListener를 통해 실제 데이터 베이스에 변경된 값이 있으면 화면에 보여지고 있는 ListView의 값을 갱신함
