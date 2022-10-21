@@ -59,7 +59,7 @@
                     android:layout_height="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/pp_1">
+                    android:src="@drawable/pp_2">
 
 
                 </ImageView>
@@ -246,7 +246,7 @@
                     android:layout_height="13dp"
                     android:layout_marginLeft="53dp"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/pp_1">
+                    android:src="@drawable/pp_2">
 
 
                 </ImageView>
@@ -555,10 +555,9 @@
         android:background="#B3000000"/>
 
     <LinearLayout
-
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <ImageButton
@@ -567,7 +566,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_friend" />
+            android:src="@drawable/nav_mypage" />
 
         <ImageButton
             android:id="@+id/nav_timer"
@@ -595,7 +594,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_menu" />
+            android:src="@drawable/nav_noti" />
 
 
     </LinearLayout>

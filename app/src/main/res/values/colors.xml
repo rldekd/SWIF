@@ -10,4 +10,14 @@
     <color name="main">#005C9F</color>
     <color name="chatback">#F9F9F9</color>
     <color name="navy">#005C9F</color>
+
+    <color name="mainBg">#f2f2f2</color>
+    <color name="colorPrimary">#b3cc4d</color>
+<color name="colorPrimaryDark">#b3cc4d</color>
+<color name="colorAccent">#ff060a</color>
+<color name="mainColor">#ffffff</color>
+<color name="boldText">#33a217</color>
+<color name="hashTag">#e6b781</color>
+<color name="timeFont">#6774e2</color>
+<color name="busline">#eaeaea</color>
 </resources>

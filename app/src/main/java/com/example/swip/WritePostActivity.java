@@ -45,7 +45,7 @@ public class WritePostActivity extends BasicActivity {
 
         if (title.length() > 0 && contents.length() > 0) {
             user = FirebaseAuth.getInstance().getCurrentUser();
-            WriteInfo writeInfo = new WriteInfo(title, contents, user.getUid());
+            WriteInfoActivity writeInfo = new WriteInfoActivity(title, contents, user.getUid());
             uploader(writeInfo);
 
         } else {
@@ -53,7 +53,7 @@ public class WritePostActivity extends BasicActivity {
         }
     }
 
-    private void uploader(WriteInfo writeInfo){
+    private void uploader(WriteInfoActivity writeInfo){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("posts").add(writeInfo)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

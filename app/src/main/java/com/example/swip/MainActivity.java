@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -21,7 +20,6 @@ import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 //import devs.mulham.horizontalcalendar.HorizontalCalendar;
@@ -34,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     //    TextView calendarTextView;
 //    int year, month, day;
     Fragment mainFragment;
-    public static NoteDatabase noteDatabase = null;
+    public static NoteDatabaseActivity noteDatabase = null;
     private Context context;
 
     public void openDatabase() { // 데이터베이스 생성
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             noteDatabase = null;
         }
 
-        noteDatabase = NoteDatabase.getInstance(this);
+        noteDatabase = NoteDatabaseActivity.getInstance(this);
         boolean isOpen = noteDatabase.open();
         if (isOpen) {
             Log.d(TAG, "Note database is open.");
@@ -69,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         openDatabase();
 
         // fragment를 객체로 할당 후 FrameLayout에 fragment_main.xml이 추가되도록 설정
-        mainFragment = new MainFragment();
+        mainFragment = new MainFragmentActivity();
         getSupportFragmentManager().beginTransaction().replace(R.id.container,mainFragment).commit();
 
         /* 일정 추가하기 */
@@ -83,6 +81,18 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"추가되었습니다.",Toast.LENGTH_SHORT).show();
             }
         });
+
+        /* 매칭하러 가기 */
+        Button add_plan = (Button) findViewById(R.id.add_plan);
+        add_plan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MatchingNickActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         //캘린더 뷰
         today=findViewById(R.id.today);
         calendarView=findViewById(R.id.calendarView);
@@ -132,18 +142,31 @@ public class MainActivity extends AppCompatActivity {
 //                calendarTextView.setText(year+"년 "+month+"월 "+day+"일");
 //            }
 //        });
-        /* 매칭하러 가기 */
-        Button add_plan = (Button) findViewById(R.id.add_plan);
-        add_plan.setOnClickListener(new View.OnClickListener() {
+
+
+        /* 하단바 */
+
+        /* 하단바 - 공지사항 */
+        ImageButton nav_menu = (ImageButton) findViewById(R.id.nav_menu);
+        nav_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Matching_Start.class);
+                Intent intent = new Intent(getApplicationContext(), NoticeActivity.class);
                 startActivity(intent);
             }
         });
 
 
-        /* 하단바 */
+        /* 하단바 - 타이머 */
+        ImageButton nav_timer = (ImageButton) findViewById(R.id.nav_timer);
+        nav_timer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         /* 하단바 - 홈 */
         ImageButton nav_home = (ImageButton) findViewById(R.id.nav_home);
@@ -161,39 +184,19 @@ public class MainActivity extends AppCompatActivity {
         nav_post.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),information_board.class);
-                startActivity(intent);
-            }
-        });
-
-        /* 하단바 - 메뉴 */
-        ImageButton nav_menu = (ImageButton) findViewById(R.id.nav_menu);
-        nav_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                Intent intent = new Intent(getApplicationContext(), InformationBoardActivity.class);
                 startActivity(intent);
             }
         });
 
 
-        /* 하단바 - 친구 */
+
+        /* 하단바 - 마이페이지 */
         ImageButton nav_friend = (ImageButton) findViewById(R.id.nav_friend);
         nav_friend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Friends_List.class);
-                startActivity(intent);
-            }
-        });
-
-
-        /* 하단바 - 타이머 */
-        ImageButton nav_timer = (ImageButton) findViewById(R.id.nav_timer);
-        nav_timer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MyPageActivity.class);
                 startActivity(intent);
             }
         });
@@ -204,10 +207,10 @@ public class MainActivity extends AppCompatActivity {
 
         String todo = inputToDo.getText().toString();
 
-        String sqlSave = "insert into " + NoteDatabase.TABLE_NOTE + " (TODO) values (" +
+        String sqlSave = "insert into " + NoteDatabaseActivity.TABLE_NOTE + " (TODO) values (" +
                 "'" + todo + "')";
 
-        NoteDatabase database = NoteDatabase.getInstance(context);
+        NoteDatabaseActivity database = NoteDatabaseActivity.getInstance(context);
         database.execSQL(sqlSave);
 
 

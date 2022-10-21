@@ -4,13 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/loho"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SWIP">
         <activity
-            android:name=".Intro_activity"
+            android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,66 +20,50 @@
         </activity>
         <!--깅-->
 
-        <activity android:name=".Friends_List"/>
-        <activity android:name=".Friends_Manage"/>
-        <activity android:name=".Friends_Apply"/>
-        <activity android:name=".information_board"/>
-        <activity android:name=".Post_Cho_Stu"/>
-        <activity android:name=".Post_Jung_Stu"/>
-        <activity android:name=".Post_Godueng_Stu"/>
-        <activity android:name=".Post_Dae_Stu"/>
-        <activity android:name=".Post_Imyong"/>
-        <activity android:name=".Post_Gita"/>
-        <activity android:name=".Post_Giup"/>
-        <activity android:name=".Post_Gukga"/>
-        <activity android:name=".Post_Gita_Zagi"/>
-        <activity android:name=".Post_Naega"/>
-        <activity android:name=".Post_Jaguk"/>
+        <activity android:name=".InformationBoardActivity"/>
+        <activity android:name=".PostChoStuActivity"/>
+        <activity android:name=".PostJungStuActivity"/>
+        <activity android:name=".PostGoduengStuActivity"/>
+        <activity android:name=".PostDaeStuActivity"/>
+        <activity android:name=".PostImyongActivity"/>
+        <activity android:name=".PostGitaActivity"/>
+        <activity android:name=".PostGiupActivity"/>
+        <activity android:name=".PostGukgaActivity"/>
+        <activity android:name=".PostGitaZagiActivity"/>
+        <activity android:name=".PostNaegaActivity"/>
+        <activity android:name=".PostJagukActivity"/>
 
 
 
         <!--죄용이-->
 
-        <activity android:name=".FriendChatActivity" android:label="friendchat" />
-        <activity android:name=".MenuActivity" android:label="menu" />
         <activity android:name=".TimerActivity" android:label="timer" />
+        <activity android:name=".MatchingNickActivity"/>
+        <activity android:name=".MatchingMainActivity"/>
+        <activity android:name=".MatchingCreateActivity"/>
 
         <!-- <meta-data
              android:name="preloaded_fonts"
              android:resource="@array/preloaded_fonts" /> -->
 
         <!--유짱-->
-        <activity android:name=".login"/>
-        <activity android:name=".Matching_Start"/>
+        <activity android:name=".LoginActivity"/>
         <activity android:name=".NoticeActivity"/>
         <activity android:name=".InqActivity"/>
         <activity android:name=".MyinqActivity"/>
-        <activity android:name=".Pop_plan_make"
-            android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".Board_detail"/>
-        <activity android:name=".Delete_friend"
-            android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".Plan_certified"
-            android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".Pop_plan_confirm"
-            android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".Post_write"/>
-        <activity android:name=".Profile_modify"/>
+        <activity android:name=".BoardDetailActivity"/>
+        <activity android:name=".PostWriteActivity"/>
+        <activity android:name=".ProfileModify"/>
         <activity android:name=".PasswordResetActivity"/>
         <activity android:name=".WritePostActivity"/>
+        <activity android:name=".BasicActivity"/>
 
 
         <!--승미니-->
-        <activity android:name=".member"/>
-        <activity android:name=".chat"/>
-        <activity android:name=".chat_f"/>
-        <activity android:name=".id"/>
-        <activity android:name=".password"/>
-        <activity android:name=".fpage"/>
-        <activity android:name=".mypage"/>
+        <activity android:name=".MemberActivity"/>
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".MyPageActivity"/>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".feedback"/>
-        <activity android:name=".Post"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -30,39 +30,12 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="16dp"
-                android:background="@drawable/search_round">
-                <TextView
-                    android:id="@+id/label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="16dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:textColor="#70000000"
-                    android:textSize="20dp"
-                    android:text="검색할 내용을 입력하세요"
-                    android:fontFamily="@font/roboto"/>
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-                <ImageButton
-                    android:id="@+id/search"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingRight="16dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:gravity="right|center_vertical"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/search"/>
-            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -215,11 +188,9 @@
         android:layout_marginRight="14dp"/>
 
     <LinearLayout
-
-        android:layout_gravity="bottom|center"
-        android:gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <ImageButton
@@ -228,7 +199,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_friend" />
+            android:src="@drawable/nav_mypage" />
 
         <ImageButton
             android:id="@+id/nav_timer"
@@ -256,7 +227,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_menu" />
+            android:src="@drawable/nav_noti" />
 
 
     </LinearLayout>
