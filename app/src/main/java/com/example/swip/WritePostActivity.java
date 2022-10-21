@@ -49,7 +49,7 @@ public class WritePostActivity extends BasicActivity {
             uploader(writeInfo);
 
         } else {
-            startToast("회원정보를 입력해주세요.");
+            startToast("회원정보를 입력해주세요");
         }
     }
 
