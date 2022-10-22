@@ -49,6 +49,7 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/titleEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -70,6 +71,7 @@
             </EditText>
 
             <EditText
+                android:id="@+id/contentsEditText"
                 android:layout_width="match_parent"
                 android:layout_height="466dp"
                 android:layout_marginLeft="16dp"
@@ -110,6 +112,7 @@
             </ImageButton>
 
             <Button
+                android:id="@+id/check"
                 android:layout_width="318dp"
                 android:layout_height="47dp"
                 android:layout_gravity="center"
@@ -131,9 +134,9 @@
 
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <ImageButton
@@ -142,7 +145,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_friend" />
+            android:src="@drawable/nav_mypage" />
 
         <ImageButton
             android:id="@+id/nav_timer"
@@ -170,7 +173,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_menu" />
+            android:src="@drawable/nav_noti" />
 
 
     </LinearLayout>

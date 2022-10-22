@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_array">
+        <item>포인트</item>
+        <item>친구</item>
+        <item>매칭</item>
+        <item>신고</item>
+        <item>채점</item>
+        <item>개인 정보</item>
+        <item>기타</item>
+    </string-array>
+</resources>

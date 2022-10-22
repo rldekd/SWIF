@@ -11,168 +11,104 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="798dp"
-        android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="474dp"
-            android:background="#336F6F6F">
+            android:layout_height="798dp"
+            android:orientation="vertical">
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:background="#336F6F6F">
 
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="-70dp">
+            </LinearLayout>
 
 
-            <ImageView
-                android:layout_width="95dp"
-                android:layout_height="95dp"
-                android:src="@drawable/pp_5" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="-160dp">
-
-            <Button
-                android:id="@+id/pp_modify_bg"
-                android:layout_width="134dp"
-                android:layout_height="22dp"
-                android:background="@drawable/profile_bg"
-                android:fontFamily="@font/roboto"
-                android:text="배경 사진 변경하기"
-                android:textColor="#80000000"
-                android:textSize="12dp" />
-
-
-            <Button
-                android:id="@+id/pp_modify_pp"
-                android:layout_width="134dp"
-                android:layout_height="22dp"
-                android:layout_marginTop="190dp"
-                android:background="@drawable/profile_bg"
-                android:fontFamily="@font/roboto"
-                android:gravity="center"
-                android:text="프로필 사진 변경하기"
-                android:textColor="#80000000"
-                android:textSize="12dp"
-
-                />
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/pp_nick"
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="7dp"
-                android:fontFamily="@font/roboto"
-                android:text="닉네임"
-                android:textColor="#80000000"
-                android:textSize="16dp" />
-
-            <EditText
-
-                android:layout_width="314dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:fontFamily="@font/roboto"
-                android:hint="닉네임을 입력하세요"
-                android:textSize="16dp" />
+                android:layout_gravity="center"
+                android:layout_marginTop="-70dp">
 
 
-            <Button
-                android:layout_width="67dp"
-                android:layout_height="22dp"
-                android:layout_marginLeft="-72dp"
-                android:layout_marginTop="34dp"
-                android:background="@drawable/profile_bg"
-                android:fontFamily="@font/roboto"
-                android:text="중복 확인"
-                android:textColor="#80000000"
-                android:textSize="12dp" />
-        </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileimg"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/pp_5" />
+            </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/pp_id"
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="7dp"
-                android:fontFamily="@font/roboto"
-                android:text="아이디"
-                android:textColor="#80000000"
-                android:textSize="16dp" />
+                android:layout_gravity="center"
+                android:layout_marginTop="-160dp">
 
-            <EditText
 
-                android:layout_width="314dp"
+                <View
+                    android:layout_width="134dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/roboto_b"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:fontFamily="@font/roboto"
-                android:hint="아이디를 입력하세요"
-                android:textSize="16dp" />
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/pp_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="7dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="닉네임"
+                    android:textColor="#80000000"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/nickEdit"
+                    android:layout_width="314dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint="닉네임을 입력하세요"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
 
 
             <Button
-                android:layout_width="67dp"
-                android:layout_height="22dp"
-                android:layout_marginLeft="-72dp"
-                android:layout_marginTop="34dp"
-                android:background="@drawable/profile_bg"
-                android:fontFamily="@font/roboto"
-                android:text="중복 확인"
-                android:textColor="#80000000"
-                android:textSize="12dp" />
+                android:id="@+id/pp_change"
+                android:layout_width="163dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/roboto_b"
+                android:text="변경하기"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+
         </LinearLayout>
 
-        <Button
-            android:layout_width="163dp"
-            android:layout_height="33dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="22dp"
-            android:background="@drawable/button_background"
-            android:fontFamily="@font/roboto_b"
-            android:text="변경하기"
-            android:textColor="#ffffff"
-            android:textSize="18dp" />
-
-
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <ImageButton
@@ -181,7 +117,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_friend" />
+            android:src="@drawable/nav_mypage" />
 
         <ImageButton
             android:id="@+id/nav_timer"
@@ -209,7 +145,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_menu" />
+            android:src="@drawable/nav_noti" />
 
 
     </LinearLayout>

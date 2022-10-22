@@ -28,14 +28,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp" />
-<!--        <Button-->
-<!--            android:id="@+id/btn_create"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:textSize="13sp"-->
-<!--            android:fontFamily="@font/roboto_b"-->
-<!--            android:text="매칭리스트 생성하기"-->
-<!--            android:layout_marginTop="-50dp" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_create"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:textSize="13sp"-->
+        <!--            android:fontFamily="@font/roboto_b"-->
+        <!--            android:text="매칭리스트 생성하기"-->
+        <!--            android:layout_marginTop="-50dp" />-->
         <Button
             android:id="@+id/btn_create"
             android:layout_width="211dp"
@@ -51,11 +51,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="bottom|center"
-        android:gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <ImageButton
@@ -64,7 +62,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_friend" />
+            android:src="@drawable/nav_mypage" />
 
         <ImageButton
             android:id="@+id/nav_timer"
@@ -92,7 +90,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_menu" />
+            android:src="@drawable/nav_noti" />
 
 
     </LinearLayout>
