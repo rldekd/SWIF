@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -23,9 +24,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -120,13 +123,28 @@ public class MatchingCreateActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
                 Intent intent = new Intent(getApplicationContext(), MatchingMainActivity.class);
                 intent.putExtra("room_name", ((TextView) view).getText().toString());
                 intent.putExtra("user_name", str_name);
                 startActivity(intent);
 
                 // str_name 갯수 구해서 3명 이상이 됐을 때는 인원 제한을 초과했습니다 메시지 띄우기
-//                int[] arr = {};
+//                String[] arr = {};
+//                int newArrLength = arr.length + 1;
+//                String[] newArr = new String[newArrLength];
+//
+//                for(int j = 0; j < newArrLength; j++) {
+//                    newArr[j] = str_name;
+//                }
+//                if(newArr.length < 3) {
+//                    Intent intent = new Intent(getApplicationContext(), MatchingMainActivity.class);
+//                    intent.putExtra("room_name", ((TextView) view).getText().toString());
+//                    intent.putExtra("user_name", str_name);
+//                    startActivity(intent);
+//                } else {
+//                    Toast.makeText(MatchingCreateActivity.this, "인원 제한을 초과했습니다." , Toast.LENGTH_SHORT).show();
+//                }
 
             }
         });
