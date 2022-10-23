@@ -11,7 +11,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1" >
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,22 +24,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto"
                 android:text="SWIF"
-                android:textSize="24sp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:fontFamily="@font/roboto"/>
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:fontFamily="@font/roboto"
                 android:text="헬로 월드님과 매칭이 종료되었습니다."
-                android:layout_gravity="center"
-                android:textSize="12sp"
                 android:textColor="#646464"
-                android:fontFamily="@font/roboto"/>
+                android:textSize="12sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,31 +50,29 @@
                 <LinearLayout
                     android:layout_width="205dp"
                     android:layout_height="130dp"
-                    android:orientation="vertical"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
                     <ImageButton
                         android:id="@+id/feedplan"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        app:srcCompat="@drawable/plan"
+                        android:layout_marginLeft="70dp"
                         android:padding="0sp"
                         android:scaleType="centerCrop"
-                        android:layout_marginLeft="70dp"
-                        />
+                        app:srcCompat="@drawable/plan" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="86dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
                         android:gravity="center"
                         android:text="공부 계획 확인"
-                        android:textSize="10sp"
-                        android:textColor="#000"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="86dp"
                         android:textAlignment="center"
-                        android:fontFamily="@font/roboto"
-                        />
+                        android:textColor="#000"
+                        android:textSize="10sp" />
 
 
                 </LinearLayout>
@@ -82,32 +80,29 @@
                 <LinearLayout
                     android:layout_width="205dp"
                     android:layout_height="130dp"
-                    android:orientation="vertical"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
                     <ImageButton
                         android:id="@+id/feedstudy"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        app:srcCompat="@drawable/study_p"
+                        android:layout_marginLeft="45dp"
                         android:padding="0sp"
                         android:scaleType="centerCrop"
-                        android:layout_marginLeft="45dp"
-                        />
+                        app:srcCompat="@drawable/study_p" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
                         android:gravity="center"
                         android:text="공부 인증 확인"
-                        android:textSize="10sp"
-                        android:textColor="#000"
-                        android:fontFamily="@font/roboto"
-                        android:layout_marginTop="10dp"
                         android:textAlignment="center"
-                        android:layout_marginLeft="60dp"
-                        />
-
+                        android:textColor="#000"
+                        android:textSize="10sp" />
 
 
                 </LinearLayout>
@@ -118,56 +113,55 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#D0D0D0"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:background="#D0D0D0" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
-                android:text="헬로 월드님과의 매칭은 어떠셨나요?"
-                android:textSize="16sp"
-                android:textAlignment="center"
                 android:fontFamily="@font/roboto"
-                android:textColor="#000000"/>
+                android:text="헬로 월드님과의 매칭은 어떠셨나요?"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                tools:context=".MainActivity"
-                >
+                tools:context=".MainActivity">
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:fontFamily="@font/roboto">
+                    android:fontFamily="@font/roboto"
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/btnnotgood"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="만족스럽지\n못했어요"
-                        android:fontFamily="@font/roboto"/>
+                        android:fontFamily="@font/roboto"
+                        android:text="만족스럽지\n못했어요" />
 
                     <RadioButton
                         android:id="@+id/btnsoso"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="그냥\n그랬어요"
-                        android:fontFamily="@font/roboto"/>
+                        android:fontFamily="@font/roboto"
+                        android:text="그냥\n그랬어요" />
 
                     <RadioButton
                         android:id="@+id/btngood"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="도움이\n되었어요"
-                        android:fontFamily="@font/roboto"/>
+                        android:fontFamily="@font/roboto"
+                        android:text="도움이\n되었어요" />
                 </RadioGroup>
 
 
@@ -176,42 +170,41 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#D0D0D0"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:background="#D0D0D0" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
-                android:text="정해진 시간 안에 목표한 분량을 완료했나요?"
-                android:textSize="16sp"
                 android:fontFamily="@font/roboto"
-                android:textColor="#000000"/>
+                android:text="정해진 시간 안에 목표한 분량을 완료했나요?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
             <SeekBar
                 android:id="@+id/seek1"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:thumb="@drawable/custom_seekbar_thumb"
                 android:progressDrawable="@drawable/custom_seekbar_progress"
                 android:splitTrack="false"
-                />
+                android:thumb="@drawable/custom_seekbar_thumb" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
                 android:fontFamily="@font/roboto"
                 android:text="계획한 일정에 따라 진행했나요?"
-                android:textSize="16sp"
                 android:textColor="#000000"
-                />
+                android:textSize="16sp" />
 
             <SeekBar
                 android:id="@+id/seek2"
@@ -219,23 +212,21 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:thumb="@drawable/custom_seekbar_thumb"
                 android:progressDrawable="@drawable/custom_seekbar_progress"
                 android:splitTrack="false"
-                />
-
+                android:thumb="@drawable/custom_seekbar_thumb" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/roboto"
-                android:layout_marginLeft="30dp"
                 android:text="헬로 월드님의 계획표 달성률은?"
-                android:textSize="16sp"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <SeekBar
                 android:id="@+id/seek3"
@@ -243,27 +234,28 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:thumb="@drawable/custom_seekbar_thumb"
                 android:progressDrawable="@drawable/custom_seekbar_progress"
                 android:splitTrack="false"
-                />
+                android:thumb="@drawable/custom_seekbar_thumb" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="60dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
                 android:text="친구신청"
-                android:textSize="16sp"
                 android:textColor="#000000"
-                android:fontFamily="@font/roboto"/>
+                android:textSize="16sp" />
+
             <View
                 android:layout_width="330dp"
                 android:layout_height="1dp"
-                android:background="#D0D0D0"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center"/>
+                android:background="#D0D0D0" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -273,23 +265,22 @@
                     android:id="@+id/imageView"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    app:srcCompat="@drawable/img"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="10dp"
                     android:padding="0sp"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/img" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto"
                     android:text="헬로 월드"
                     android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/roboto"/>
-
+                    android:textSize="14sp" />
 
 
             </LinearLayout>
@@ -297,44 +288,40 @@
             <View
                 android:layout_width="330dp"
                 android:layout_height="1dp"
-                android:background="#D0D0D0"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center"/>
+                android:background="#D0D0D0" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
-                android:text="* 친구 추가 후 플래너 공유와 채팅이 가능합니다."
-                android:textSize="10sp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/roboto"
-                />
+                android:text="* 친구 추가 후 플래너 공유와 채팅이 가능합니다."
+                android:textSize="10sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
 
-
             </LinearLayout>
-
-
-
 
 
             <Button
                 android:layout_width="318dp"
                 android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/button_background"
                 android:text="Matching Close"
                 android:textColor="#fff"
                 tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="359dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"/>
+                tools:layout_editor_absoluteY="359dp" />
 
         </LinearLayout>
 
