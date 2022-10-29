@@ -1,6 +1,8 @@
 package com.example.swip;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -29,6 +31,8 @@ public class MemberActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.member);
+
+
 
         id1 = (EditText)findViewById(R.id.mem_id); // 이메일 입력공간
         pw1 = (EditText)findViewById(R.id.mem_pass); // 첫번째 비밀번호 입력공간
@@ -74,7 +78,7 @@ public class MemberActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 Toast.makeText(MemberActivity.this, "회원가입을 성공했습니다.", Toast.LENGTH_SHORT).show();
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                finish();
+                                startMemberInitActivity();
                             } else {
                                 Toast.makeText(MemberActivity.this, "회원가입을 실패하였습니다.", Toast.LENGTH_SHORT).show();
                             }
@@ -98,7 +102,10 @@ public class MemberActivity extends AppCompatActivity {
         finish();
         super.onDestroy();
     }
-
+    private void startMemberInitActivity() {
+        Intent intent = new Intent(this, MemberInitActivity.class);
+        startActivity(intent); // 회원 정보 기입 페이지로 넘어가기 정의
+    }
 
 }
 

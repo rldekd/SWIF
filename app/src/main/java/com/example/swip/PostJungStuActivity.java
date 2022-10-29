@@ -18,7 +18,7 @@ public class PostJungStuActivity extends AppCompatActivity {
         write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PostWriteActivity.class);
+                Intent intent = new Intent(getApplicationContext(), WritePostActivity.class);
                 startActivity(intent);
             }
         });
@@ -27,12 +27,9 @@ public class PostJungStuActivity extends AppCompatActivity {
 
         /* 하단바 - 공지사항 */
         ImageButton nav_menu = (ImageButton) findViewById(R.id.nav_menu);
-        nav_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NoticeActivity.class);
-                startActivity(intent);
-            }
+        nav_menu.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), NoticeActivity.class);
+            startActivity(intent);
         });
 
 

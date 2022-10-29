@@ -23,6 +23,7 @@ public class PostChoStuActivity extends AppCompatActivity {
             }
         });
 
+
         /* 하단바 */
 
         /* 하단바 - 공지사항 */

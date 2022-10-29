@@ -1,86 +1,64 @@
 package com.example.swip;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.TextView;
+import android.webkit.DownloadListener;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MyinqActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_inquiry);
 
-        TextView changeBtn = (TextView) findViewById(R.id.inq_write);
-        changeBtn.setOnClickListener(new View.OnClickListener() {
+
+        WebView webView = null;
+
+
+        webView = (WebView) findViewById(R.id.webview);
+        webView.setWebViewClient(new WebViewClient());
+
+
+
+
+
+        // 새 창 띄우기 않기
+        webView.setWebChromeClient(new WebChromeClient());
+
+
+        webView.setDownloadListener(new DownloadListener(){
+
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),InqActivity.class);
-                startActivity(intent);
-            }
-        });
+            public void onDownloadStart(String s, String s1, String s2, String s3, long l) {
+
+            }});  // 파일 다운로드 설정
+
+        webView.getSettings().setLoadWithOverviewMode(true);  // WebView 화면크기에 맞추도록 설정 - setUseWideViewPort 와 같이 써야함
+        webView.getSettings().setUseWideViewPort(true);  // wide viewport 설정 - setLoadWithOverviewMode 와 같이 써야함
+
+        webView.getSettings().setSupportZoom(false);  // 줌 설정 여부
+        webView.getSettings().setBuiltInZoomControls(false);  // 줌 확대/축소 버튼 여부
+
+        webView.getSettings().setJavaScriptEnabled(true); // 자바스크립트 사용여부
+
+        webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true); // javascript가 window.open()을 사용할 수 있도록 설정
+        webView.getSettings().setSupportMultipleWindows(true); // 멀티 윈도우 사용 여부
+
+        webView.getSettings().setDomStorageEnabled(true);  // 로컬 스토리지 (localStorage) 사용여부
 
 
-
-        /* 하단바 */
-
-        /* 하단바 - 공지사항 */
-        ImageButton nav_menu = (ImageButton) findViewById(R.id.nav_menu);
-        nav_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NoticeActivity.class);
-                startActivity(intent);
-            }
-        });
+        //웹페이지 호출
+        webView.loadUrl("http://pf.kakao.com/_UPUsxj");
 
 
-        /* 하단바 - 타이머 */
-        ImageButton nav_timer = (ImageButton) findViewById(R.id.nav_timer);
-        nav_timer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-        /* 하단바 - 홈 */
-        ImageButton nav_home = (ImageButton) findViewById(R.id.nav_home);
-        nav_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-        /* 하단바 - 게시판 */
-        ImageButton nav_post = (ImageButton) findViewById(R.id.nav_post);
-        nav_post.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), InformationBoardActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-        /* 하단바 - 마이페이지 */
-        ImageButton nav_friend = (ImageButton) findViewById(R.id.nav_friend);
-        nav_friend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MyPageActivity.class);
-                startActivity(intent);
-            }
-        });
     }
+
+
 }

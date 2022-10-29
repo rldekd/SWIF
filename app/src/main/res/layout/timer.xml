@@ -26,6 +26,7 @@
             android:textSize="25sp"></TextView>
 
         <Chronometer
+            android:id="@+id/chronometer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -49,11 +50,13 @@
             android:layout_marginLeft="40dp"
             android:layout_weight="1">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/buttonstart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_weight="4"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/record_start" />
 
             <TextView
@@ -73,12 +76,13 @@
             android:layout_marginLeft="20dp"
             android:layout_weight="1">
 
-            <ImageView
-                android:id="@+id/imageView3"
+            <ImageButton
+                android:id="@+id/buttonstop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_weight="4"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/record_stop" />
 
             <TextView
