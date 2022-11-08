@@ -15,8 +15,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="798dp"
-            android:orientation="vertical">
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,60 +65,63 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
+
 
                 <ImageButton
                     android:id="@+id/my_pro"
-                    android:layout_width="70dp"
+                    android:layout_width="match_parent"
                     android:layout_height="70dp"
-                    android:layout_marginLeft="95dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:background="@android:color/transparent"
-                    android:padding="0sp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/pro_modify" />
-
-                <ImageButton
-                    android:id="@+id/my_inq"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@android:color/transparent"
-                    android:padding="0sp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/pro_inq" />
 
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/mymem"
+                android:layout_width="318dp"
+                android:layout_height="47dp"
+                android:background="@drawable/button_background"
+                android:text="로그아웃"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="359dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_b"/>
 
         </LinearLayout>
 
     </ScrollView>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/nav_alarm"
+            android:id="@+id/nav_friend"
             android:layout_width="80dp"
             android:layout_height="50dp"
+            android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_alarm"/>
+            android:src="@drawable/nav_mypage" />
 
         <ImageButton
-            android:id="@+id/nav_rank"
+            android:id="@+id/nav_timer"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_rank"/>
+            android:src="@drawable/nav_timer" />
 
         <ImageButton
             android:id="@+id/nav_home"
@@ -138,7 +142,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/nav_menu" />
+            android:src="@drawable/nav_noti" />
 
 
     </LinearLayout>

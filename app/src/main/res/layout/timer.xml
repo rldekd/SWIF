@@ -56,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_weight="4"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/record_start" />
 
             <TextView
@@ -81,6 +82,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_weight="4"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/record_stop" />
 
             <TextView

@@ -5,14 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".MainActivity">
 
 
 
-    <TextView
+    <ImageView
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:text="SWIF"
+        android:layout_height="190dp"
+        android:layout_marginBottom="40dp"
+        android:src="@mipmap/swif_icon_round"
         android:gravity="center"
         android:textAlignment="center"
         android:textSize="60sp"
@@ -81,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="아이디/비밀번호 찾기"
+            android:text="비밀번호 찾기"
             android:textAlignment="center"
             android:textSize="10sp"
             android:layout_marginTop="20dp"

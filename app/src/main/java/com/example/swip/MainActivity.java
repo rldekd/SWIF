@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         openDatabase();
 
+
         // fragment를 객체로 할당 후 FrameLayout에 fragment_main.xml이 추가되도록 설정
         mainFragment = new MainFragmentActivity();
         getSupportFragmentManager().beginTransaction().replace(R.id.container,mainFragment).commit();
@@ -215,5 +216,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         inputToDo.setText("");
+
     }
 }
