@@ -21,7 +21,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/roboto_b"
                 android:gravity="center"
-                android:text="기타"
+                android:text="매칭 피드백"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16dp" />

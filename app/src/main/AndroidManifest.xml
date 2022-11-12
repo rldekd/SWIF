@@ -38,7 +38,7 @@
         <activity android:name=".PostGitaActivity"/>
         <activity android:name=".PostGiupActivity"/>
         <activity android:name=".PostGukgaActivity"/>
-        <activity android:name=".PostGitaZagiActivity"/>
+        <activity android:name=".PostMatFeedbackActivity"/>
         <activity android:name=".PostNaegaActivity"/>
         <activity android:name=".PostJagukActivity"/>
         <activity android:name=".UserTermsActivity"/>

@@ -7,12 +7,12 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PostGitaZagiActivity extends AppCompatActivity {
+public class PostMatFeedbackActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.post_gita_zagi);
+        setContentView(R.layout.post_mat_feedback);
 
         ImageButton write = (ImageButton) findViewById(R.id.write);
         write.setOnClickListener(new View.OnClickListener() {
