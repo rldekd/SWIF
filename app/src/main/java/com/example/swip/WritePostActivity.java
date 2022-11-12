@@ -84,7 +84,7 @@ public class WritePostActivity extends BasicActivity {
             }
         });
 
-        findViewById(R.id.check).setOnClickListener(onClickListener);
+        findViewById(R.id.insertButton).setOnClickListener(onClickListener);
     }
 
 
@@ -93,7 +93,7 @@ public class WritePostActivity extends BasicActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.check:
+                case R.id.insertButton:
                     profileUpdate();
                     break;
             }
@@ -102,8 +102,8 @@ public class WritePostActivity extends BasicActivity {
 
 
     private void profileUpdate() {
-        final String title = ((EditText) findViewById(R.id.titleEditText)).getText().toString();
-        final String contents = ((EditText) findViewById(R.id.contentsEditText)).getText().toString();
+        final String title = ((EditText) findViewById(R.id.editTextName)).getText().toString();
+        final String contents = ((EditText) findViewById(R.id.editTextMessage)).getText().toString();
 
         if (title.length() > 0 && contents.length() > 0) {
             user = FirebaseAuth.getInstance().getCurrentUser();

@@ -20,7 +20,7 @@ public class InformationBoardActivity extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PostChoStuActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ShowMessage.class);
                 startActivity(intent);
             }
         });

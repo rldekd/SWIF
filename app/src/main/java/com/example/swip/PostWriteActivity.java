@@ -7,21 +7,17 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PostChoStuActivity extends AppCompatActivity {
+
+public class PostWriteActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.post_cho_stu);
+        setContentView(R.layout.post_write);
 
-        ImageButton write = (ImageButton) findViewById(R.id.write);
-        write.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Insert.class);
-                startActivity(intent);
-            }
-        });
+
 
 
         /* 하단바 */
