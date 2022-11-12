@@ -5,13 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
-    android:paddingLeft="4dp"
-    android:paddingTop="8dp"
-    android:paddingRight="4dp"
-    android:paddingBottom="4dp"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="5dp">
+    app:cardCornerRadius="20dp">
 
     <LinearLayout
         android:id="@+id/layoutTodo"
@@ -23,16 +18,19 @@
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
             android:layout_weight="1" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/deleteButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="7"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
             android:text="X"
+            android:textStyle="bold"
             android:textColor="#FF6F32"
             android:background="#FFFFFF" />
     </LinearLayout>
