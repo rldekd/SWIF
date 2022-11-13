@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/drawable/chat_round.xml" value="0.363" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/a_people_fragment.xml" value="0.1839499739447629" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/chat_fragment.xml" value="0.1" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/matching_main.xml" value="0.33" />
+        <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/mypage.xml" value="0.33" />
         <entry key="..\:/Users/ychyu/AndroidStudioProjects/SWIP/app/src/main/res/layout/timer.xml" value="0.16933746337890626" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIP/app/src/main/res/layout/board_detail.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIP/app/src/main/res/layout/chat.xml" value="0.27395833333333336" />
