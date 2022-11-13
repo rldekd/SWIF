@@ -2,6 +2,7 @@ package com.example.swip;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.Image;
@@ -131,6 +132,33 @@ public class MatchingMainActivity  extends AppCompatActivity {
 
                         }
                     });
+                }
+                AssetManager am = getResources().getAssets();
+                InputStream is = null ;
+                try {
+                    is = am.open("photo/1.png");
+                    Bitmap bm = BitmapFactory.decodeStream(is);
+                    
+                    ImageView imageView = (ImageView) findViewById(R.id.st_img);
+                    imageView.setImageBitmap(bm);
+
+                    Map<String, Object> objectMap = new HashMap<String, Object>();
+                    objectMap.put("name", str_user_name);
+                    objectMap.put("photo", st_img.getImageMatrix());
+
+                    root.updateChildren(objectMap);
+                    
+                    is.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                
+                if (is != null) {
+                    try {
+                        is.close();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
