@@ -105,6 +105,7 @@ public class MatchingMainActivity  extends AppCompatActivity {
                         loadAlbum();
                         break;
                 }
+                st_img.setVisibility(View.GONE);
                 // map을 사용해 name과 메시지를 가져오고, key에 값 요청
                 Map<String, Object> map = new HashMap<String, Object>();
                 key = reference.push().getKey();
@@ -133,33 +134,33 @@ public class MatchingMainActivity  extends AppCompatActivity {
                         }
                     });
                 }
-                AssetManager am = getResources().getAssets();
-                InputStream is = null ;
-                try {
-                    is = am.open("photo/1.png");
-                    Bitmap bm = BitmapFactory.decodeStream(is);
-                    
-                    ImageView imageView = (ImageView) findViewById(R.id.st_img);
-                    imageView.setImageBitmap(bm);
-
-                    Map<String, Object> objectMap = new HashMap<String, Object>();
-                    objectMap.put("name", str_user_name);
-                    objectMap.put("photo", st_img.getImageMatrix());
-
-                    root.updateChildren(objectMap);
-                    
-                    is.close();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                
-                if (is != null) {
-                    try {
-                        is.close();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+//                AssetManager am = getResources().getAssets();
+//                InputStream is = null ;
+//                try {
+//                    is = am.open("photo/1.png");
+//                    Bitmap bm = BitmapFactory.decodeStream(is);
+//
+//                    ImageView imageView = (ImageView) findViewById(R.id.st_img);
+//                    imageView.setImageBitmap(bm);
+//
+//                    Map<String, Object> objectMap = new HashMap<String, Object>();
+//                    objectMap.put("name", str_user_name);
+//                    objectMap.put("photo", st_img.getImageMatrix());
+//
+//                    root.updateChildren(objectMap);
+//
+//                    is.close();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//
+//                if (is != null) {
+//                    try {
+//                        is.close();
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//                }
             }
 
             private void loadAlbum() {
@@ -256,10 +257,10 @@ public class MatchingMainActivity  extends AppCompatActivity {
         while (i.hasNext()) {
             chat_message = (String) ((DataSnapshot) i.next()).getValue();
             chat_user = (String) ((DataSnapshot) i.next()).getValue();
-            chat_photo = (Image) ((DataSnapshot) i.next()).getValue();
+//            chat_photo = (Image) ((DataSnapshot) i.next()).getValue();
 
             arrayAdapter.add(chat_user + " : " + chat_message);
-            arrayAdapter.add(chat_user + " : " + chat_photo);
+//            arrayAdapter.add(chat_user + " : " + chat_photo);
         }
 
         arrayAdapter.notifyDataSetChanged();
