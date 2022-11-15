@@ -48,7 +48,6 @@
         <activity
             android:name=".TimerActivity"
             android:label="timer" />
-        <activity android:name=".MatchingNickActivity" />
         <activity android:name=".MatchingMainActivity" />
         <activity android:name=".MatchingCreateActivity" />
         <!--

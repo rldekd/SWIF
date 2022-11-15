@@ -39,9 +39,7 @@ public class MatchingCreateActivity extends AppCompatActivity {
     private ArrayList<String> arr_roomList = new ArrayList<>();
     private DatabaseReference reference = FirebaseDatabase.getInstance()
             .getReference().getRoot();
-    private String name;
 
-    private String str_name;
     private String str_room;
 
     Map<String, Object> map = new HashMap<String, Object>();
@@ -53,9 +51,6 @@ public class MatchingCreateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTitle("매칭 리스트");
         setContentView(R.layout.matching_create);
-
-        Intent intent = getIntent();
-        str_name = intent.getStringExtra("name");
 
         listView = (ListView) findViewById(R.id.list);
         btn_create = (Button) findViewById(R.id.btn_create);
@@ -79,8 +74,6 @@ public class MatchingCreateActivity extends AppCompatActivity {
                         str_room = et_inDialog.getText().toString();
                         map.put(str_room, "");
                         reference.updateChildren(map);
-//                        Intent intent = new Intent(getApplicationContext(), MatchingMainActivity.class);
-//                        startActivity(intent);
                     }
                 });
                 builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
@@ -125,12 +118,7 @@ public class MatchingCreateActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(), MatchingMainActivity.class);
                 intent.putExtra("room_name", ((TextView) view).getText().toString());
-                intent.putExtra("user_name", str_name);
                 startActivity(intent);
-
-                // str_name 갯수 구해서 3명 이상이 됐을 때는 인원 제한을 초과했습니다 메시지 띄우기
-                int[] arr = {};
-
             }
 
         });
