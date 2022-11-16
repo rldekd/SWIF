@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         add_plan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MatchingNickActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MatchingCreateActivity.class);
                 startActivity(intent);
             }
         });
@@ -218,6 +218,4 @@ public class MainActivity extends AppCompatActivity {
         inputToDo.setText("");
 
     }
-
-
 }

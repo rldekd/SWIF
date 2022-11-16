@@ -27,17 +27,26 @@
         <entry key="app/src/main/res/layout/accessibility_shortcut_chooser_item.xml" value="0.12590579710144928" />
         <entry key="app/src/main/res/layout/accessibilty_button_chooser_item.xml" value="0.10572916666666667" />
         <entry key="app/src/main/res/layout/actionbar_title.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_add_hotel.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_check_my_post.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_hotel_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_hotel_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17178802490234374" />
         <entry key="app/src/main/res/layout/activity_main_a.xml" value="0.14945652173913043" />
         <entry key="app/src/main/res/layout/activity_member_init.xml" value="0.21022491455078127" />
         <entry key="app/src/main/res/layout/activity_password_reset.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_post.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_post_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_show_message.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_there_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/array_custom.xml" value="0.1" />
         <entry key="app/src/main/res/layout/board_detail.xml" value="0.13187374538845484" />
         <entry key="app/src/main/res/layout/chat.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/layout/chat_f.xml" value="0.12407407407407407" />
+        <entry key="app/src/main/res/layout/comment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/delete_friend.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/layout/example.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/example_layout.xml" value="0.18298339843750003" />
@@ -64,12 +73,14 @@
         <entry key="app/src/main/res/layout/matching_start.xml" value="0.29064662767493216" />
         <entry key="app/src/main/res/layout/member.xml" value="0.22865447998046876" />
         <entry key="app/src/main/res/layout/membership.xml" value="0.13949275362318841" />
+        <entry key="app/src/main/res/layout/menu_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/menubar.xml" value="0.20838326992355702" />
         <entry key="app/src/main/res/layout/message_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/my_inquiry.xml" value="0.2314391647560009" />
         <entry key="app/src/main/res/layout/mypage.xml" value="0.17375584943262162" />
+        <entry key="app/src/main/res/layout/newcard.xml" value="0.1" />
         <entry key="app/src/main/res/layout/nofi.xml" value="0.190234375" />
-        <entry key="app/src/main/res/layout/notice.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/notice.xml" value="0.27056579589843754" />
         <entry key="app/src/main/res/layout/notice_board_write.xml" value="0.11322188449848024" />
         <entry key="app/src/main/res/layout/password.xml" value="0.13949275362318841" />
         <entry key="app/src/main/res/layout/plan_certified.xml" value="0.1425925925925926" />
@@ -92,12 +103,14 @@
         <entry key="app/src/main/res/layout/post_write.xml" value="0.1" />
         <entry key="app/src/main/res/layout/profile_modify.xml" value="0.23329669012539628" />
         <entry key="app/src/main/res/layout/ranking.xml" value="0.14463019250253292" />
+        <entry key="app/src/main/res/layout/row_layout_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/scrap.xml" value="0.14463019250253292" />
         <entry key="app/src/main/res/layout/swif_theme.xml" value="0.14463019250253292" />
         <entry key="app/src/main/res/layout/talk_list.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/timer.xml" value="0.16933746337890626" />
         <entry key="app/src/main/res/layout/timer2.xml" value="0.21811370849609377" />
         <entry key="app/src/main/res/layout/todo_item.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/upload.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/layout/user_info_terms.xml" value="0.1" />
         <entry key="app/src/main/res/layout/using_terms.xml" value="0.3194595336914063" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.1" />
