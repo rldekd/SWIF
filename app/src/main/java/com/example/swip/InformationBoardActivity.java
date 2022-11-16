@@ -20,7 +20,7 @@ public class InformationBoardActivity extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ShowMessage.class);
+                Intent intent = new Intent(getApplicationContext(), PostList.class);
                 startActivity(intent);
             }
         });
@@ -111,20 +111,11 @@ public class InformationBoardActivity extends AppCompatActivity {
         gee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PostGitaZagiActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PostMatFeedbackActivity.class);
                 startActivity(intent);
             }
         });
 
-        /* 내가 쓴 글 */
-        TextView k = (TextView) findViewById(R.id.k);
-        k.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PostNaegaActivity.class);
-                startActivity(intent);
-            }
-        });
 
         /* 스크랩 */
 

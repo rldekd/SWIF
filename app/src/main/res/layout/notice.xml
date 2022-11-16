@@ -7,20 +7,14 @@
     android:orientation="vertical"
     android:background="#ffffff">
 
-    <ImageView
-        android:id="@+id/notice_logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@null"
-        android:src="@drawable/logo" />
 
     <TextView
         android:layout_gravity="center"
         android:id="@+id/notice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/roboto"
         android:gravity="center"
         android:text="@string/Notice"
@@ -41,66 +35,9 @@
 
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="27dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginEnd="3dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="[자주 묻는 질문]"
-                    android:textColor="#196CA8"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginEnd="1dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="포인트 적립 관련 안내"
-                    android:textColor="#000000"
-                    android:textSize="16dp" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="16dp"
-                android:background="#D7D7D7" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="27dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginEnd="3dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="장학 혜택 관련 안내"
-                    android:textColor="#000000"
-                    android:textSize="16dp" />
 
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="16dp"
-                android:background="#D7D7D7" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -166,7 +103,7 @@
                     android:layout_marginTop="18dp"
                     android:layout_marginEnd="3dp"
                     android:fontFamily="@font/roboto"
-                    android:text="채점 제도 안내"
+                    android:text="피드백 제도 안내"
                     android:textColor="#000000"
                     android:textSize="16dp" />
 
@@ -198,31 +135,9 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="16dp"
-                android:background="#D7D7D7" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="27dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginEnd="3dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="안드로이드 5 미만 지원 종료 예정"
-                    android:textColor="#000000"
-                    android:textSize="16dp" />
 
-            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -244,7 +159,7 @@
                     android:layout_marginTop="18dp"
                     android:layout_marginEnd="3dp"
                     android:fontFamily="@font/roboto"
-                    android:text="스위프 고객센터 운영 안내"
+                    android:text="SWIF 고객센터 운영 안내"
                     android:textColor="#000000"
                     android:textSize="16dp" />
 
@@ -285,77 +200,7 @@
                 android:background="#D7D7D7" />
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:contentDescription="@null"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="65dp"
-                    android:layout_marginTop="26dp"
-                    android:src="@drawable/notice_previous_page" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto_b"
-                    android:text="1"
-                    android:textColor="#196CA8"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="2"
-                    android:textColor="#80000000"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="3"
-                    android:textColor="#80000000"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="4"
-                    android:textColor="#80000000"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="5"
-                    android:textColor="#80000000"
-                    android:textSize="20dp" />
-
-                <ImageView
-                    android:contentDescription="@null"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="26dp"
-                    android:src="@drawable/notice_next_page" />
-
-            </LinearLayout>
         </LinearLayout>
 
 

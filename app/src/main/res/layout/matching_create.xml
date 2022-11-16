@@ -44,19 +44,9 @@
             android:fontFamily="@font/roboto"
             android:layout_gravity="center"
             android:layout_marginTop="-50dp"
+            android:layout_marginBottom="70dp"
             android:background="@drawable/yellow_roundcorner"
             android:text="매칭리스트 생성하기" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:text="원하는 매칭리스트가 없을 경우 생성하세요."
-            android:gravity="center"
-            android:fontFamily="@font/roboto"
-            android:textSize="12sp"
-            android:textColor="#70000000"
-            android:background="#FFF"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="70dp"/>
 
     </LinearLayout>
 
