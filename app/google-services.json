@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70784116670",
+    "project_id": "swif-4d448",
+    "storage_bucket": "swif-4d448.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70784116670:android:cb9b3c590abe74ebc5bbef",
+        "android_client_info": {
+          "package_name": "com.example.swip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70784116670-0b3t491lbrguasa4ej3jbhcgvs94bau6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQD1EaWqdsvLbGTA8c67bR-DL_Zp_RBeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70784116670-0b3t491lbrguasa4ej3jbhcgvs94bau6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

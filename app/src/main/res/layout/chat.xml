@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="SWIF"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/img"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="헬로월드"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/roboto"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D0D0D0"
+        android:layout_marginTop="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/chatback">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="헬로월드님과 매칭되었습니다."
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#646464"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="서로의 공부 인증을 확인했습니다!"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#646464"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지금부터 최대 10분간 자유롭게 대화가 가능하며,"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#646464"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10분이 지나면 자동으로 채팅이 종료됩니다."
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#646464"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/navy">
+
+        <ImageButton
+            android:id="@+id/chatplus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/plus"
+            android:layout_marginLeft="10dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"/>
+
+        <EditText
+            android:id="@+id/EditText_chat"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/chatsend"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/send"
+            android:layout_marginLeft="10dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

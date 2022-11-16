@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sample1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new text"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:layout_weight="2">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/sample2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/student_icon">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/sample3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/student_icon">
+        </ImageButton>
+    </LinearLayout>
+
+    <Chronometer
+        android:id="@+id/sample4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp">
+    </Chronometer>
+</LinearLayout>
