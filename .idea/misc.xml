@@ -38,6 +38,7 @@
         <entry key="app/src/main/res/layout/activity_member_init.xml" value="0.21022491455078127" />
         <entry key="app/src/main/res/layout/activity_password_reset.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_post.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_post_detail.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_post_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_show_message.xml" value="0.1" />
