@@ -47,7 +47,6 @@ public class AddPostActivity extends AppCompatActivity {
     Uri image_uri;
     private StorageReference storageReference;
     private DatabaseReference databaseReference;
-    private static final String TAG = "AddHotelActivity";
 
     private static final int REQUEST_CODE_STORAGE_PERMISSION = 1;
     private static final int REQUEST_CODE_SELECT_IMAGE = 2;

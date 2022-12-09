@@ -127,13 +127,13 @@
 
             <ImageView
                 android:id="@+id/add_comment"
-                android:layout_width="30dp"
+                android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp"
                 android:background="@null"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/match_plus"
+                android:src="@drawable/plus"
                 app:layout_constraintLeft_toRightOf="@id/layoutComment"
                 app:layout_constraintTop_toTopOf="@id/layoutComment" />
 

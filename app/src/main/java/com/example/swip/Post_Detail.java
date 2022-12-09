@@ -1,5 +1,13 @@
 package com.example.swip;
 
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -7,20 +15,20 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentChange;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Post_Detail extends AppCompatActivity {
 
@@ -28,19 +36,13 @@ public class Post_Detail extends AppCompatActivity {
     public static String Time;
 
     RecyclerView recyclerView;
-
-
-    RecyclerView recyclerCommentView;// comment
-
-
-
-
-    ArrayList<NewComment> newCommentArrayList; // comment
-    MyCommentAdapter myCommentAdapter; // comment
+    RecyclerView recyclerCommentView;
+    ArrayList<NewComment> newCommentArrayList;
+    MyCommentAdapter myCommentAdapter;
     FirebaseFirestore db;
-    NewComment newComment; // comment
-    EditText post_comment; // comment
-    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser(); // comment
+    NewComment newComment;
+    EditText post_comment;
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
     public static String title="";
     @Override
@@ -126,7 +128,6 @@ public class Post_Detail extends AppCompatActivity {
 
     // EventChangeListener get the Post from the Firestore database every time that user call the function and save the data in the newPostArrayList
 
-
     // EventCommentChangeListener get the Comment from the Firestore database every time that user call the function and save the data in the newCommentArrayList
     private void EventCommentChangeListener() {
         db.collection("NewComment").whereEqualTo("writerUid",WriterUid)
@@ -147,6 +148,7 @@ public class Post_Detail extends AppCompatActivity {
                         {
                             if(dc.getType() == DocumentChange.Type.ADDED)
                             {
+                                newCommentArrayList.add(dc.getDocument().toObject(NewComment.class));
                             }
                             myCommentAdapter.notifyDataSetChanged();
                         }

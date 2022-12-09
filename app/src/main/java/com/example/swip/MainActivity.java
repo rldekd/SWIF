@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         nav_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),ShowMessage.class);
+                Intent intent = new Intent(getApplicationContext(), NoticeActivity.class);
                 startActivity(intent);
             }
         });

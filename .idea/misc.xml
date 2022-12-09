@@ -3,7 +3,51 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_add_hotel.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_hotel_detail.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_hotel_list.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_main.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_member_init.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_password_reset.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_post.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_post_detail.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_post_list.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_profile.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_show_message.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_there_profile.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/comment.xml" value="0.4" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/example_layout.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/example_layout2.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/fragment_home.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/fragment_main.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/information_board.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/inquiry_write.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/intro.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/item_gallery.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/login.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/matching_create.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/matching_main.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/matching_nick.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/member.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/message_layout.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/my_inquiry.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/mypage.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/newcard.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/notice.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/notice_board_write.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_gita_zagi.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_naega.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_us.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_write.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/row_layout_home.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/timer.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/todo_item.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/user_info_terms.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/user_terms.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/menu/main_menu.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/menu/menu_main.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/menu/nav_bar.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/menu/post.xml" value="0.2703125" />
       </map>
     </option>
   </component>

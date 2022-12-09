@@ -1,20 +1,77 @@
 package com.example.swip;
 
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class NoticeActivity extends AppCompatActivity {
+
+    RecyclerView recyclerView;
+    CustomAdapter adapter;
+    List<Model> list;
+
+    FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notice);
+        setContentView(R.layout.activity_show_message);
 
 
+        recyclerView = findViewById(R.id.recyclerView);
+
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        db = FirebaseFirestore.getInstance();
+        list = new ArrayList<>();
+        adapter = new CustomAdapter(list, NoticeActivity.this);
+        recyclerView.setAdapter(adapter);
+
+
+        showData();
+    }
+
+    public void showData() {
+        db.collection("공지사항").get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        list.clear();
+
+                        for (DocumentSnapshot snapshot : task.getResult()) {
+                            Model model = new Model(snapshot.getString("id"), snapshot.getString("Name"), snapshot.getString("Message"));
+                            list.add(model);
+                        }
+
+                        adapter.notifyDataSetChanged();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(NoticeActivity.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(NoticeActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
         /* 하단바 */
 
@@ -72,7 +129,5 @@ public class NoticeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }

@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.swip">
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -12,6 +18,9 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/swif_icon"
@@ -40,7 +49,6 @@
         <activity android:name=".PostGiupActivity"/>
         <activity android:name=".PostGukgaActivity"/>
         <activity android:name=".PostGitaZagiActivity"/>
-        <activity android:name=".PostNaegaActivity"/>
         <activity android:name=".PostJagukActivity"/>
         <activity android:name=".UserTermsActivity"/>
         <activity android:name=".UserInfoTermsActivity"/>
@@ -59,23 +67,26 @@
              android:resource="@array/preloaded_fonts" /> -->
 
         <!--유짱-->
-        <activity android:name=".IntroActivity"/>
-        <activity android:name=".NoticeActivity"/>
-        <activity android:name=".InqActivity"/>
-        <activity android:name=".MyinqActivity"/>
-        <activity android:name=".ProfileModify"/>
+
         <activity android:name=".PasswordResetActivity"/>
         <activity android:name=".MemberInitActivity"/>
-
-
         <activity android:name=".AddPostActivity"/>
         <activity android:name=".PostDetailActivity"/>
         <activity android:name=".PostListActivity"/>
         <activity android:name=".PostConfirmActivity"/>
-        <activity android:name=".ChatActivity"/>
+        <activity android:name=".NoticeActivity"/>
 
-        <activity android:name=".Insert"/>
-        <activity android:name=".ShowMessage"/>
+
+        <activity android:name=".AddPostActivity_im"/>
+        <activity android:name=".AddPostActivity_jung"/>
+        <activity android:name=".AddPostActivity_cho"/>
+        <activity android:name=".AddPostActivity_dae"/>
+        <activity android:name=".AddPostActivity_feed"/>
+        <activity android:name=".AddPostActivity_gaguk"/>
+        <activity android:name=".AddPostActivity_gita"/>
+        <activity android:name=".AddPostActivity_giup"/>
+        <activity android:name=".AddPostActivity_go"/>
+        <activity android:name=".AddPostActivity_gukga"/>
 
         <activity android:name=".Post_Detail"/>
 

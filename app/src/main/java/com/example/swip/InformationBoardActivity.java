@@ -20,7 +20,7 @@ public class InformationBoardActivity extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PostListActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PostChoStuActivity.class);
                 startActivity(intent);
             }
         });
@@ -101,12 +101,12 @@ public class InformationBoardActivity extends AppCompatActivity {
         i.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PostDaeStuActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PostJagukActivity.class);
                 startActivity(intent);
             }
         });
 
-        /* 자격증 - 기타 */
+        /* 피드백 */
         TextView gee = (TextView) findViewById(R.id.gee);
         gee.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,14 +117,6 @@ public class InformationBoardActivity extends AppCompatActivity {
         });
 
         /* 내가 쓴 글 */
-        TextView k = (TextView) findViewById(R.id.k);
-        k.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PostNaegaActivity.class);
-                startActivity(intent);
-            }
-        });
 
         /* 스크랩 */
 

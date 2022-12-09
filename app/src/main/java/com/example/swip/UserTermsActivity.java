@@ -2,6 +2,7 @@ package com.example.swip;
 
 import android.os.Bundle;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class UserTermsActivity extends AppCompatActivity {
@@ -14,5 +15,5 @@ public class UserTermsActivity extends AppCompatActivity {
         setContentView(R.layout.user_terms);
 
     }
-
 }
+

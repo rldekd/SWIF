@@ -1,32 +1,26 @@
 package com.example.swip;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
 
-    ShowMessage activity;
+    NoticeActivity activity;
     List<Model> list;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    public CustomAdapter(List<Model> list, ShowMessage activity) {
+    public CustomAdapter(List<Model> list, NoticeActivity activity) {
         this.activity = activity;
         this.list = list;
 

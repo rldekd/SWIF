@@ -114,9 +114,10 @@ public class PostListActivity extends AppCompatActivity {
                     }
 
                     if (mPostModel.isEmpty()) {
-                        defaultView.setVisibility(View.VISIBLE);
+                        Toast.makeText(getApplicationContext(), "등록된 글이 없습니다.", Toast.LENGTH_SHORT).show();
                         circleP_bar.setVisibility(View.INVISIBLE);
                     }
+
 
                     mAdapter.notifyDataSetChanged();
                     circleP_bar.setVisibility(View.INVISIBLE);
