@@ -1,12 +1,12 @@
 package com.example.swip;
 
-public class Model {
+public class NoticeModel {
 
     String id;
     String name;
     String message;
 
-    public Model(String id, String name, String message) {
+    public NoticeModel(String id, String name, String message) {
 
         this.id = id;
         this.name = name;

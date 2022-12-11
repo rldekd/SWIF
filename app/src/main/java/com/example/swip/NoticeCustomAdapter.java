@@ -13,25 +13,18 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
+public class NoticeCustomAdapter extends RecyclerView.Adapter<NoticeCustomAdapter.ViewHolder> {
 
     NoticeActivity activity;
-    List<Model> list;
+    List<NoticeModel> list;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    public CustomAdapter(List<Model> list, NoticeActivity activity) {
+    public NoticeCustomAdapter(List<NoticeModel> list, NoticeActivity activity) {
         this.activity = activity;
         this.list = list;
 
     }
-
-
-
-
-
-
-
 
     @NonNull
     @Override

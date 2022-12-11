@@ -16,7 +16,6 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 public  class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder> {
-    private static final String TAG = "hotelAdapter";
     private Context mContext;
     private List<Post_Model> postModels;
 

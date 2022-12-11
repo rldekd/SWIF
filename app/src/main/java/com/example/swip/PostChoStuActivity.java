@@ -87,7 +87,7 @@ public class PostChoStuActivity extends AppCompatActivity {
             }
         });
         circleP_bar = findViewById(R.id.progressBarCircle);
-        mDatabase = FirebaseDatabase.getInstance().getReference("대학생");
+        mDatabase = FirebaseDatabase.getInstance().getReference("초등학생");
 
         storage = FirebaseStorage.getInstance();
 
@@ -140,7 +140,7 @@ public class PostChoStuActivity extends AppCompatActivity {
         extended_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), AddPostActivity_dae.class));
+                startActivity(new Intent(getApplicationContext(), AddPostActivity_cho.class));
                 return;
             }
         });

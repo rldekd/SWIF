@@ -26,8 +26,8 @@ import java.util.List;
 public class NoticeActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    CustomAdapter adapter;
-    List<Model> list;
+    NoticeCustomAdapter adapter;
+    List<NoticeModel> list;
 
     FirebaseFirestore db;
 
@@ -44,7 +44,7 @@ public class NoticeActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
         list = new ArrayList<>();
-        adapter = new CustomAdapter(list, NoticeActivity.this);
+        adapter = new NoticeCustomAdapter(list, NoticeActivity.this);
         recyclerView.setAdapter(adapter);
 
 
@@ -59,8 +59,8 @@ public class NoticeActivity extends AppCompatActivity {
                         list.clear();
 
                         for (DocumentSnapshot snapshot : task.getResult()) {
-                            Model model = new Model(snapshot.getString("id"), snapshot.getString("Name"), snapshot.getString("Message"));
-                            list.add(model);
+                            NoticeModel noticeModel = new NoticeModel(snapshot.getString("id"), snapshot.getString("Name"), snapshot.getString("Message"));
+                            list.add(noticeModel);
                         }
 
                         adapter.notifyDataSetChanged();

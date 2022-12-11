@@ -7,7 +7,6 @@ public class NewComment {
     private String comment;
     private String uid;
     private String writerUid;
-    private String time;
 
     public String getUid() {
         return uid;

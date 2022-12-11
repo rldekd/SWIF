@@ -185,5 +185,3 @@ public class ProfileModify extends AppCompatActivity {
 
 
 }
-
-
