@@ -20,7 +20,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.swip.databinding.ActivityHotelListBinding;
+import com.example.swip.databinding.ActivityAddPostBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -48,12 +48,12 @@ public class PostChoStuActivity extends AppCompatActivity {
 
 
 
-    ActivityHotelListBinding hotelListBinding;
+    ActivityAddPostBinding addPostBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotel_list);
+        setContentView(R.layout.activity_post_list);
 
         recyclerView = findViewById(R.id.recyclerVw);
         recyclerView.setHasFixedSize(true);
@@ -165,8 +165,8 @@ public class PostChoStuActivity extends AppCompatActivity {
                 recyclerView.removeAllViews();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     String uid = snapshot.getKey();
-                    String hotelLocation = snapshot.child("hotelLocation").getValue(String.class);
-                    String hotelName = snapshot.child("hotelName").getValue(String.class);
+                    String hotelLocation = snapshot.child("postTitle").getValue(String.class);
+                    String hotelName = snapshot.child("postContent").getValue(String.class);
 
                     Post_Model modelFiltered = snapshot.getValue(Post_Model.class);
 

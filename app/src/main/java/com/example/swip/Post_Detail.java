@@ -1,13 +1,11 @@
 package com.example.swip;
 
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,20 +13,15 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentChange;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class Post_Detail extends AppCompatActivity {
 
@@ -48,7 +41,7 @@ public class Post_Detail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post_detail);
+        setContentView(R.layout.activity_comment_detail);
 
         // Dynamically add the Post cardview in the noteRecyclerView
         recyclerView = findViewById(R.id.noteRecyclerView);
@@ -112,12 +105,11 @@ public class Post_Detail extends AppCompatActivity {
 
 
 
-                db.collection("NewComment")
-                        .add(newComment);
+                db.collection("NewComment").add(newComment); // NewComment에 post_comment, user, WriterUid 넣기
 
-                Toast.makeText(Post_Detail.this,"data inserted succefully",Toast.LENGTH_LONG).show();
+                Toast.makeText(Post_Detail.this,"data inserted succefully",Toast.LENGTH_LONG).show(); // 댓글 등록 완료 메시지
 
-                post_comment.setText("");
+                post_comment.setText(""); // 텍스트 출력 설정
 
             }
         });

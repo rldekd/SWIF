@@ -26,7 +26,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.swip.databinding.ActivityAddHotelBinding;
+import com.example.swip.databinding.ActivityAddPostBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -62,13 +62,13 @@ public class AddPostActivity_jung extends AppCompatActivity {
     String mhotelLocation, mhotelName, mhotelRating,mhotelPricePerHour,email,phone,mapUrl,webUrl, mhotelTagList;
 
 
-    ActivityAddHotelBinding addHotelBinding;
+    ActivityAddPostBinding addHotelBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_hotel);
-        addHotelBinding = ActivityAddHotelBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_add_post);
+        addHotelBinding = ActivityAddPostBinding.inflate(getLayoutInflater());
         View view = addHotelBinding.getRoot();
         setContentView(view);
 
@@ -80,9 +80,9 @@ public class AddPostActivity_jung extends AppCompatActivity {
 
 
         ivBack = findViewById(R.id.ivBack);
-        hotelImage = findViewById(R.id.hotelImage);
-        etLocation = findViewById(R.id.etLocation);
-        etHotelName = findViewById(R.id.etHotelName);
+        hotelImage = findViewById(R.id.postImage);
+        etLocation = findViewById(R.id.etTitle);
+        etHotelName = findViewById(R.id.etContent);
 
         btnSave = findViewById(R.id.btnSave);
         tvUpload = findViewById(R.id.tvUploadPhoto);
@@ -231,7 +231,7 @@ public class AddPostActivity_jung extends AppCompatActivity {
                                         }
                                     }, 500);
 
-                                    postModel = new Post_Model(mhotelLocation, mhotelName, mhotelRating,mhotelPricePerHour,email,phone,mapUrl,webUrl, mhotelTagList, sImage);
+                                    postModel = new Post_Model(mhotelLocation, mhotelName, sImage);
                                     String key = databaseReference.push().getKey();
                                     postModel.setID(key);
                                     databaseReference.child(key).setValue(postModel);

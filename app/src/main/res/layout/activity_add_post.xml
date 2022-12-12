@@ -43,7 +43,7 @@
 
 
                 <ImageView
-                    android:id="@+id/hotelImage"
+                    android:id="@+id/postImage"
                     android:layout_width="380dp"
                     android:layout_height="201dp"
                     android:layout_marginLeft="10dp"
@@ -76,7 +76,7 @@
 
                     <!--this is the actual edit text which takes the input-->
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etLocation"
+                        android:id="@+id/etTitle"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:ems="10"
@@ -99,7 +99,7 @@
 
                     <!--this is the actual edit text which takes the input-->
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etHotelName"
+                        android:id="@+id/etContent"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:ems="10"

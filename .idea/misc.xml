@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_add_hotel.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_add_post.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_hotel_detail.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_hotel_list.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/activity_main.xml" value="0.2490740740740741" />
@@ -35,7 +36,9 @@
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/newcard.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/notice.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/notice_board_write.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_cho_stu.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_gita_zagi.xml" value="0.2703125" />
+        <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_godueng_stu.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_naega.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_us.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/youji/AndroidStudioProjects/SWIF-lee/app/src/main/res/layout/post_write.xml" value="0.2490740740740741" />

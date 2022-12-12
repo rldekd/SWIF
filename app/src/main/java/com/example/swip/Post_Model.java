@@ -1,16 +1,16 @@
 package com.example.swip;
 
 public class Post_Model {
-    public  String hotelLocation;
-    public String hotelName;
+    public  String postTitle;
+    public String postContent;
     public String imageUri;
     private String key;
     private String ID;
 
 
-    public Post_Model(String hotelLocation, String hotelName, String imageUri, String hotelRating, String hotelListTag, String hotelPricePerHour, String key, String ID, String email, String phone, String mapUrl, String websiteUrl) {
-        this.hotelLocation = hotelLocation;
-        this.hotelName = hotelName;
+    public Post_Model(String postTitle, String postContent, String imageUri,  String key, String ID) {
+        this.postTitle = postTitle;
+        this.postContent = postContent;
         this.imageUri = imageUri;
 
         this.key = key;
@@ -22,9 +22,9 @@ public class Post_Model {
 
     }
 
-    public Post_Model(String mhotelLocation, String mhotelName, String mhotelRating, String mhotelPricePerHour, String email, String phone, String mapUrl, String webUrl, String mhotelTagList, String sImage) {
-        this.hotelLocation = mhotelLocation;
-        this.hotelName = mhotelName;
+    public Post_Model(String mpostTitle, String mpostContent, String sImage) {
+        this.postTitle = mpostTitle;
+        this.postContent = mpostContent;
         this.imageUri = sImage;
 
 
@@ -35,20 +35,20 @@ public class Post_Model {
 
 
 
-    public String getHotelLocation() {
-        return hotelLocation;
+    public String getPostTtile() {
+        return postTitle;
     }
 
-    public void setHotelLocation(String hotelLocation) {
-        this.hotelLocation = hotelLocation;
+    public void setPostTtile(String postTtile) {
+        this.postTitle = postTtile;
     }
 
-    public String getHotelName() {
-        return hotelName;
+    public String getPostContent() {
+        return postContent;
     }
 
-    public void setHotelName(String hotelName) {
-        this.hotelName = hotelName;
+    public void setPostContent(String postContent) {
+        this.postContent = postContent;
     }
 
     public String getImageUri() {

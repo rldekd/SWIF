@@ -19,15 +19,13 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.swip.databinding.ActivityHotelListBinding;
+import com.example.swip.databinding.ActivityPostListBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
-
-import org.checkerframework.checker.units.qual.A;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,12 +48,11 @@ public class PostJungStuActivity extends AppCompatActivity {
 
 
 
-    ActivityHotelListBinding hotelListBinding;
-
+    ActivityPostListBinding postListBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotel_list);
+        setContentView(R.layout.activity_post_list);
 
         recyclerView = findViewById(R.id.recyclerVw);
         recyclerView.setHasFixedSize(true);

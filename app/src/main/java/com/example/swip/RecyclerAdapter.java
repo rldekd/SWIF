@@ -36,8 +36,8 @@ public  class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recyc
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         final Post_Model currentPostModel = postModels.get(position);
 
-        holder.hotelLocation.setText(currentPostModel.getHotelLocation());
-        holder.hotelName.setText(currentPostModel.getHotelName());
+        holder.postTitle.setText(currentPostModel.getPostTtile());
+        holder.postContent.setText(currentPostModel.getPostContent());
 
 
 
@@ -54,9 +54,8 @@ public  class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recyc
             @Override
             public void onClick(View v) {
                 Intent passIntent = new Intent(mContext, PostDetailActivity.class);
-                passIntent.putExtra("hotelLocation1", currentPostModel.getHotelLocation());
-                passIntent.putExtra("hotelName1", currentPostModel.getHotelName());
-
+                passIntent.putExtra("postTitle1", currentPostModel.getPostTtile());
+                passIntent.putExtra("postContent1", currentPostModel.getPostContent());
                 passIntent.putExtra("imageUri1", currentPostModel.getImageUri());
 
 
@@ -78,16 +77,16 @@ public  class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recyc
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView hotelLocation, hotelName;
+        public TextView postTitle, postContent;
         public ImageView hotelImage;
         CardView clickedLayout;
 
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
-            hotelLocation = itemView.findViewById(R.id.hotelLocation);
-            hotelName = itemView.findViewById(R.id.hotelName);
-            hotelImage = itemView.findViewById(R.id.hotelImage);
+            postTitle = itemView.findViewById(R.id.postTitle);
+            postContent = itemView.findViewById(R.id.postContent);
+            hotelImage = itemView.findViewById(R.id.postImage);
             clickedLayout = itemView.findViewById(R.id.hotelCard);
 
 

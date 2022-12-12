@@ -19,7 +19,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.swip.databinding.ActivityHotelListBinding;
+import com.example.swip.databinding.ActivityPostListBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -48,12 +48,12 @@ public class PostJagukActivity extends AppCompatActivity {
 
 
 
-    ActivityHotelListBinding hotelListBinding;
+    ActivityPostListBinding postListBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotel_list);
+        setContentView(R.layout.activity_post_list);
 
         recyclerView = findViewById(R.id.recyclerVw);
         recyclerView.setHasFixedSize(true);

@@ -26,7 +26,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.swip.databinding.ActivityAddHotelBinding;
+import com.example.swip.databinding.ActivityAddPostBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -59,30 +59,30 @@ public class AddPostActivity extends AppCompatActivity {
 
     long maxid = 0;
 
-    String mhotelLocation, mhotelName, mhotelRating,mhotelPricePerHour,email,phone,mapUrl,webUrl, mhotelTagList;
+    String mhotelLocation, mhotelName;
 
 
-    ActivityAddHotelBinding addHotelBinding;
+    ActivityAddPostBinding addPostBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_hotel);
-        addHotelBinding = ActivityAddHotelBinding.inflate(getLayoutInflater());
-        View view = addHotelBinding.getRoot();
+        setContentView(R.layout.activity_add_post);
+        addPostBinding = ActivityAddPostBinding.inflate(getLayoutInflater());
+        View view = addPostBinding.getRoot();
         setContentView(view);
 
         storageReference = FirebaseStorage.getInstance().getReference("초딩"); // 얘가 이름인 것 같음
         databaseReference = FirebaseDatabase.getInstance().getReference("초딩");
 
-        addHotelBinding.progressBar.setVisibility(View.GONE);
+        addPostBinding.progressBar.setVisibility(View.GONE);
 
 
 
         ivBack = findViewById(R.id.ivBack);
-        hotelImage = findViewById(R.id.hotelImage);
-        etLocation = findViewById(R.id.etLocation);
-        etHotelName = findViewById(R.id.etHotelName);
+        hotelImage = findViewById(R.id.postImage);
+        etLocation = findViewById(R.id.etTitle);
+        etHotelName = findViewById(R.id.etContent);
 
         btnSave = findViewById(R.id.btnSave);
         tvUpload = findViewById(R.id.tvUploadPhoto);
@@ -227,17 +227,17 @@ public class AddPostActivity extends AppCompatActivity {
                                     handler.postDelayed(new Runnable() {
                                         @Override
                                         public void run() {
-                                            addHotelBinding.mprogressBar.setProgress(0);
+                                            addPostBinding.mprogressBar.setProgress(0);
                                         }
                                     }, 500);
 
-                                    postModel = new Post_Model(mhotelLocation, mhotelName, mhotelRating,mhotelPricePerHour,email,phone,mapUrl,webUrl, mhotelTagList, sImage);
+                                    postModel = new Post_Model(mhotelLocation, mhotelName, sImage);
                                     String key = databaseReference.push().getKey();
                                     postModel.setID(key);
                                     databaseReference.child(key).setValue(postModel);
 
                                     mProgress.setVisibility(View.INVISIBLE);
-                                    backToProfile(mhotelLocation, mhotelName, mhotelRating,mhotelPricePerHour,email,phone,mapUrl,webUrl, mhotelTagList, sImage);
+                                    backToProfile(mhotelLocation, mhotelName, sImage);
                                     etHotelName.setText("");
                                     etLocation.setText("");
                                     Picasso.get().load("null").placeholder(R.drawable.placeholder).into(hotelImage);
@@ -264,7 +264,7 @@ public class AddPostActivity extends AppCompatActivity {
 
     }
 
-    private void backToProfile(String mhotelLocation, String mhotelName, String mhotelRating, String mhotelPricePerHour, String email, String phone, String mapUrl, String webUrl, String mhotelTagList, String sImage) {
+    private void backToProfile(String mhotelLocation, String mhotelName, String sImage) {
 
         Intent backIntent = new Intent(this, PostConfirmActivity.class);
         backIntent.putExtra("hotelLocation1",mhotelLocation );

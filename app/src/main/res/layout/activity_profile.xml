@@ -39,7 +39,7 @@
 
 
                 <ImageView
-                    android:id="@+id/Image"
+                    android:id="@+id/cImage"
                     android:layout_width="match_parent"
                     android:layout_height="227dp"
                     android:layout_marginLeft="10dp"
@@ -49,7 +49,7 @@
                     android:src="@drawable/placeholder" />
 
                 <TextView
-                    android:id="@+id/tvHotelName"
+                    android:id="@+id/cTitle"
                     android:hint="제목"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
@@ -62,7 +62,7 @@
                     android:textColorHint="#000000"/>
 
                 <TextView
-                    android:id="@+id/tvLocation"
+                    android:id="@+id/cContent"
                     android:hint="내용"
                     android:layout_width="300dp"
                     android:layout_height="70dp"

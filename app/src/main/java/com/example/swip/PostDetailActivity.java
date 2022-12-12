@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -27,19 +26,18 @@ public class PostDetailActivity extends AppCompatActivity {
     private static final int CALL_PERMISSION = 30;
 
     ImageView ivhotelImage;
-    TextView tvratings,tvHotelEmail,tvHotelPhone,tvhotelLocation,
-            tvhotelNames,tvtagsList, tvHotelPrice,tvMapUrlLoaccation, tvHotelWebsite;
+    TextView tvhotelLocation, tvhotelNames;
 
-    String mratings,mtvHotelEmail,mtvHotelPhone,mhotelLocation,
-            mhotelNames,mtagsList, mhotelImage, mhotelPrice, mhotelMapUrl,mhotelWebsite;
-    WebView tvHotelDirection;
+    String mhotelLocation,
+            mhotelNames, mhotelImage;
+
 
 
 
     private void initializeWidgets(){
         ivhotelImage        = findViewById(R.id.ivHotelImage);
-        tvhotelLocation     = findViewById(R.id.tvHotelLocation);
-        tvhotelNames        = findViewById(R.id.tvHotelName);
+        tvhotelLocation     = findViewById(R.id.tvHotelName);
+        tvhotelNames        = findViewById(R.id.tvContent);
 
 
     }
@@ -47,7 +45,7 @@ public class PostDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotel_detail);
+        setContentView(R.layout.activity_post_detail);
         initializeWidgets();
         recieveIntents();
 
@@ -77,23 +75,20 @@ public class PostDetailActivity extends AppCompatActivity {
 
 
     private void recieveIntents() {
-        if (getIntent().hasExtra("hotelLocation1")
-                && getIntent().hasExtra("hotelName1")
+        if (getIntent().hasExtra("postTitle1")
+                && getIntent().hasExtra("postContent1")
                 && getIntent().hasExtra("imageUri1")) {
 
-            mhotelLocation = getIntent().getStringExtra("hotelLocation1");
-            mhotelNames = getIntent().getStringExtra("hotelName1");
+            mhotelLocation = getIntent().getStringExtra("postTitle1");
+            mhotelNames = getIntent().getStringExtra("postContent1");
             mhotelImage = getIntent().getStringExtra("imageUri1");
 
-            provision(mhotelLocation,mhotelNames,mratings,mtagsList,
-                    mhotelImage,mtvHotelEmail, mtvHotelPhone, mhotelMapUrl,  mhotelWebsite,mhotelPrice);
+            provision(mhotelLocation,mhotelNames,
+                    mhotelImage);
         }
     }
 
-    private void provision(String mhotelLocation, String mhotelNames, String mratings,
-                           String mtagsList, String mhotelImage,
-                           String mtvHotelEmail, String mtvHotelPhone,
-                           String mhotelMapUrl, String mhotelWebsite, String mhotelPrice) {
+    private void provision(String mhotelLocation, String mhotelNames, String mhotelImage) {
 
         tvhotelLocation.setText(mhotelLocation); ;
         tvhotelNames .setText(mhotelNames);

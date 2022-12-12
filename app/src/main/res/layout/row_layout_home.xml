@@ -25,7 +25,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/hotelImage"
+                android:id="@+id/postImage"
                 android:layout_width="match_parent"
                 android:layout_height="212dp"
                 android:scaleType="centerCrop"
@@ -34,7 +34,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
-                android:layout_below="@id/hotelImage"
+                android:layout_below="@id/postImage"
                 android:background="#ffffff" />
 
         </RelativeLayout>
@@ -52,7 +52,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/hotelName"
+                    android:id="@+id/postTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -66,7 +66,7 @@
 
 
             <TextView
-                android:id="@+id/hotelLocation"
+                android:id="@+id/postContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/hotelnameLayout"
