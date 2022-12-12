@@ -25,19 +25,19 @@ public class PostDetailActivity extends AppCompatActivity {
 
     private static final int CALL_PERMISSION = 30;
 
-    ImageView ivhotelImage;
-    TextView tvhotelLocation, tvhotelNames;
+    ImageView ivpostImage;
+    TextView tvpostTitle, tvpostContent;
 
-    String mhotelLocation,
-            mhotelNames, mhotelImage;
+    String mpostTitle,
+            mpostContent, mpostImage;
 
 
 
 
     private void initializeWidgets(){
-        ivhotelImage        = findViewById(R.id.ivHotelImage);
-        tvhotelLocation     = findViewById(R.id.tvHotelName);
-        tvhotelNames        = findViewById(R.id.tvContent);
+        ivpostImage        = findViewById(R.id.ivPostImage);
+        tvpostTitle     = findViewById(R.id.tvTitle);
+        tvpostContent        = findViewById(R.id.tvContent);
 
 
     }
@@ -79,23 +79,23 @@ public class PostDetailActivity extends AppCompatActivity {
                 && getIntent().hasExtra("postContent1")
                 && getIntent().hasExtra("imageUri1")) {
 
-            mhotelLocation = getIntent().getStringExtra("postTitle1");
-            mhotelNames = getIntent().getStringExtra("postContent1");
-            mhotelImage = getIntent().getStringExtra("imageUri1");
+            mpostTitle = getIntent().getStringExtra("postTitle1");
+            mpostContent = getIntent().getStringExtra("postContent1");
+            mpostImage = getIntent().getStringExtra("imageUri1");
 
-            provision(mhotelLocation,mhotelNames,
-                    mhotelImage);
+            provision(mpostTitle,mpostContent,
+                    mpostImage);
         }
     }
 
     private void provision(String mhotelLocation, String mhotelNames, String mhotelImage) {
 
-        tvhotelLocation.setText(mhotelLocation); ;
-        tvhotelNames .setText(mhotelNames);
+        tvpostTitle.setText(mhotelLocation); ;
+        tvpostContent .setText(mhotelNames);
 
 
 
-        Picasso.get().load(mhotelImage).fit().placeholder(R.drawable.placeholder).into(ivhotelImage);
+        Picasso.get().load(mhotelImage).fit().placeholder(R.drawable.placeholder).into(ivpostImage);
 
     }
 

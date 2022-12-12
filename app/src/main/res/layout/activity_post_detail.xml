@@ -35,14 +35,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvContent" />
 
             <ImageView
-                android:id="@+id/ivHotelImage"
+                android:id="@+id/ivPostImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="86dp"
+                android:layout_marginTop="84dp"
                 android:foregroundGravity="center_horizontal"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/placeholder" />
@@ -58,11 +59,11 @@
                 android:textAllCaps="true"
                 android:textColor="#940C0C0C"
                 android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="@+id/ivHotelImage"
-                app:layout_constraintTop_toBottomOf="@+id/ivHotelImage" />
+                app:layout_constraintStart_toStartOf="@+id/ivPostImage"
+                app:layout_constraintTop_toBottomOf="@+id/ivPostImage" />
 
             <TextView
-                android:id="@+id/tvHotelName"
+                android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
@@ -72,8 +73,8 @@
                 android:textAllCaps="true"
                 android:textColor="#005C9F"
                 android:textSize="26dp"
-                app:layout_constraintBottom_toTopOf="@+id/ivHotelImage"
-                app:layout_constraintStart_toStartOf="@+id/ivHotelImage" />
+                app:layout_constraintBottom_toTopOf="@+id/ivPostImage"
+                app:layout_constraintStart_toStartOf="@+id/ivPostImage" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

@@ -13,8 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.squareup.picasso.Picasso;
 
 public class PostConfirmActivity extends AppCompatActivity {
-    private  ImageView ivBack, ivhotelImage;
-    private  TextView tvLocation, tvHotelName;
+    private  ImageView ivBack, ivImage;
+    private  TextView tvTitle, tvContent;
     Button btnHome;
     ProgressBar mProgress;
 
@@ -24,9 +24,9 @@ public class PostConfirmActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         ivBack = findViewById(R.id.ivBack);
-        ivhotelImage = findViewById(R.id.cImage);
-        tvLocation = findViewById(R.id.cTitle);
-        tvHotelName = findViewById(R.id.cContent);
+        ivImage = findViewById(R.id.cImage);
+        tvTitle = findViewById(R.id.cTitle);
+        tvContent = findViewById(R.id.cContent);
 
         btnHome = findViewById(R.id.btnBackHome);
 
@@ -58,10 +58,10 @@ public class PostConfirmActivity extends AppCompatActivity {
             mpostImage = getIntent().getStringExtra("imageUri1");;
 
 
-            tvLocation.setText(mpostTitle); ;
-            tvHotelName .setText(mpostContent);
+            tvTitle.setText(mpostTitle); ;
+            tvContent .setText(mpostContent);
 
-            Picasso.get().load(mpostImage).fit().placeholder(R.drawable.placeholder).into(ivhotelImage);
+            Picasso.get().load(mpostImage).fit().placeholder(R.drawable.placeholder).into(ivImage);
 
         }
 

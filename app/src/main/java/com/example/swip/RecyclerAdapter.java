@@ -47,7 +47,7 @@ public  class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recyc
                 .placeholder(R.drawable.placeholder)
                 .fit()
                 .centerCrop()
-                .into(holder.hotelImage);
+                .into(holder.postImage);
 
 
         holder.clickedLayout.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +78,7 @@ public  class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recyc
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
         public TextView postTitle, postContent;
-        public ImageView hotelImage;
+        public ImageView postImage;
         CardView clickedLayout;
 
 
@@ -86,7 +86,7 @@ public  class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recyc
             super(itemView);
             postTitle = itemView.findViewById(R.id.postTitle);
             postContent = itemView.findViewById(R.id.postContent);
-            hotelImage = itemView.findViewById(R.id.postImage);
+            postImage = itemView.findViewById(R.id.postImage);
             clickedLayout = itemView.findViewById(R.id.hotelCard);
 
 

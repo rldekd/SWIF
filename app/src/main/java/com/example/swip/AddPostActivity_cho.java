@@ -215,6 +215,7 @@ public class AddPostActivity_cho extends AppCompatActivity {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Toast.makeText(AddPostActivity_cho.this, "글이 등록되었습니다.", Toast.LENGTH_LONG).show();
 
+
                     if (taskSnapshot.getMetadata() != null)
                         if (taskSnapshot.getMetadata().getReference() != null) {
                             Task<Uri> result = taskSnapshot.getStorage().getDownloadUrl();

@@ -1,5 +1,6 @@
 package com.example.swip;
 
+
 import android.Manifest;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -40,8 +41,8 @@ import com.squareup.picasso.Picasso;
 
 public class AddPostActivity extends AppCompatActivity {
 
-    ImageView ivBack, hotelImage;
-    EditText etLocation, etHotelName;
+    ImageView ivBack, postImage;
+    EditText etTitle, etContent;
     Button btnSave;
     TextView tvUpload;
     Uri image_uri;
@@ -59,7 +60,7 @@ public class AddPostActivity extends AppCompatActivity {
 
     long maxid = 0;
 
-    String mhotelLocation, mhotelName;
+    String mTitle, mContent;
 
 
     ActivityAddPostBinding addPostBinding;
@@ -72,17 +73,17 @@ public class AddPostActivity extends AppCompatActivity {
         View view = addPostBinding.getRoot();
         setContentView(view);
 
-        storageReference = FirebaseStorage.getInstance().getReference("초딩"); // 얘가 이름인 것 같음
-        databaseReference = FirebaseDatabase.getInstance().getReference("초딩");
+        storageReference = FirebaseStorage.getInstance().getReference("초등학생"); // 얘가 이름인 것 같음
+        databaseReference = FirebaseDatabase.getInstance().getReference("초등학생");
 
         addPostBinding.progressBar.setVisibility(View.GONE);
 
 
 
         ivBack = findViewById(R.id.ivBack);
-        hotelImage = findViewById(R.id.postImage);
-        etLocation = findViewById(R.id.etTitle);
-        etHotelName = findViewById(R.id.etContent);
+        postImage = findViewById(R.id.postImage);
+        etTitle = findViewById(R.id.etTitle);
+        etContent = findViewById(R.id.etContent);
 
         btnSave = findViewById(R.id.btnSave);
         tvUpload = findViewById(R.id.tvUploadPhoto);
@@ -214,6 +215,7 @@ public class AddPostActivity extends AppCompatActivity {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Toast.makeText(AddPostActivity.this, "글이 등록되었습니다.", Toast.LENGTH_LONG).show();
 
+
                     if (taskSnapshot.getMetadata() != null)
                         if (taskSnapshot.getMetadata().getReference() != null) {
                             Task<Uri> result = taskSnapshot.getStorage().getDownloadUrl();
@@ -231,16 +233,16 @@ public class AddPostActivity extends AppCompatActivity {
                                         }
                                     }, 500);
 
-                                    postModel = new Post_Model(mhotelLocation, mhotelName, sImage);
+                                    postModel = new Post_Model(mTitle, mContent, sImage);
                                     String key = databaseReference.push().getKey();
                                     postModel.setID(key);
                                     databaseReference.child(key).setValue(postModel);
 
                                     mProgress.setVisibility(View.INVISIBLE);
-                                    backToProfile(mhotelLocation, mhotelName, sImage);
-                                    etHotelName.setText("");
-                                    etLocation.setText("");
-                                    Picasso.get().load("null").placeholder(R.drawable.placeholder).into(hotelImage);
+                                    backToProfile(mTitle, mContent, sImage);
+                                    etContent.setText("");
+                                    etTitle.setText("");
+                                    Picasso.get().load("null").placeholder(R.drawable.placeholder).into(postImage);
                                 }
                             });
                             result.addOnFailureListener(new OnFailureListener() {
@@ -264,11 +266,11 @@ public class AddPostActivity extends AppCompatActivity {
 
     }
 
-    private void backToProfile(String mhotelLocation, String mhotelName, String sImage) {
+    private void backToProfile(String mTitle, String mContent, String sImage) {
 
         Intent backIntent = new Intent(this, PostConfirmActivity.class);
-        backIntent.putExtra("hotelLocation1",mhotelLocation );
-        backIntent.putExtra("hotelName1",mhotelName );
+        backIntent.putExtra("postTitle1",mTitle );
+        backIntent.putExtra("postContent1",mContent );
         backIntent.putExtra("imageUri1",sImage);
 
         startActivity(backIntent);
@@ -278,18 +280,18 @@ public class AddPostActivity extends AppCompatActivity {
 
     private void receiveEntries() {
 
-        mhotelLocation = etLocation.getText().toString().trim();
-        mhotelName = etHotelName.getText().toString().trim();
+        mTitle = etTitle.getText().toString().trim();
+        mContent = etContent.getText().toString().trim();
 
         checkFields();
     }
 
     private void checkFields() {
 
-        if (etLocation.getText().toString().isEmpty()) {
-            etLocation.setError("Location of The hotel is required.");
-        } else if (etHotelName.getText().toString().isEmpty()) {
-            etHotelName.setError("Name of The hotel is required.");
+        if (etTitle.getText().toString().isEmpty()) {
+            etTitle.setError("Location of The hotel is required.");
+        } else if (etContent.getText().toString().isEmpty()) {
+            etContent.setError("Name of The hotel is required.");
 
         } else {
 
@@ -298,9 +300,6 @@ public class AddPostActivity extends AppCompatActivity {
 
                 if (isNetworkConnected()) {
                     uploadFile();
-
-
-                    startActivity(new Intent(getApplicationContext(), PostListActivity.class));
                     finish();
                 }
                 else {
@@ -350,7 +349,7 @@ public class AddPostActivity extends AppCompatActivity {
                 && data != null && data.getData() != null) {
             image_uri = data.getData();
 
-            Picasso.get().load(image_uri).into(hotelImage);
+            Picasso.get().load(image_uri).into(postImage);
         }
     }
 
