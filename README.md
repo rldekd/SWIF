@@ -4,6 +4,7 @@
 - 개발 배경
 - 개발 필요성
 - 사용 프로그램
+- 화면 설계
 - --
 ### :heavy_check_mark: 개발 배경
 - 코로나19 확산 이후 온라인 독서실 및 스터디앱 사용량 증가
@@ -14,7 +15,13 @@
 
 ---
 ### :heavy_check_mark: 개발 필요성
-- 오프라인 독서실 사용 대비 비용절감
+- 오프라인 독서실 사용 대비 비용 절감
+
+---
+### :heavy_check_mark: 핵심 기능
+- 타이머로 간단하게 총 공부 시간 기록
+- 채팅을 통해 타 사용자와 서로 스터디 결과물 확인
+- 게시판을 통한 사용자와 정보 공유
 
 ---
 ### :heavy_check_mark: 사용 프로그램
@@ -23,6 +30,8 @@
 
 ---
 ### :heavy_check_mark: [화면 설계](https://www.figma.com/file/11UPpZ3Bjcf419xwidDnb3/%EC%A1%B8%EC%9E%91-%EB%B0%B1%EC%97%85?type=design&node-id=0%3A1&mode=design&t=bUwRK2DXZ5DGuHzQ-1)
+
+클릭 시 Figma 이동
 
 ![uiux1](https://github.com/rldekd/SWIF/assets/113246634/ef2ded5a-fb71-40f6-a61a-142446d9e315)
 
