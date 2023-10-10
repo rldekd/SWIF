@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#005C9F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_plan"
+            android:layout_width="209dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:background="@drawable/yellow_roundcorner"
+            android:text="매칭하러 가기"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_roundcorner">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:ignore="MissingConstraints" />
+        <!--                <devs.mulham.horizontalcalendar.HorizontalCalendarView-->
+        <!--                    android:id="@+id/calendarView"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="#FFE400"-->
+        <!--                    app:textColorNormal="#FFFFFF"-->
+        <!--                    app:selectorColor="#86E57F"-->
+        <!--                    app:textColorSelected="#86E57F" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_gravity="center"-->
+        <!--                    android:layout_marginTop="30dp"-->
+        <!--                    android:textSize="25dp"-->
+        <!--                    android:id="@+id/calendar_text_view" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <EditText
+                android:id="@+id/inputToDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="30dp"
+                android:hint="할 일을 입력하세요."
+                android:textSize="15dp"
+                android:inputType="textMultiLine" />
+
+            <ImageButton
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nav_friend"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_mypage" />
+
+        <ImageButton
+            android:id="@+id/nav_timer"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_timer" />
+
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_home" />
+
+        <ImageButton
+            android:id="@+id/nav_post"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_post" />
+
+        <ImageButton
+            android:id="@+id/nav_menu"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_noti" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="매칭리스트"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_b"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#dd000000"
+            android:background="#FFF"/>
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp" />
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_create"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:textSize="13sp"-->
+        <!--            android:fontFamily="@font/roboto_b"-->
+        <!--            android:text="매칭리스트 생성하기"-->
+        <!--            android:layout_marginTop="-50dp" />-->
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="211dp"
+            android:layout_height="50dp"
+            android:textSize="13sp"
+            android:fontFamily="@font/roboto"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/yellow_roundcorner"
+            android:text="매칭리스트 생성하기" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nav_friend"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_mypage" />
+
+        <ImageButton
+            android:id="@+id/nav_timer"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_timer" />
+
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_home" />
+
+        <ImageButton
+            android:id="@+id/nav_post"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_post" />
+
+        <ImageButton
+            android:id="@+id/nav_menu"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_noti" />
+
+
+    </LinearLayout>
+</LinearLayout>

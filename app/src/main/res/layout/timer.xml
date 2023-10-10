@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_dot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/blue_strokecorner"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:text="총 공부 시간"
+            android:textStyle="bold"
+            android:textSize="25sp"></TextView>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:textColor="#005C9F"></Chronometer>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/buttonstart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/record_start" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="기록 시작"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/buttonstop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/record_stop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginRight="30dp"
+                android:text="기록 중단"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--하단바-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nav_friend"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_mypage" />
+
+        <ImageButton
+            android:id="@+id/nav_timer"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_timer" />
+
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_home" />
+
+        <ImageButton
+            android:id="@+id/nav_post"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_post" />
+
+        <ImageButton
+            android:id="@+id/nav_menu"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_noti" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

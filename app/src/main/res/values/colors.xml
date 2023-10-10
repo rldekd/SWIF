@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#005C9F</color>
+    <color name="chatback">#F9F9F9</color>
+    <color name="navy">#005C9F</color>
+
+    <color name="mainBg">#f2f2f2</color>
+
+<color name="mainColor">#ffffff</color>
+<color name="boldText">#33a217</color>
+<color name="hashTag">#e6b781</color>
+<color name="timeFont">#6774e2</color>
+<color name="busline">#eaeaea</color>
+
+
+    <color name="red">#FF4848</color>
+    <color name="blue">#4374D9</color>
+    <color name="yellow">#FAED7D</color>
+    <color name="purple">#D1B2FF</color>
+    <color name="gray">#EAEAEA</color>
+
+    <color name="colorPrimary">#E33435</color>
+    <color name="colorPrimaryDark">#E33435</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorItem1Start">#FEBD1B</color>
+    <color name="colorItem1End">#E4A401</color>
+    <color name="colorItem2Start">#4D79FF</color>
+    <color name="colorItem2End">#0039E6</color>
+
+    <color name="colorItem3Start">#993399</color>
+    <color name="colorItem3End">#602060</color>
+
+    <color name="colorItem4Start">#00B33C</color>
+    <color name="colorItem4End">#006622</color>
+
+    <color name="colorEndBackground">#50FFFFFB</color>
+    <color name="colorLightText">#ECECEC</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+
+
+
+    <color name="colorSearchIcon">#DBDBDB</color>
+    <color name="colorTextHint">#7B7B7B</color>
+    <color name="colorQuickActionBackground">#2F2D2E</color>
+    <color name="colorIcons">#A4A4A4</color>
+    <color name="colorTextSubtitle">#FAFAFA</color>
+    <color name="colorDefaultNoteColor">#333333</color>
+    <color name="colorNotesubtitleText">#FAFAFA</color>
+    <color name="colorMiscellaneousBackground">#1F1F1F</color>
+    <color name="colorNoteColor2">#FDBE3B</color>
+    <color name="colorNoteColor3">#FF4842</color>
+    <color name="colorNoteColor4">#3A52Fc</color>
+    <color name="colorNoteColor5">#000000</color>
+    <color name="colorDelete">#FF4842</color>
+    <color name="colorSearchBackground">#7B7B7B</color>
+</resources>

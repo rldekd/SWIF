@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.swip">
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/swif_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/swif_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SWIP">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--깅-->
+
+        <activity android:name=".InformationBoardActivity"/>
+        <activity android:name=".PostChoStuActivity"/>
+        <activity android:name=".PostJungStuActivity"/>
+        <activity android:name=".PostGoduengStuActivity"/>
+        <activity android:name=".PostDaeStuActivity"/>
+        <activity android:name=".PostImyongActivity"/>
+        <activity android:name=".PostGitaActivity"/>
+        <activity android:name=".PostGiupActivity"/>
+        <activity android:name=".PostGukgaActivity"/>
+        <activity android:name=".PostGitaZagiActivity"/>
+        <activity android:name=".PostJagukActivity"/>
+        <activity android:name=".UserTermsActivity"/>
+        <activity android:name=".UserInfoTermsActivity"/>
+
+
+
+        <!--죄용이-->
+
+        <activity android:name=".TimerActivity" android:label="timer" />
+        <activity android:name=".MatchingNickActivity"/>
+        <activity android:name=".MatchingMainActivity"/>
+        <activity android:name=".MatchingCreateActivity"/>
+
+        <!-- <meta-data
+             android:name="preloaded_fonts"
+             android:resource="@array/preloaded_fonts" /> -->
+
+        <!--유짱-->
+
+        <activity android:name=".PasswordResetActivity"/>
+        <activity android:name=".MemberInitActivity"/>
+        <activity android:name=".AddPostActivity"/>
+        <activity android:name=".PostDetailActivity"/>
+        <activity android:name=".PostListActivity"/>
+        <activity android:name=".PostConfirmActivity"/>
+        <activity android:name=".NoticeActivity"/>
+
+
+        <activity android:name=".AddPostActivity_im"/>
+        <activity android:name=".AddPostActivity_jung"/>
+        <activity android:name=".AddPostActivity_cho"/>
+        <activity android:name=".AddPostActivity_dae"/>
+        <activity android:name=".AddPostActivity_feed"/>
+        <activity android:name=".AddPostActivity_gaguk"/>
+        <activity android:name=".AddPostActivity_gita"/>
+        <activity android:name=".AddPostActivity_giup"/>
+        <activity android:name=".AddPostActivity_go"/>
+        <activity android:name=".AddPostActivity_gukga"/>
+
+        <activity android:name=".Post_Detail"/>
+
+
+        <!--승미니-->
+        <activity android:name=".MyPageActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".MemberActivity"/>
+        <activity android:name=".ProfileModify"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>
