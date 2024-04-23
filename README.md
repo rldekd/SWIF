@@ -1,11 +1,20 @@
 # :book: SWIF
 
-## :mag_right: 개요
+## 목차
+- 프로젝트 개요
 - 개발 배경
 - 개발 필요성
 - 사용 프로그램
 - 화면 설계
 - --
+### :mag_right: 프로젝트 개요
+- 개발 기간: 2022. 03. ~ 2022. 10.
+- 개발 인원: 4
+- 개발 언어: Java
+- DB: Firebase
+- IDE: Android Studio
+- [시연 영상](https://youtu.be/STS_tqPen94)
+---
 ### :heavy_check_mark: 개발 배경
 - 코로나19 확산 이후 온라인 독서실 및 스터디앱 사용량 증가
 
